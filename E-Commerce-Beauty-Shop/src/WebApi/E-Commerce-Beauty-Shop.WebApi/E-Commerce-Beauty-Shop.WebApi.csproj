@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RootNamespace>E_Commerce_Beauty_Shop.WebApi</RootNamespace>
+    </PropertyGroup>
+
+
+</Project>
