@@ -1,8 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "K2N/pXkx1OLzSfAAZVUV38OUW/E/oQh3HB5iywsGyt8bOEcTYKTkAL+eAlQpDFNTTsXfqR8+fyY8tM4C4968zQ==",
+  "dgSpecHash": "bCOO8NG1vEMQ6WT/Aa80AKisi38aDuyhIbLkPrnZBd+qd6p5jhdWZ13yAAa/NIyFCg32wDYfoNE7+zHz/e4XAA==",
   "success": true,
-  "projectFilePath": "/Users/gunelyusubova/Desktop/Onion_Architectura/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/E-Commerce-Beauty-Shop.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/E-Commerce-Beauty-Shop.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/gunelyusubova/.nuget/packages/microsoft.aspnetcore.cryptography.internal/3.1.0/microsoft.aspnetcore.cryptography.internal.3.1.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/3.1.0/microsoft.aspnetcore.cryptography.keyderivation.3.1.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.configuration/3.1.0/microsoft.extensions.configuration.3.1.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.0/microsoft.extensions.configuration.abstractions.3.1.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.configuration.binder/3.1.0/microsoft.extensions.configuration.binder.3.1.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.dependencyinjection/3.1.0/microsoft.extensions.dependencyinjection.3.1.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.0/microsoft.extensions.dependencyinjection.abstractions.3.1.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.identity.core/3.1.0/microsoft.extensions.identity.core.3.1.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.identity.stores/3.1.0/microsoft.extensions.identity.stores.3.1.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.logging/3.1.0/microsoft.extensions.logging.3.1.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.0/microsoft.extensions.logging.abstractions.3.1.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.options/3.1.0/microsoft.extensions.options.3.1.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.primitives/3.1.0/microsoft.extensions.primitives.3.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

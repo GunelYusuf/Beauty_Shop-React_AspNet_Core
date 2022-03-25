@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gunelyusubova/Desktop/Onion_Architectura/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/E-Commerce-Beauty-Shop.Domain.csproj": {}
+    "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/E-Commerce-Beauty-Shop.Domain.csproj": {}
   },
   "projects": {
-    "/Users/gunelyusubova/Desktop/Onion_Architectura/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/E-Commerce-Beauty-Shop.Domain.csproj": {
+    "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/E-Commerce-Beauty-Shop.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gunelyusubova/Desktop/Onion_Architectura/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/E-Commerce-Beauty-Shop.Domain.csproj",
+        "projectUniqueName": "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/E-Commerce-Beauty-Shop.Domain.csproj",
         "projectName": "E-Commerce-Beauty-Shop.Domain",
-        "projectPath": "/Users/gunelyusubova/Desktop/Onion_Architectura/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/E-Commerce-Beauty-Shop.Domain.csproj",
+        "projectPath": "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/E-Commerce-Beauty-Shop.Domain.csproj",
         "packagesPath": "/Users/gunelyusubova/.nuget/packages/",
-        "outputPath": "/Users/gunelyusubova/Desktop/Onion_Architectura/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/obj/",
+        "outputPath": "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/gunelyusubova/.nuget/NuGet/NuGet.Config"
@@ -35,6 +35,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

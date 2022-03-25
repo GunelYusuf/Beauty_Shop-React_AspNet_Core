@@ -5,4 +5,18 @@
         <RootNamespace>E_Commerce_Beauty_Shop.Application</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\E-Commerce-Beauty-Shop.Domain\E-Commerce-Beauty-Shop.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Repositories\" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Repositories\" />
+    </ItemGroup>
 </Project>

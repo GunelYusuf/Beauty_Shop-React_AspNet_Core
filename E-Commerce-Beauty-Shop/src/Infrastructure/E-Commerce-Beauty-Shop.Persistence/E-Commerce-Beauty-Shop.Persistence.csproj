@@ -5,13 +5,44 @@
         <RootNamespace>E_Commerce_Beauty_Shop.Persistence</RootNamespace>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+      <LangVersion>9.0</LangVersion>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+      <LangVersion>9.0</LangVersion>
+    </PropertyGroup>
     <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.0">
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        <PrivateAssets>all</PrivateAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="Microsoft.EntityFrameworkCore.Design" />
+      <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+      <None Remove="Microsoft.Extensions.DependencyInjection" />
+      <None Remove="Repositories\" />
+      <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Repositories" />
+      <Folder Include="Repositories\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Core\E-Commerce-Beauty-Shop.Application\E-Commerce-Beauty-Shop.Application.csproj" />
+      <ProjectReference Include="..\..\Core\E-Commerce-Beauty-Shop.Domain\E-Commerce-Beauty-Shop.Domain.csproj" />
+    </ItemGroup>
 </Project>

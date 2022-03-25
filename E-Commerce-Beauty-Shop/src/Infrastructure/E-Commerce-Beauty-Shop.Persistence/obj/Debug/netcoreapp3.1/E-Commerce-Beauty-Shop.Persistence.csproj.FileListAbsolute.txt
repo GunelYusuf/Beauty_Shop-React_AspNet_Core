@@ -1,0 +1,17 @@
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.deps.json
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.runtimeconfig.json
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.runtimeconfig.dev.json
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.dll
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.pdb
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.dll
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Domain.dll
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.pdb
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Domain.pdb
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.AssemblyInfoInputs.cache
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.AssemblyInfo.cs
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.csproj.CoreCompileInputs.cache
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.csproj.CopyComplete
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.dll
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.pdb
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.genruntimeconfig.cache
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.csprojAssemblyReference.cache
