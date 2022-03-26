@@ -370,7 +370,7 @@
       <updated>1648253768847</updated>
       <workItem from="1648253788514" duration="5499000" />
       <workItem from="1648289898145" duration="1617000" />
-      <workItem from="1648320119742" duration="8298000" />
+      <workItem from="1648320119742" duration="8839000" />
     </task>
     <servers />
   </component>
@@ -381,24 +381,5 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/TokenServiceRepository.cs</url>
-          <line>21</line>
-          <properties documentPath="$PROJECT_DIR$/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/TokenServiceRepository.cs" initialLine="21" containingFunctionPresentation="constructor 'TokenServiceRepository'">
-            <startOffsets>
-              <option value="666" />
-            </startOffsets>
-            <endOffsets>
-              <option value="667" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
