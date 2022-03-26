@@ -4,9 +4,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace E_Commerce_Beauty_Shop.Persistence.Context
 {
+
     public class AppDbContext:IdentityDbContext<AppUser>
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options):base(options)
+        public AppDbContext(DbContextOptions options):base(options)
         {
             
         }

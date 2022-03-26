@@ -613,6 +613,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
             "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/E-Commerce-Beauty-Shop.Domain.csproj": {
               "projectPath": "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/E-Commerce-Beauty-Shop.Domain.csproj"
@@ -628,6 +629,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
@@ -649,7 +651,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.412/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -3,10 +3,11 @@
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.pdb
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Domain.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Domain.pdb
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.csproj.AssemblyReference.cache
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.GeneratedMSBuildEditorConfig.editorconfig
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.AssemblyInfoInputs.cache
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.AssemblyInfo.cs
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.csproj.CoreCompileInputs.cache
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.csproj.CopyComplete
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.pdb
-/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.csprojAssemblyReference.cache

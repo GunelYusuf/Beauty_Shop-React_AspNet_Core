@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{B9D29CC1-7682-4A58-99DB-65DE547695DF}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="src/WebApi/Api/Controllers/UserController.cs">
     <Files>
-      <File FileName="src/WebApi/Api/Controllers/UserController.cs" Line="80" Column="28" />
-      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Dto/UserDto/LoginResponseDto.cs" Line="10" Column="45" />
-      <File FileName="src/Core/E-Commerce-Beauty-Shop.Domain/Entities/AppUser.cs" Line="1" Column="1" />
+      <File FileName="src/WebApi/Api/Controllers/UserController.cs" Line="17" Column="43" />
+      <File FileName="src/WebApi/Api/Program.cs" Line="16" Column="1" />
+      <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/ServiceRegistration.cs" Line="20" Column="13" />
+      <File FileName="src/WebApi/Api/Startup.cs" Line="43" Column="13" />
+      <File FileName="src/WebApi/Api/Properties/launchSettings.json" Line="24" Column="47" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,15 +18,17 @@
                     <Node name="UserDto" expanded="True" />
                   </Node>
                 </Node>
-                <Node name="E-Commerce-Beauty-Shop.Domain" expanded="True">
-                  <Node name="Entities" expanded="True" />
-                </Node>
+              </Node>
+              <Node name="Infrastructure" expanded="True">
+                <Node name="E-Commerce-Beauty-Shop.Persistence" expanded="True" />
               </Node>
               <Node name="WebApi" expanded="True">
                 <Node name="Api" expanded="True">
                   <Node name="Controllers" expanded="True">
                     <Node name="UserController.cs" selected="True" />
                   </Node>
+                  <Node name="Properties" expanded="True" />
+                  <Node name="appsettings.json" expanded="True" />
                 </Node>
               </Node>
             </Node>
@@ -35,7 +39,6 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.src.WebApi.Api PreferredExecutionTarget="/Applications/Opera.app" />
-  <MonoDevelop.Ide.ItemProperties.src.WebApi.E-Commerce-Beauty-Shop.WebApi PreferredExecutionTarget="/Applications/Opera.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

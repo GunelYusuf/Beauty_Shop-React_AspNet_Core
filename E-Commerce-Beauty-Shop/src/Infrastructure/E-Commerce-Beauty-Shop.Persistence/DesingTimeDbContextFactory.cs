@@ -10,7 +10,7 @@ namespace E_Commerce_Beauty_Shop.Persistence
         public AppDbContext CreateDbContext(string[] args)
         {
             DbContextOptionsBuilder<AppDbContext> dbContextOptionsBuilder = new();
-            dbContextOptionsBuilder.UseSqlServer("Server = localhost; Database = E - Commerce; Trusted_Connection = False; User Id = sa; Password = MyPass@word");
+            dbContextOptionsBuilder.UseSqlServer("Server=localhost;Database=Shop-Commerce;Trusted_Connection=False; User Id=sa;Password=MyPass@word");
             return new AppDbContext(dbContextOptionsBuilder.Options);
         }
     }

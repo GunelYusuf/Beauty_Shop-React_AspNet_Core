@@ -17,9 +17,11 @@ namespace E_Commerce_Beauty_Shop.Persistence
     {
         public static void AddPersistenceInfrastructure(this IServiceCollection service, IConfiguration configuration)
         {
+            
+
             //Connection String
             service.AddDbContext<AppDbContext>(options =>
-            options.UseSqlServer(configuration.GetConnectionString("Default")));
+            options.UseSqlServer("Server=localhost;Database=Shop-Commerce;Trusted_Connection=False;User Id=sa;Password=MyPass@word"));
             service.AddAutoMapper(typeof(AutoMapperProfile));
 
 
@@ -48,12 +50,13 @@ namespace E_Commerce_Beauty_Shop.Persistence
             service.AddScoped<ITokenServiceRepository, TokenServiceRepository>();
 
 
-            service.AddIdentityCore<AppUser>(opt => {
-                opt.User.RequireUniqueEmail = true;
-            })
-            .AddRoles<IdentityRole>()
-            .AddEntityFrameworkStores<AppDbContext>();
+          
+        service.AddIdentity<AppUser, IdentityRole>(options=> {
+                options.Tokens.PasswordResetTokenProvider = TokenOptions.DefaultEmailProvider;
+            }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
 
+
+         
 
         }
     }

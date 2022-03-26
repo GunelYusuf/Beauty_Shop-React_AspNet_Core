@@ -14,14 +14,14 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
 {
     public class TokenServiceRepository:ITokenServiceRepository
     {
-        private readonly IConfiguration _config;
+        
         private readonly UserManager<AppUser> _userManager;
 
 
-        public TokenServiceRepository(UserManager<AppUser> userManager, IConfiguration config)
+        public TokenServiceRepository(UserManager<AppUser> userManager)
         {
             _userManager = userManager;
-            _config = config;
+            
         }
 
         public async Task<string> GenerateToken(AppUser user)

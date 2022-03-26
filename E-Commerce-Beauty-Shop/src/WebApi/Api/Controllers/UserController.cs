@@ -73,7 +73,7 @@ namespace Api.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Register([FromBody] UserRegisterDto userRegisterDto)
+        public async Task<ActionResult> Register(UserRegisterDto userRegisterDto)
         {
             var isExist = await _userManager.FindByEmailAsync(userRegisterDto.Email);
 
@@ -127,6 +127,8 @@ namespace Api.Controllers
                 await _roleManager.CreateAsync(new IdentityRole { Name = "Member" });
             }
         }
+        
+        
 
     }
 }

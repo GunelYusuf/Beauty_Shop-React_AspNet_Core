@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace E_Commerce_Beauty_Shop.Persistence.Migrations
 {
-    public partial class AppUserTav : Migration
+    public partial class AppUserTablee : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -41,9 +41,7 @@ namespace E_Commerce_Beauty_Shop.Persistence.Migrations
                     LockoutEnabled = table.Column<bool>(nullable: false),
                     AccessFailedCount = table.Column<int>(nullable: false),
                     Name = table.Column<string>(nullable: true),
-                    Surname = table.Column<string>(nullable: true),
-                    DateOfBirth = table.Column<DateTime>(nullable: false),
-                    IsActive = table.Column<bool>(nullable: false)
+                    Surname = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
