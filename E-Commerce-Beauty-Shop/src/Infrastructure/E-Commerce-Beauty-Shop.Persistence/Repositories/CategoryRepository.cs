@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using System.Linq;
 using System.Threading.Tasks;
 using E_Commerce_Beauty_Shop.Application.Repositories;
 using E_Commerce_Beauty_Shop.Domain.Entities;
@@ -54,9 +55,19 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<Category> GetAsync(Expression<Func<Category, bool>> filter = null)
+        public async Task<Category> GetAsync(Expression<Func<Category, bool>> filter = null)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var category=  _dbContext.Categories.FirstOrDefault(filter);
+                return category;
+
+            }
+            catch (Exception)
+            {
+                return null;
+                
+            }
         }
 
         public Task<bool> UpdateAsync(Category entity)
