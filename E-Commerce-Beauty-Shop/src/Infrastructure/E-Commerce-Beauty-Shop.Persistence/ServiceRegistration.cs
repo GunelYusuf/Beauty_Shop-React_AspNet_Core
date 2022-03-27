@@ -56,7 +56,7 @@ namespace E_Commerce_Beauty_Shop.Persistence
             }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
 
 
-         
+        service.AddScoped<ICategoryRepository, CategoryRepository>();
 
         }
     }
