@@ -9,6 +9,13 @@ namespace E_Commerce_Beauty_Shop.Domain.Entities
         public string Name { get; set; }
         public string Surname { get; set;}
        
+        // public DateTime DateOfBirth { get; set;}
+        //
+        // public bool IsActive { get; set;}
+        //
+        //
+        // [NotMapped]
+        // public string Role { get; set; }
     
     }
 }
