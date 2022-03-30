@@ -7,7 +7,7 @@ namespace E_Commerce_Beauty_Shop.Domain.Entities
     {
         public string? Name { get; set; }
        
-         public bool IsFeature { get; set; }
+        public bool IsFeature { get; set; }
         public bool IsDeleted { get; set; }
        
        

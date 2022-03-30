@@ -31,6 +31,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Api/1.0.0": {
         "dependencies": {
+          "AutoMapper": "11.0.0",
           "E-Commerce-Beauty-Shop.Persistence": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.0",

@@ -57,6 +57,7 @@ namespace E_Commerce_Beauty_Shop.Persistence
 
 
         service.AddScoped<ICategoryRepository, CategoryRepository>();
+        service.AddScoped<IProductRepository, ProductRepository>();
 
         }
     }

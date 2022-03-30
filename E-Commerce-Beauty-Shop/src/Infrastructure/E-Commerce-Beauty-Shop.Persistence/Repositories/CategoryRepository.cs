@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using E_Commerce_Beauty_Shop.Application.Repositories;
 using E_Commerce_Beauty_Shop.Domain.Entities;
 using E_Commerce_Beauty_Shop.Persistence.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace E_Commerce_Beauty_Shop.Persistence.Repositories
 {
@@ -13,9 +15,11 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
     {
         
         private readonly AppDbContext _dbContext;
-        public CategoryRepository(AppDbContext dbContext)
+        private readonly IMapper _mapper;
+        public CategoryRepository(AppDbContext dbContext, IMapper mapper)
         {
             _dbContext = dbContext;
+            _mapper = mapper;
         }
         
         public Task<bool> AddAsync(Category entity)
@@ -50,9 +54,16 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             }
         }
         
-        public Task<List<Category>> GetAllAsync(Expression<Func<Category, bool>> filter = null)
+       
+        public async Task<List<Category>> GetAllAsync(Expression<Func<Category, bool>> filter = null)
         {
-            throw new NotImplementedException();
+            List<Category> result = new List<Category>();
+            foreach (var category in _dbContext.Categories.Include(p=>p.Products))
+            {
+                result.Add(category);
+            }
+            return result;
+           
         }
 
         public async Task<Category> GetAsync(Expression<Func<Category, bool>> filter = null)
@@ -70,9 +81,27 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             }
         }
 
-        public Task<bool> UpdateAsync(Category entity)
+        public async Task<bool> UpdateAsync(Category entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Category category = await GetAsync(c => c.Id == entity.Id);
+
+                category.Id=entity.Id;
+                category.Name=entity.Name;
+                category.IsFeature=entity.IsFeature;
+                category.IsDeleted=entity.IsDeleted;
+             
+                await _dbContext.SaveChangesAsync();
+                return true;
+
+
+            }
+            catch (Exception)
+            {
+                return false;
+                throw;
+            }
         }
 
     }

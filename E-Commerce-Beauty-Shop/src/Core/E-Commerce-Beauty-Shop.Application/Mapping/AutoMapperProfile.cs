@@ -1,4 +1,5 @@
 using AutoMapper;
+using E_Commerce_Beauty_Shop.Application.Dto.CategoryDTO;
 using E_Commerce_Beauty_Shop.Application.Dto.UserDto;
 using E_Commerce_Beauty_Shop.Domain.Entities;
 
@@ -10,6 +11,9 @@ namespace E_Commerce_Beauty_Shop.Application.Mapping
         {
             CreateMap<UserLoginDto, AppUser>().ReverseMap();
             CreateMap<UserRegisterDto, AppUser>().ReverseMap();
+            CreateMap<CreateCategoryDTO, Category>().ReverseMap();
+            CreateMap<UpdateCategoryDTO,Category>().ReverseMap();
+            CreateMap<Category,Category>().ReverseMap();
         }
      
     }
