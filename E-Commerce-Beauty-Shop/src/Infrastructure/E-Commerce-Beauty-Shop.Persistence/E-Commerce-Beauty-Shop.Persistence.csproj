@@ -43,5 +43,6 @@
     <ItemGroup>
       <ProjectReference Include="..\..\Core\E-Commerce-Beauty-Shop.Application\E-Commerce-Beauty-Shop.Application.csproj" />
       <ProjectReference Include="..\..\Core\E-Commerce-Beauty-Shop.Domain\E-Commerce-Beauty-Shop.Domain.csproj" />
+      <ProjectReference Include="..\Services\Services.csproj" />
     </ItemGroup>
 </Project>

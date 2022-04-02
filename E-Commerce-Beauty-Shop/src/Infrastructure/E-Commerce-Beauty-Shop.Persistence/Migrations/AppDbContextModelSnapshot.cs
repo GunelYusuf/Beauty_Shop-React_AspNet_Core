@@ -110,6 +110,9 @@ namespace E_Commerce_Beauty_Shop.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
@@ -117,6 +120,9 @@ namespace E_Commerce_Beauty_Shop.Persistence.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PublicId")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

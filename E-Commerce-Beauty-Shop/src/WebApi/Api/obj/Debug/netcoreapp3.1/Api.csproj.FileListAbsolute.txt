@@ -7,6 +7,7 @@
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Api.pdb
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/AutoMapper.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/CloudinaryDotNet.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
@@ -21,6 +22,7 @@
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.WebEncoders.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Microsoft.Identity.Client.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
@@ -37,6 +39,7 @@
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/System.Runtime.Caching.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/System.Text.Encodings.Web.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
@@ -48,9 +51,11 @@
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Domain.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.dll
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Services.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.pdb
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.pdb
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Domain.pdb
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Services.pdb
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Debug/netcoreapp3.1/Api.csproj.AssemblyReference.cache
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Debug/netcoreapp3.1/Api.GeneratedMSBuildEditorConfig.editorconfig
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Debug/netcoreapp3.1/Api.AssemblyInfoInputs.cache

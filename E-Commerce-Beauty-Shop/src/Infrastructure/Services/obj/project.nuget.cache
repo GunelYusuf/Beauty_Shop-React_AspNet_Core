@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "Cmust48mSq9EN1Ve04FA3Rirloa+hWgoDVc0BT/FuUZrkcZgSADtzNHHuaO7rK0HCmCfeOujxwPYuyv1Wskh2w==",
+  "success": true,
+  "projectFilePath": "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/Services/Services.csproj",
+  "expectedPackageFiles": [
+    "/Users/gunelyusubova/.nuget/packages/cloudinarydotnet/1.15.2/cloudinarydotnet.1.15.2.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.2.0/microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.aspnetcore.http.features/2.2.0/microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.configuration/3.1.0/microsoft.extensions.configuration.3.1.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.0/microsoft.extensions.configuration.abstractions.3.1.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.options/5.0.0/microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.primitives/5.0.0/microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.webencoders/5.0.3/microsoft.extensions.webencoders.5.0.3.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/system.text.encodings.web/5.0.0/system.text.encodings.web.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

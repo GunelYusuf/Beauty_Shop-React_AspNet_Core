@@ -1,0 +1,59 @@
+﻿<Properties StartupConfiguration="{B9D29CC1-7682-4A58-99DB-65DE547695DF}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/Core/E-Commerce-Beauty-Shop.Application/Dto/CategoryDTO/CreateCategoryDTO.cs">
+    <Files>
+      <File FileName="src/Infrastructure/Services/ImageService/ImageService.cs" Line="15" Column="14" />
+      <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/ServiceRegistration.cs" Line="62" Column="1" />
+      <File FileName="src/WebApi/Api/Startup.cs" Line="1" Column="1" />
+      <File FileName="src/WebApi/Api/appsettings.json" Line="21" Column="1" />
+      <File FileName="src/Core/E-Commerce-Beauty-Shop.Domain/Entities/Product.cs" Line="20" Column="9" />
+      <File FileName="src/Core/E-Commerce-Beauty-Shop.Domain/Entities/Category.cs" Line="10" Column="43" />
+      <File FileName="src/WebApi/Api/Controllers/CategoryController.cs" Line="82" Column="25" />
+      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Dto/CategoryDTO/CreateCategoryDTO.cs" Line="12" Column="18" />
+      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Dto/CategoryDTO/UpdateCategoryDTO.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="E-Commerce-Beauty-Shop" expanded="True">
+            <Node name="src" expanded="True">
+              <Node name="Core" expanded="True">
+                <Node name="E-Commerce-Beauty-Shop.Application" expanded="True">
+                  <Node name="Dto" expanded="True">
+                    <Node name="CategoryDTO" expanded="True">
+                      <Node name="UpdateCategoryDTO.cs" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+                <Node name="E-Commerce-Beauty-Shop.Domain" expanded="True">
+                  <Node name="Entities" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Infrastructure" expanded="True">
+                <Node name="E-Commerce-Beauty-Shop.Persistence" expanded="True" />
+                <Node name="Services" expanded="True">
+                  <Node name="ImageService" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="WebApi" expanded="True">
+                <Node name="Api" expanded="True">
+                  <Node name="Controllers" expanded="True" />
+                  <Node name="appsettings.json" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.src.WebApi.Api PreferredExecutionTarget="/Applications/Opera.app" />
+  <DisabledProjects>
+    <String>src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Services/Services.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -17,5 +17,6 @@ namespace E_Commerce_Beauty_Shop.Domain.Entities
         public Guid CategoryId { get; set; }
         public Category Category { get; set; }
         public List<ProductPhoto> productPhotos { get; set; }
+        
     }
 }

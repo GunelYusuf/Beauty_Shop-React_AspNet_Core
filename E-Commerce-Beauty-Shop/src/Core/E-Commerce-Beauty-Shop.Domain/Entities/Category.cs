@@ -6,7 +6,9 @@ namespace E_Commerce_Beauty_Shop.Domain.Entities
     public class Category:BaseEntity
     {
         public string? Name { get; set; }
-       
+
+        public string ImageUrl { get; set; }
+        public string PublicId { get; set; }
         public bool IsFeature { get; set; }
         public bool IsDeleted { get; set; }
        

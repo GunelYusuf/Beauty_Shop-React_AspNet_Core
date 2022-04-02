@@ -1,5 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1E556F18-73AF-4613-9FA0-82EDA232EFF4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{95C38355-0DE8-4724-AD19-08BE1D05434F}"
@@ -16,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{4BB53A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "src\WebApi\Api\Api.csproj", "{B9D29CC1-7682-4A58-99DB-65DE547695DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "src\Infrastructure\Services\Services.csproj", "{C98BC189-6F7F-4C5A-9985-077C04934959}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +32,7 @@ Global
 		{69AF1924-253C-4F6E-B013-68F97009D74A} = {27990296-F7A7-45A7-88D0-96CE45C97BE5}
 		{4BB53A33-3308-4262-9296-82F264992472} = {1E556F18-73AF-4613-9FA0-82EDA232EFF4}
 		{B9D29CC1-7682-4A58-99DB-65DE547695DF} = {4BB53A33-3308-4262-9296-82F264992472}
+		{C98BC189-6F7F-4C5A-9985-077C04934959} = {27990296-F7A7-45A7-88D0-96CE45C97BE5}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{93AAE0F8-824B-4339-85A5-331AD550AA07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -47,5 +51,9 @@ Global
 		{B9D29CC1-7682-4A58-99DB-65DE547695DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9D29CC1-7682-4A58-99DB-65DE547695DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9D29CC1-7682-4A58-99DB-65DE547695DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C98BC189-6F7F-4C5A-9985-077C04934959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C98BC189-6F7F-4C5A-9985-077C04934959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C98BC189-6F7F-4C5A-9985-077C04934959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C98BC189-6F7F-4C5A-9985-077C04934959}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

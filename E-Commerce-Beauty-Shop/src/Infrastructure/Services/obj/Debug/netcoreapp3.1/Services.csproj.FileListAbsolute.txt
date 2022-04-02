@@ -1,0 +1,10 @@
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/Services/bin/Debug/netcoreapp3.1/Services.deps.json
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/Services/bin/Debug/netcoreapp3.1/Services.dll
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/Services/bin/Debug/netcoreapp3.1/Services.pdb
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/Services/obj/Debug/netcoreapp3.1/Services.csproj.AssemblyReference.cache
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/Services/obj/Debug/netcoreapp3.1/Services.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/Services/obj/Debug/netcoreapp3.1/Services.AssemblyInfoInputs.cache
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/Services/obj/Debug/netcoreapp3.1/Services.AssemblyInfo.cs
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/Services/obj/Debug/netcoreapp3.1/Services.csproj.CoreCompileInputs.cache
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/Services/obj/Debug/netcoreapp3.1/Services.dll
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/Services/obj/Debug/netcoreapp3.1/Services.pdb

@@ -45,6 +45,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
             }
           },
           "imports": [
@@ -151,6 +155,9 @@
               },
               "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/E-Commerce-Beauty-Shop.Domain.csproj": {
                 "projectPath": "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/E-Commerce-Beauty-Shop.Domain.csproj"
+              },
+              "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/Services/Services.csproj": {
+                "projectPath": "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/Services/Services.csproj"
               }
             }
           }
@@ -198,6 +205,68 @@
               "version": "[3.1.0, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/Services/Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/Services/Services.csproj",
+        "projectName": "Services",
+        "projectPath": "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/Services/Services.csproj",
+        "packagesPath": "/Users/gunelyusubova/.nuget/packages/",
+        "outputPath": "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/Services/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/gunelyusubova/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.15.2, )"
+            },
+            "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[3.1.0, )"
             }

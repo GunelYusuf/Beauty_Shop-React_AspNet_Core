@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using Services.ImageService;
 
 namespace E_Commerce_Beauty_Shop.Persistence
 {
@@ -58,6 +59,7 @@ namespace E_Commerce_Beauty_Shop.Persistence
 
         service.AddScoped<ICategoryRepository, CategoryRepository>();
         service.AddScoped<IProductRepository, ProductRepository>();
+        service.AddScoped<ImageService>();
 
         }
     }
