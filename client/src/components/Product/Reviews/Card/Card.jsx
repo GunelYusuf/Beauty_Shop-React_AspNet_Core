@@ -14,7 +14,7 @@ export const Card = ({ review }) => {
               {[...Array(rating)].map((star, index) => {
                 return (
                   <li key={index}>
-                    <i className='icon-star'></i>
+                    <i className='icon-star'/>
                   </li>
                 );
               })}

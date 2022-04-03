@@ -36,7 +36,7 @@ export const Header = () => {
             <i
               onClick={() => setPromo(false)}
               className='header-top-close js-header-top-close icon-close'
-            ></i>
+            />
           </div>
         )}
         <div className={`header-content ${fixedNav ? 'fixed' : ''}`}>
@@ -55,28 +55,28 @@ export const Header = () => {
               <li>
                 <Link href='/faq'>
                   <a>
-                    <i className='icon-search'></i>
+                    <i className='icon-search'/>
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href='/profile'>
                   <a>
-                    <i className='icon-user'></i>
+                    <i className='icon-user'/>
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href='/wishlist'>
                   <a>
-                    <i className='icon-heart'></i>
+                    <i className='icon-heart'/>
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href='/cart'>
                   <a>
-                    <i className='icon-cart'></i>
+                    <i className='icon-cart'/>
                     <span>{cart.length ?? '0'}</span>
                   </a>
                 </Link>

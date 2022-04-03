@@ -74,9 +74,9 @@ export const Info = () => {
               </p>
               <Link href='/about'>
                 <a className='info-blocks__item-link'>
-                  <i className='icon-video'></i>
+                  <i className='icon-video'/>
                   Watch video about us
-                  <i className='icon-arrow-lg'></i>
+                  <i className='icon-arrow-lg'/>
                 </a>
               </Link>
             </div>

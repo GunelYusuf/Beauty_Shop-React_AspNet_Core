@@ -6,7 +6,7 @@ export const PromoVideo = ({ play, videoUrl, onVideoPlay, image }) => {
         autoPlay
         src={videoUrl}
         allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope'
-      ></iframe>
+      />
       {!play && (
         <div className='info-blocks__item-img-overlay'>
           <span>Promotion video</span>

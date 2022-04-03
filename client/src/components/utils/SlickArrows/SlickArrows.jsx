@@ -9,7 +9,7 @@ export const SlickArrowPrev = ({ currentSlide, slideCount, ...props }) => (
     aria-disabled={currentSlide === 0 ? true : false}
     type='button'
   >
-    <i className='icon icon-arrow'></i>
+    <i className='icon icon-arrow'/>
   </button>
 );
 
@@ -24,6 +24,6 @@ export const SlickArrowNext = ({ currentSlide, slideCount, ...props }) => (
     aria-disabled={currentSlide === slideCount - 1 ? true : false}
     type='button'
   >
-    <i className='icon icon-arrow'></i>
+    <i className='icon icon-arrow'/>
   </button>
 );

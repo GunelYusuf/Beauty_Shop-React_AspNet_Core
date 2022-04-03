@@ -91,6 +91,7 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
                 category.Name=entity.Name;
                 category.IsFeature=entity.IsFeature;
                 category.IsDeleted=entity.IsDeleted;
+                category.ImageUrl = entity.ImageUrl;
              
                 await _dbContext.SaveChangesAsync();
                 return true;
