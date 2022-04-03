@@ -46,7 +46,7 @@ export const ReviewFrom = () => {
             <textarea
               className='form-control'
               placeholder='Enter your review'
-            ></textarea>
+           />
           </div>
           <button type='submit' className='btn'>
             send

@@ -6,7 +6,7 @@ export const PagingList = ({ paginate }) => {
         className='paging-list__item paging-prev'
       >
         <button className='paging-list__link'>
-          <i className='icon-arrow'></i>
+          <i className='icon-arrow'/>
         </button>
       </li>
 
@@ -27,7 +27,7 @@ export const PagingList = ({ paginate }) => {
         className='paging-list__item paging-next'
       >
         <button className='paging-list__link'>
-          <i className='icon-arrow'></i>
+          <i className='icon-arrow'/>
         </button>
       </li>
     </ul>

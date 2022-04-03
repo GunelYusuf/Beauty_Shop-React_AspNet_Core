@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="47a7265c-7266-41c7-8c81-be6a75666dc5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/.vs/E-Commerce-Beauty-Shop/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/.vs/E-Commerce-Beauty-Shop/xs/UserPrefs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Api.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Api.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Api.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Api.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Api.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Api.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Debug/netcoreapp3.1/Api.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Debug/netcoreapp3.1/Api.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Debug/netcoreapp3.1/Api.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Debug/netcoreapp3.1/Api.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Debug/netcoreapp3.1/Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Debug/netcoreapp3.1/Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Debug/netcoreapp3.1/Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Debug/netcoreapp3.1/Api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/BUILD_ID" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/build-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development-fallback/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development-fallback/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development-fallback/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development-fallback/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/10.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/11.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/12.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/13.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/13.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/14.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/14.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/2.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/3.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/4.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/5.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/6.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/7.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/8.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/9.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-production/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-production/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-production/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-production/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-production/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-production/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/10.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/11.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/12.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/13.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/13.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/2.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/3.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/4.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/5.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/6.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/7.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/8.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/9.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/export-marker.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/images-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/next-server.js.nft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/prerender-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/required-server-files.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/routes-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/chunks/136.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/chunks/173.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/chunks/209.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/chunks/246.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/chunks/286.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/chunks/290.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/chunks/492.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/chunks/493.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/chunks/590.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/chunks/600.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/chunks/664.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/chunks/730.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/chunks/731.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/chunks/859.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/chunks/873.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/chunks/914.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/chunks/918.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/chunks/929.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/chunks/969.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/chunks/986.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/chunks/font-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/font-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/404.js.nft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/server/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/_app.js.nft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/server/pages/_document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/_document.js.nft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/_error.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/server/pages/_error.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/_error.js.nft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/about.js.nft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/blog.js.nft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/blog/[id].html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/blog/[id].js.nft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/cart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/cart.js.nft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/categories.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/categories.js.nft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/checkout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/checkout.js.nft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/contact.js.nft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/faq.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/faq.js.nft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/index.js.nft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/login.js.nft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/product.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/product.js.nft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/product/[id].html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/product/[id].js.nft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/profile.js.nft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/registration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/registration.js.nft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/shop.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/shop.js.nft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/wishlist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/wishlist.js.nft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/webpack-runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/server/webpack-runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/136-13564fb00528eb0b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/160-26c99160f1f56ac8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/181-92af022ca3ea0616.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/246-97eed85803d2e8fd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/270-d9733c9942aa0136.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/297-1a1c7634b4ae3e1f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/652-520c524767dd6730.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/66-a9c3f0c5fe4377a6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/959-bd55c30412e83e68.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/framework-5f4595e5518b5600.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/main-01df828e572375b9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/404-bfb2abcc393b3ac5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/_app-89556bfc85bd5f78.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/_error-2280fa386d040b66.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/about-ede4181e9bdaa540.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/blog-6a6caf4ff86640fe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/blog/[id]-e119f5d4604c2684.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/cart-2fa2bcd10fbf9bfa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/categories-58ff5fabc7d83832.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/checkout-3ae3ce3a6f11beeb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/contact-d9d496d6060a6390.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/faq-546e8245e33ace60.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/index-1d19e6b67cb088e8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/login-1d316580ea52d66f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/product-ed70b36f91bb8327.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/product/[id]-2f54b7ad58e53c89.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/profile-dec02591201db7ad.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/registration-877187fc7fe289e2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/shop-6f4de01098d77ec2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/wishlist-ff0899a08acdebe6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/polyfills-5cd94c89d3acac5f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/webpack-24780b5468e42e63.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/css/19a4a5ed23fccb3c.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/iDdg3HVHURKKHQkAZr14U/_buildManifest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/iDdg3HVHURKKHQkAZr14U/_middlewareManifest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/iDdg3HVHURKKHQkAZr14U/_ssgManifest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/trace" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/trace" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Cart/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Cart/Card/Card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Cart/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Cart/Cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Category/Categories/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Category/Categories/Card/Card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Category/Categories/Categories.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Category/Categories/Categories.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Category/Category.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Category/Category.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/Products/Products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/Products/Products.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/Products/ProductsCarousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/Products/ProductsCarousel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/Products/SingleProduct/SingleProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/Products/SingleProduct/SingleProduct.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/ReviewForm/ReviewFrom.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/ReviewForm/ReviewFrom.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Shop/Shop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Shop/Shop.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/shared/AsideItem/AsideItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/shared/AsideItem/AsideItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/shared/PagingList/PagingList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/shared/PagingList/PagingList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/_app.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/Entities/Category.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/Common/BaseEntity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Context/AppDbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/Entities/AppUser.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/Dto/CategoryDTO/CreateCategoryDTO.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/ServiceRegistration.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/CategoryRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/Dto/UserDto/UserLoginDto.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/Repositories/IRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/Repositories/Category/ICategoryRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/Mapping/AutoMapperProfile.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/Dto/UserDto/UserRegisterDto.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/Controllers/CategoryController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/Dto/CategoryDTO/UpdateCategoryDTO.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/Entities/Color.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/Controllers/UserController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/Entities/ProductPhoto.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/Entities/Product.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/Entities/Campaign.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="26YhZJ9X2ZpgpGUhQwUUlmHtkFU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/E-Commerce-Beauty-Shop/E-Commerce-Beauty-Shop.sln" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="RiderNuGetOptionsPageId" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration default="true" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="" />
+      <option name="LAUNCH_PROFILE_TFM" value="" />
+      <option name="LAUNCH_PROFILE_NAME" value="" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="0" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="0" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration default="true" type="RunExe" factoryName=".NET Executable" singleton="false">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build Solution" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47a7265c-7266-41c7-8c81-be6a75666dc5" name="Changes" comment="" />
+      <created>1647606487491</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647606487491</updated>
+      <workItem from="1647606495512" duration="1399000" />
+      <workItem from="1647607925951" duration="1728000" />
+      <workItem from="1648202238000" duration="14795000" />
+      <workItem from="1648243763712" duration="6659000" />
+      <workItem from="1648251629832" duration="1522000" />
+      <workItem from="1648287730166" duration="1473000" />
+      <workItem from="1648289849104" duration="26000" />
+      <workItem from="1648303399744" duration="362000" />
+      <workItem from="1648569091205" duration="6307000" />
+      <workItem from="1648815999754" duration="1582000" />
+      <workItem from="1648822964601" duration="1277000" />
+      <workItem from="1648927785378" duration="2994000" />
+      <workItem from="1648944240458" duration="3625000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

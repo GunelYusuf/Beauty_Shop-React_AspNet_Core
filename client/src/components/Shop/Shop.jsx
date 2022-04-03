@@ -6,6 +6,9 @@ import Slider from 'rc-slider';
 import { useEffect, useState } from 'react';
 import Dropdown from 'react-dropdown';
 import { AsideItem } from '../shared/AsideItem/AsideItem';
+import axios from "axios";
+
+
 
 
 const { createSliderWithTooltip } = Slider;
@@ -15,6 +18,22 @@ const options = [
   { value: 'minToHigh', label: 'From cheap to expensive' },
 ];
 export const Shop = () => {
+
+  const [data,setData]=useState([])
+  useEffect( ()=>{
+
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("https://localhost:5001/api/Category");
+        setData(response.data)
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    fetchData()
+
+  },[])
+  
   const allProducts = [...productData];
 
   const [productOrder, setProductOrder] = useState(
@@ -73,42 +92,21 @@ export const Shop = () => {
                   className='form-control'
                   placeholder='Search'
                 />
-                <i className='icon-search'></i>
+                <i className='icon-search'/>
               </div>
               <div className='shop-aside__item'>
                 <span className='shop-aside__item-title'>Categories</span>
-                <ul>
-                  <li>
-                    <a href='#'>
-                      Make up <span>(37)</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#'>
-                      SPA <span>(162)</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#'>
-                      Perfume <span>(153)</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#'>
-                      Nails <span>(86)</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#'>
-                      Skin care <span>(48)</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#'>
-                      Hair care <span>(54)</span>
-                    </a>
-                  </li>
-                </ul>
+                {data.map((category) =>(
+                    <ul key={category.id}>
+                      <li>
+                        <a href='#'>
+                          {category.name}<span>(37)</span>
+                        </a>
+                      </li>
+
+                    </ul>
+                ))}
+              
               </div>
               <div className='shop-aside__item'>
                 <span className='shop-aside__item-title'>Price</span>
@@ -151,7 +149,7 @@ export const Shop = () => {
                       }
                       type='checkbox'
                     />
-                    <span className='checkmark'></span>
+                    <span className='checkmark'/>
                     SALE
                   </label>
                   <label className='checkbox-box'>
@@ -162,7 +160,7 @@ export const Shop = () => {
                       }
                       type='checkbox'
                     />
-                    <span className='checkmark'></span>
+                    <span className='checkmark'/>
                     NEW
                   </label>
                 </div>

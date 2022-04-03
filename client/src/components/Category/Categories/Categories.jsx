@@ -4,7 +4,7 @@ export const Categories = ({ categories }) => {
   return (
     <>
       {categories.map((category) => (
-        <Card key={category.categoryId} category={category} />
+        <Card key={category.id} category={category} />
       ))}
     </>
   );

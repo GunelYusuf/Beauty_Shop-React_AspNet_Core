@@ -16,7 +16,7 @@ export const AsideItem = ({ aside }) => {
             <ul className='star-rating'>
               {[...Array(star)].map((star, index) => {
                 <li key={index}>
-                  <i className='icon-star'></i>
+                  <i className='icon-star'/>
                 </li>;
               })}
             </ul>

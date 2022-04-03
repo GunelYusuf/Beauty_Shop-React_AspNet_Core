@@ -1,15 +1,15 @@
 import Link from 'next/link';
 
 export const Card = ({ category }) => {
-  const { name, image } = category;
+  const { name, imageUrl } = category;
   return (
     <Link href={`/categories`}>
       <a className='top-categories__item'>
-        <img src={image} className='js-img' alt='' />
+        <img src={imageUrl} className='js-img' alt='' />
         <div className='top-categories__item-hover'>
           <h5>{name}</h5>
           <span>browse products -</span>
-          <i className='icon-arrow-lg'></i>
+          <i className='icon-arrow-lg'/>
         </div>
       </a>
     </Link>
