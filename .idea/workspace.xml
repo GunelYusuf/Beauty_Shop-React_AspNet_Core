@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a499b7d-a1d7-409a-8937-0d6dbca56055" name="Changes" comment="" />
+    <list default="true" id="4a499b7d-a1d7-409a-8937-0d6dbca56055" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/src/views/app-views/apps/e-commerce/edit-category/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/views/app-views/apps/e-commerce/edit-category/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.csproj.AssemblyReference.cache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +50,7 @@
       <workItem from="1649171716068" duration="31042000" />
       <workItem from="1649330382741" duration="38294000" />
       <workItem from="1649537439492" duration="1353000" />
+      <workItem from="1649540885899" duration="4299000" />
     </task>
     <servers />
   </component>

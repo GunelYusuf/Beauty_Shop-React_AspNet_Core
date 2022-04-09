@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import PageHeaderAlt from 'components/layout-components/PageHeaderAlt'
 import {Tabs, Form, Button, message, Col, Card, Input, Upload, Checkbox, Row} from 'antd';
-import {useParams} from 'react-router-dom';
+import {useHistory, useParams} from 'react-router-dom';
 import Flex from 'components/shared-components/Flex'
 import axios from "axios";
 import { toast,ToastContainer} from "react-toastify";
@@ -60,6 +60,7 @@ const EditCategory = () => {
 
     const param = useParams()
 
+    let history = useHistory();
     const [form] = Form.useForm();
     const [uploadedImg, setImage] = useState('')
     const [uploadLoading, setUploadLoading] = useState(false)
@@ -92,10 +93,7 @@ const EditCategory = () => {
         console.log(window.URL.createObjectURL(e.file.originFileObj))
 
     };
-    // const handleUploadChange = e => {
-    //     setImage(e.target.files[0])
-    //     console.log(e.file[0])
-    // };
+
 
 
     const onSubmit = (e) => {
@@ -106,12 +104,13 @@ const EditCategory = () => {
 
             setSubmitLoading(false)
             const formData = new FormData();
+            formData.append("id",form.getFieldValue("id"))
             formData.append("name",form.getFieldValue("name"))
             formData.append("isFeature",form.getFieldValue('isFeature'))
-            formData.append("file",e.file.originFileObj)
+            formData.append("file",e.file.file.originFileObj)
 
-                     const updateCategory = async (id) =>{
-                        await axios.put(`https://localhost:5001/api/Category/${id}`,formData,{
+                     const updateCategory = async () =>{
+                        await axios.put(`https://localhost:5001/api/Category/${param.id}`,formData,{
                             headers: {'Content-Type': 'multipart/form-data'}
 
                         }).then(()=>{
@@ -161,6 +160,9 @@ const EditCategory = () => {
                         <TabPane tab="General" key="1">
                             <Row gutter={16}>
                                 <Col xs={24} sm={24} md={17}>
+                                    <Form.Item name="id" initialValue={param.id}>
+                                        <Input type="hidden"/>
+                                    </Form.Item>
                                     <Card title="Basic Info">
                                         {list.name!==undefined?
                                             <Form.Item name="name" label="Category name" initialValue={list.name}  rules={rules.name}>
