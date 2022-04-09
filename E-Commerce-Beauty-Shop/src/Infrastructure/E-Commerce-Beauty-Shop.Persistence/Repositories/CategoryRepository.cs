@@ -66,14 +66,13 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
            
         }
 
-        public async Task<Category> GetAsync(Expression<Func<Category, bool>> filter = null)
+        public async Task<Category> GetAsync(Expression<Func<Category, bool>> filter)
         {
             try
             {
-                var category=  _dbContext.Categories.FirstOrDefault(filter);
-                return category;
+               return _dbContext.Categories.FirstOrDefault(filter);
 
-            }
+           }
             catch (Exception)
             {
                 return null;

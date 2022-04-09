@@ -52,7 +52,7 @@ namespace Api.Controllers
         public async Task<IActionResult> CreateCategory([FromForm] CreateCategoryDTO categorydto)
         {
             var GetCategory=await _categoryRepository.GetAsync(c=>c.Name.ToLower()==categorydto.Name.ToLower());
-            if (GetCategory != null) return BadRequest("Please, type another name");
+            if (GetCategory != null) return BadRequest(new ProblemDetails{Title="Please, enter another type name"});
             Category newCategory= _mapper.Map<Category>(categorydto);
             if (categorydto.File != null)
             {
