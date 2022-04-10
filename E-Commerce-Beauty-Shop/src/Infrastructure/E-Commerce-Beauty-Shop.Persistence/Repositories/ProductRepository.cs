@@ -15,6 +15,7 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
     {
         private readonly AppDbContext _dbContext;
         private readonly IMapper _mapper;
+
         public ProductRepository(AppDbContext dbContext, IMapper mapper)
         {
             _dbContext = dbContext;
@@ -22,7 +23,7 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
         }
         
         public  async Task<bool> AddAsync(Product entity)
-       {
+        {
            try
             {
                await   _dbContext.Products.AddAsync(entity);
@@ -35,9 +36,9 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
              return false;
            }
 
-      }
+        }
         public async Task<bool> DeleteAsync(Product entity)
-      {
+        {
             try
             {
                 var productphoto = _dbContext.ProductPhotos.Where(p => p.ProductId == entity.Id);
