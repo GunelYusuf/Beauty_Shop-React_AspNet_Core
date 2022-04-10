@@ -7,6 +7,7 @@ namespace E_Commerce_Beauty_Shop.Domain.Entities
     {
         public string PhotoUrl { get; set; }
         public bool IsMain { get; set; }
+        public string PublicId { get; set; }
         public Guid ProductId { get; set; }
         public Product Product { get; set; }
     }

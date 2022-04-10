@@ -6,7 +6,7 @@ import { ImageSvg } from 'assets/svg/icon';
 import CustomIcon from 'components/util-components/CustomIcon'
 import { LoadingOutlined } from '@ant-design/icons';
 import axios from "axios";
-import ProductListData from "assets/data/product-list.data.json"
+
 
 const { TabPane } = Tabs;
 
@@ -143,6 +143,7 @@ const AddProduct = () => {
 
 
 	const tags = ['Cotton', 'Nike', 'Sales', 'Sports', 'Outdoor', 'Toys', 'Hobbies' ]
+	const colors = ['Cotton', 'Nike', 'Sales', 'Sports', 'Outdoor', 'Toys', 'Hobbies' ]
 	return (
 		<>
 			<Form
@@ -253,7 +254,7 @@ const AddProduct = () => {
 										</Dragger>
 									</Card>
 									<Card title="Organization">
-										<Form.Item name="category" label="Category">
+										<Form.Item name="categoryId" label="Category">
 											<Select className="w-100" placeholder="Category">
 												{
 													data.map(elm => (
@@ -262,9 +263,14 @@ const AddProduct = () => {
 												}
 											</Select>
 										</Form.Item>
-										<Form.Item name="tags" label="Tags">
+										<Form.Item name="tagId" label="Tags">
 											<Select mode="tags" style={{width: '100%'}} placeholder="Tags">
 												{tags.map(elm => <Option key={elm}>{elm}</Option>)}
+											</Select>
+										</Form.Item>
+										<Form.Item name="colorId" label="Colors">
+											<Select mode="colors" style={{width: '100%'}} placeholder="Colors">
+												{colors.map(elm => <Option key={elm}>{elm}</Option>)}
 											</Select>
 										</Form.Item>
 									</Card>

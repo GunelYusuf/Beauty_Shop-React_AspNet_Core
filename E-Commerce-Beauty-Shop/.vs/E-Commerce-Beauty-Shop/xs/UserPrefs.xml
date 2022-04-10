@@ -1,32 +1,51 @@
 ﻿<Properties StartupConfiguration="{B9D29CC1-7682-4A58-99DB-65DE547695DF}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/ProductRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/WebApi/Api/Controllers/ProductController.cs">
     <Files>
-      <File FileName="src/Infrastructure/Services/ImageService/ImageService.cs" Line="15" Column="14" />
+      <File FileName="src/WebApi/Api/Controllers/ProductController.cs" Line="36" Column="85" />
+      <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/ProductRepository.cs" />
+      <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/ColorRepository.cs" />
+      <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/TagRepository.cs" />
+      <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/CampaignRepository.cs" />
       <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/ServiceRegistration.cs" />
+      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Repositories/ProductColor/IColorRepository.cs" />
+      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Repositories/ProductTag/ITagRepository.cs" />
+      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Repositories/Campaign/ICampaignRepository.cs" />
       <File FileName="src/WebApi/Api/Startup.cs" />
-      <File FileName="src/WebApi/Api/appsettings.json" />
-      <File FileName="src/Core/E-Commerce-Beauty-Shop.Domain/Entities/Product.cs" />
-      <File FileName="src/Core/E-Commerce-Beauty-Shop.Domain/Entities/Category.cs" />
-      <File FileName="src/WebApi/Api/Controllers/CategoryController.cs" Line="74" Column="76" />
-      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Dto/CategoryDTO/CreateCategoryDTO.cs" />
-      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Dto/CategoryDTO/UpdateCategoryDTO.cs" />
-      <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/ProductRepository.cs" Line="81" Column="47" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="E-Commerce-Beauty-Shop" expanded="True">
             <Node name="src" expanded="True">
+              <Node name="Core" expanded="True">
+                <Node name="E-Commerce-Beauty-Shop.Application" expanded="True">
+                  <Node name="Dto" expanded="True">
+                    <Node name="CategoryDTO" expanded="True" />
+                    <Node name="ProductDto" expanded="True" />
+                  </Node>
+                  <Node name="Mapping" expanded="True" />
+                  <Node name="Repositories" expanded="True">
+                    <Node name="Campaign" expanded="True" />
+                    <Node name="Product" expanded="True" />
+                    <Node name="ProductColor" expanded="True" />
+                    <Node name="ProductTag" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="E-Commerce-Beauty-Shop.Domain" expanded="True">
+                  <Node name="Entities" expanded="True" />
+                </Node>
+              </Node>
               <Node name="Infrastructure" expanded="True">
                 <Node name="E-Commerce-Beauty-Shop.Persistence" expanded="True">
-                  <Node name="Repositories" expanded="True">
-                    <Node name="ProductRepository.cs" selected="True" />
-                  </Node>
+                  <Node name="Context" expanded="True" />
+                  <Node name="Repositories" expanded="True" />
                 </Node>
               </Node>
               <Node name="WebApi" expanded="True">
                 <Node name="Api" expanded="True">
-                  <Node name="Controllers" expanded="True" />
+                  <Node name="Controllers" expanded="True">
+                    <Node name="ProductController.cs" selected="True" />
+                  </Node>
                 </Node>
               </Node>
             </Node>

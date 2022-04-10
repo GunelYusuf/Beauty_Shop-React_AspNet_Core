@@ -1,0 +1,1 @@
+{"c":["webpack"],"r":["pages/wishlist"],"m":["./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fwishlist&absolutePagePath=%2FUsers%2Fgunelyusubova%2FDesktop%2Ffinal_project%2Fclient%2Fsrc%2Fpages%2Fwishlist.js!","./src/components/Wishlist/Card/Card.jsx","./src/components/Wishlist/Wishlist.jsx","./src/pages/wishlist.js"]}

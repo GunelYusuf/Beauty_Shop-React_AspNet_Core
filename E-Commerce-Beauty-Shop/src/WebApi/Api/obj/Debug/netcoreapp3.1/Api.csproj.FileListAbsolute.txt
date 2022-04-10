@@ -10,6 +10,8 @@
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/CloudinaryDotNet.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.JsonPatch.dll
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Microsoft.Data.SqlClient.dll
@@ -31,6 +33,7 @@
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Microsoft.OpenApi.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.Swagger.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll

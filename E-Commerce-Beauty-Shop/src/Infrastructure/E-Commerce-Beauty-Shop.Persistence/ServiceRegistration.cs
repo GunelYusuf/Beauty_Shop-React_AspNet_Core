@@ -63,7 +63,9 @@ namespace E_Commerce_Beauty_Shop.Persistence
         service.AddScoped<IProductImageRepository, ProductImageRepository>();
         service.AddScoped<IProductColorRepository, ProductColorRepository>();
         service.AddScoped<IProductTagRepository, ProductTagRepository>();
-
+        service.AddScoped<IColorRepository, ColorRepository>();
+        service.AddScoped<ITagRepository, TagRepository>();
+        service.AddScoped<ICampaignRepository, CampaignRepository>();
         }
     }
     

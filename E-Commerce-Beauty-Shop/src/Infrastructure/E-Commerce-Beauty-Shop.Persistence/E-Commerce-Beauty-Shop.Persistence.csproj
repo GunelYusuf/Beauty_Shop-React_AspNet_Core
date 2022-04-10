@@ -26,6 +26,7 @@
         <PrivateAssets>all</PrivateAssets>
       </PackageReference>
       <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.0" />
     </ItemGroup>
 
     <ItemGroup>
@@ -34,6 +35,7 @@
       <None Remove="Microsoft.Extensions.DependencyInjection" />
       <None Remove="Repositories\" />
       <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
+      <None Remove="Microsoft.AspNetCore.Mvc.NewtonsoftJson" />
     </ItemGroup>
 
     <ItemGroup>

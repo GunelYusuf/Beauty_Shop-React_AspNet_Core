@@ -17,8 +17,18 @@
     <ItemGroup>
       <None Remove="Repositories\" />
       <None Remove="Microsoft.AspNetCore.Http" />
+      <None Remove="Dto\ProductDto\" />
+      <None Remove="Repositories\ProductImage\" />
+      <None Remove="Repositories\ProductColor\" />
+      <None Remove="Repositories\ProductTag\" />
+      <None Remove="Repositories\Campaign\" />
     </ItemGroup>
     <ItemGroup>
       <Folder Include="Repositories\" />
+      <Folder Include="Dto\ProductDto\" />
+      <Folder Include="Repositories\ProductImage\" />
+      <Folder Include="Repositories\ProductColor\" />
+      <Folder Include="Repositories\ProductTag\" />
+      <Folder Include="Repositories\Campaign\" />
     </ItemGroup>
 </Project>

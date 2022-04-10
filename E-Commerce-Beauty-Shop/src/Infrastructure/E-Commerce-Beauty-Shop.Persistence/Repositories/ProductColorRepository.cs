@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using E_Commerce_Beauty_Shop.Application.Repositories;
+using E_Commerce_Beauty_Shop.Domain.Common;
 using E_Commerce_Beauty_Shop.Domain.Entities;
 using E_Commerce_Beauty_Shop.Persistence.Context;
 
 namespace E_Commerce_Beauty_Shop.Persistence.Repositories
 {
-    public class ProductColorRepository:IProductColorRepository
+    public class ProductColorRepository:BaseEntity,IProductColorRepository
     {
         private readonly AppDbContext _dbContext;
 
@@ -62,5 +64,7 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
         {
             throw new NotImplementedException();
         }
+
+       
     }
 }
