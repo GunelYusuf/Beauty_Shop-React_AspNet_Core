@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_Commerce_Beauty_Shop.Persistence.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220402223824_PublicIdAdded")]
-    partial class PublicIdAdded
+    [Migration("20220411005720_AddingFixedTables")]
+    partial class AddingFixedTables
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -33,11 +33,17 @@ namespace E_Commerce_Beauty_Shop.Persistence.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime?>("DateOfBirth")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(256)")
                         .HasMaxLength(256);
 
                     b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
                     b.Property<bool>("LockoutEnabled")
@@ -112,6 +118,9 @@ namespace E_Commerce_Beauty_Shop.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
@@ -119,6 +128,9 @@ namespace E_Commerce_Beauty_Shop.Persistence.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PublicId")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -149,10 +161,7 @@ namespace E_Commerce_Beauty_Shop.Persistence.Migrations
                     b.Property<bool>("Availibility")
                         .HasColumnType("bit");
 
-                    b.Property<int>("CampaignId")
-                        .HasColumnType("int");
-
-                    b.Property<Guid?>("CampaignId1")
+                    b.Property<Guid>("CampaignId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("CategoryId")
@@ -175,7 +184,7 @@ namespace E_Commerce_Beauty_Shop.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CampaignId1");
+                    b.HasIndex("CampaignId");
 
                     b.HasIndex("CategoryId");
 
@@ -218,6 +227,9 @@ namespace E_Commerce_Beauty_Shop.Persistence.Migrations
                     b.Property<Guid>("ProductId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("PublicId")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ProductId");
@@ -234,10 +246,7 @@ namespace E_Commerce_Beauty_Shop.Persistence.Migrations
                     b.Property<Guid>("ProductId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("TagId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("TagsId")
+                    b.Property<Guid>("TagId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
@@ -398,7 +407,9 @@ namespace E_Commerce_Beauty_Shop.Persistence.Migrations
                 {
                     b.HasOne("E_Commerce_Beauty_Shop.Domain.Entities.Campaign", "Campaign")
                         .WithMany()
-                        .HasForeignKey("CampaignId1");
+                        .HasForeignKey("CampaignId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("E_Commerce_Beauty_Shop.Domain.Entities.Category", "Category")
                         .WithMany("Products")
@@ -416,7 +427,7 @@ namespace E_Commerce_Beauty_Shop.Persistence.Migrations
                         .IsRequired();
 
                     b.HasOne("E_Commerce_Beauty_Shop.Domain.Entities.Product", "Product")
-                        .WithMany()
+                        .WithMany("productColors")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -434,14 +445,16 @@ namespace E_Commerce_Beauty_Shop.Persistence.Migrations
             modelBuilder.Entity("E_Commerce_Beauty_Shop.Domain.Entities.ProductTag", b =>
                 {
                     b.HasOne("E_Commerce_Beauty_Shop.Domain.Entities.Product", "Product")
-                        .WithMany()
+                        .WithMany("productTags")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("E_Commerce_Beauty_Shop.Domain.Entities.Tag", "Tag")
                         .WithMany()
-                        .HasForeignKey("TagId");
+                        .HasForeignKey("TagId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

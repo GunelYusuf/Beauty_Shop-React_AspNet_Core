@@ -22,7 +22,7 @@ namespace E_Commerce_Beauty_Shop.Persistence
 
             //Connection String
             service.AddDbContext<AppDbContext>(options =>
-            options.UseSqlServer("Server=localhost;Database=Shop-Commerce;Trusted_Connection=False;User Id=sa;Password=MyPass@word"));
+            options.UseSqlServer("Server=localhost;Database=Beauty;Trusted_Connection=False;User Id=sa;Password=MyPass@word"));
             service.AddAutoMapper(typeof(AutoMapperProfile));
 
 

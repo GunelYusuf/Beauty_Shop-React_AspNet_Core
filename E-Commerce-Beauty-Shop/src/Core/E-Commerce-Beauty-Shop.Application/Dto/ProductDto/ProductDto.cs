@@ -19,13 +19,13 @@ namespace E_Commerce_Beauty_Shop.Application.Dto.ProductDto
         [Required]
         public int Quantity { get; set; }
 
-        [Required]
+      
         public string ProductCode { get; set; }
 
 
         public bool Availibility { get; set; }
 
-        public int? CampaignId { get; set; }
+        public Guid CampaignId { get; set; }
 
         [Required]
         public Guid CategoryId { get; set; }

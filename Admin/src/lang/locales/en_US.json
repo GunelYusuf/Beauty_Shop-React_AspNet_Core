@@ -19,6 +19,10 @@
 	"sidenav.apps.ecommerce.addProduct": "Add Product",
 	"sidenav.apps.ecommerce.productList": "Product List",
 	"sidenav.apps.ecommerce.orders": "Orders",
+	"sidenav.apps.ecommerce.categoryList": "Category List",
+	"sidenav.apps.ecommerce.addCategory": "Add Category",
+	"sidenav.apps.ecommerce.editCategory": "Edit Category",
+
 
 	"sidenav.components": "Components",
 	"sidenav.components.general": "General",

@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import {LoadingOutlined} from "@ant-design/icons";
 import CustomIcon from "../../../../../components/util-components/CustomIcon";
 import {ImageSvg} from "../../../../../assets/svg/icon";
-import Dragger from "antd/es/upload/Dragger";
+
 
 const { TabPane } = Tabs;
 

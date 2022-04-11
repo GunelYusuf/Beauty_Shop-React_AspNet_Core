@@ -112,12 +112,10 @@ const AddCategory = () => {
                     <Row gutter={16}>
                         <Col xs={24} sm={24} md={17}>
                             <Card title="Basic Info">
-
                                     <Form.Item name="name"  label="Category name"  rules={rules.name}>
                                         <Input placeholder="Category Name" />
                                     </Form.Item>
-
-                            </Card>
+                             </Card>
                             <Card title="Media">
 
                                 <Form.Item name='file' rules={rules.file}>

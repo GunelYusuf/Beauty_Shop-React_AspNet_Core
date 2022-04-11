@@ -53,9 +53,6 @@ namespace Api.Controllers
             _tagRepository = tagRepository;
             _colorRepository = colorRepository;
             _campaignRepository = campaignRepository;
-
-            
-           
         }
 
 
@@ -93,7 +90,7 @@ namespace Api.Controllers
                 {
                     ProductTag productTag = new ProductTag();
                     productTag.ProductId = product.Id;
-                    productTag.TagsId = Guid.Parse(tag);
+                    productTag.TagId = Guid.Parse(tag);
                     var tagRes = await _productTagRepository.AddAsync(productTag);
                 }
             }

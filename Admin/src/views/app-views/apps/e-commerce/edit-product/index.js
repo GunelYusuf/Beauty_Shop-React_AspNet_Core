@@ -6,7 +6,7 @@ import { ImageSvg } from 'assets/svg/icon';
 import CustomIcon from 'components/util-components/CustomIcon'
 import { LoadingOutlined } from '@ant-design/icons';
 import axios from "axios";
-import ProductListData from "assets/data/product-list.data.json"
+
 
 const { TabPane } = Tabs;
 

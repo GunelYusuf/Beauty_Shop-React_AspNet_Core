@@ -12,8 +12,8 @@ namespace E_Commerce_Beauty_Shop.Domain.Entities
         public int Quantity { get; set; }
         public string ProductCode { get; set; }
         public bool Availibility { get; set; }
-        public int CampaignId { get; set; }
-        public Campaign Campaign { get; set; }
+        public Guid CampaignId { get; set; }
+        public Campaign Campaign { get; set;}
         public Guid CategoryId { get; set; }
         public Category Category { get; set; }
 

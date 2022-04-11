@@ -1,16 +1,21 @@
 ﻿<Properties StartupConfiguration="{B9D29CC1-7682-4A58-99DB-65DE547695DF}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="src/WebApi/Api/Controllers/ProductController.cs">
     <Files>
-      <File FileName="src/WebApi/Api/Controllers/ProductController.cs" Line="36" Column="85" />
-      <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/ProductRepository.cs" />
-      <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/ColorRepository.cs" />
-      <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/TagRepository.cs" />
-      <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/CampaignRepository.cs" />
-      <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/ServiceRegistration.cs" />
-      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Repositories/ProductColor/IColorRepository.cs" />
-      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Repositories/ProductTag/ITagRepository.cs" />
-      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Repositories/Campaign/ICampaignRepository.cs" />
-      <File FileName="src/WebApi/Api/Startup.cs" />
+      <File FileName="src/Core/E-Commerce-Beauty-Shop.Domain/Entities/Product.cs" Line="1" Column="1" />
+      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Dto/ProductDto/ProductDto.cs" Line="22" Column="7" />
+      <File FileName="src/Core/E-Commerce-Beauty-Shop.Domain/Entities/AppUser.cs" Line="16" Column="5" />
+      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Dto/UserDto/LoginResponseDto.cs" Line="10" Column="23" />
+      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Dto/UserDto/UserLoginDto.cs" Line="1" Column="1" />
+      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Dto/UserDto/UserRegisterDto.cs" Line="1" Column="1" />
+      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/ServiceRegistration.cs" Line="1" Column="1" />
+      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Repositories/ITokenServiceRepository.cs" Line="1" Column="1" />
+      <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/ServiceRegistration.cs" Line="25" Column="67" />
+      <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/DesingTimeDbContextFactory.cs" Line="13" Column="83" />
+      <File FileName="src/Core/E-Commerce-Beauty-Shop.Domain/Entities/Tag.cs" Line="1" Column="1" />
+      <File FileName="src/Core/E-Commerce-Beauty-Shop.Domain/Entities/ProductTag.cs" Line="10" Column="24" />
+      <File FileName="src/WebApi/Api/appsettings.Development.json" Line="9" Column="51" />
+      <File FileName="src/WebApi/Api/appsettings.json" Line="9" Column="51" />
+      <File FileName="src/WebApi/Api/Controllers/ProductController.cs" Line="93" Column="35" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,6 +27,7 @@
                   <Node name="Dto" expanded="True">
                     <Node name="CategoryDTO" expanded="True" />
                     <Node name="ProductDto" expanded="True" />
+                    <Node name="UserDto" expanded="True" />
                   </Node>
                   <Node name="Mapping" expanded="True" />
                   <Node name="Repositories" expanded="True">
@@ -46,6 +52,7 @@
                   <Node name="Controllers" expanded="True">
                     <Node name="ProductController.cs" selected="True" />
                   </Node>
+                  <Node name="appsettings.json" expanded="True" />
                 </Node>
               </Node>
             </Node>
