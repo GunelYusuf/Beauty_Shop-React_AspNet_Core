@@ -20,7 +20,7 @@ export const Banner = () => {
         </div>
         <img
           className='main-block__decor'
-          src='/assets/img/main-block-decor.png'
+          src='/assets/img/'
           alt=''
         />
       </div>

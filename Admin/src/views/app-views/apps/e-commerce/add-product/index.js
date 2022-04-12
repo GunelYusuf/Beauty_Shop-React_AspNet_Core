@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import PageHeaderAlt from 'components/layout-components/PageHeaderAlt'
-import { Tabs, Form, Button, message,Input, Row, Col, Card, Upload, InputNumber, Select} from 'antd';
+import {Tabs, Form, Button, message, Input, Row, Col, Card, Upload, InputNumber, Select, Checkbox} from 'antd';
 import Flex from 'components/shared-components/Flex'
 import { ImageSvg } from 'assets/svg/icon';
 import CustomIcon from 'components/util-components/CustomIcon'
@@ -198,8 +198,8 @@ const AddProduct = () => {
 			formData.append("description",form.getFieldValue("description"))
 			formData.append("price",form.getFieldValue("price"))
 			formData.append("quantity",form.getFieldValue("quantity"))
-
-
+			formData.append("productCode",form.getFieldValue("productCode"))
+			formData.append("availibility",form.getFieldValue("availibility"))
             const newtagIdList = form.getFieldValue("tagId")
             for (const tagId in newtagIdList) {
                 formData.append('tagId', newtagIdList[tagId])
@@ -289,8 +289,16 @@ const AddProduct = () => {
 													<InputNumber
 														className="w-100"
 														value={0}
-														formatter={value => `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+														formatter={value => ` ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
 														parser={value => value.replace(/\$\s?|(,*)/g, '')}
+													/>
+												</Form.Item>
+											</Col>
+											<Col xs={24} sm={24} md={12}>
+												<Form.Item name="productCode" label="Product Code">
+													<Input
+														className="w-100"
+														placeholder="Product Code"
 													/>
 												</Form.Item>
 											</Col>
@@ -301,6 +309,11 @@ const AddProduct = () => {
 														{campaign.map(elm => (<Option value={elm.id} key={elm.id}>{elm.discount}%</Option>))}
 													</Select>
 												</Form.Item>
+											</Col>
+											<Col xs={24} sm={24} md={12}>
+											<Form.Item valuePropName="checked" name="availibility" initialValue={false}>
+												<Checkbox checked>Availibility</Checkbox>
+											</Form.Item>
 											</Col>
 										</Row>
 									</Card>
