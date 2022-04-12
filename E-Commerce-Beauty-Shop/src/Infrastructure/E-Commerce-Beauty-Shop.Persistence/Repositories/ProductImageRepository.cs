@@ -58,6 +58,11 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             throw new NotImplementedException();
         }
 
+        public Task<ProductPhoto> GetSingle(Expression<Func<ProductPhoto, bool>> filter = null)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<bool> UpdateAsync(ProductPhoto entity)
         {
             throw new NotImplementedException();

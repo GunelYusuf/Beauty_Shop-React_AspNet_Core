@@ -1,11 +1,8 @@
 ﻿<Properties StartupConfiguration="{B9D29CC1-7682-4A58-99DB-65DE547695DF}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Core/E-Commerce-Beauty-Shop.Domain/Entities/Product.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/WebApi/Api/Controllers/ProductController.cs">
     <Files>
-      <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/ProductRepository.cs" Line="101" Column="28" />
-      <File FileName="src/WebApi/Api/Controllers/ProductController.cs" Line="132" Column="1" />
-      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Dto/ProductDto/ProductDto.cs" Line="1" Column="1" />
-      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Dto/ProductDto/ProductResponseDto.cs" Line="14" Column="22" />
-      <File FileName="src/Core/E-Commerce-Beauty-Shop.Domain/Entities/Product.cs" Line="9" Column="41" />
+      <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/ProductRepository.cs" Line="110" Column="14" />
+      <File FileName="src/WebApi/Api/Controllers/ProductController.cs" Line="158" Column="51" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -28,9 +25,7 @@
                   </Node>
                 </Node>
                 <Node name="E-Commerce-Beauty-Shop.Domain" expanded="True">
-                  <Node name="Entities" expanded="True">
-                    <Node name="Product.cs" selected="True" />
-                  </Node>
+                  <Node name="Entities" expanded="True" />
                 </Node>
               </Node>
               <Node name="Infrastructure" expanded="True">
@@ -41,7 +36,9 @@
               </Node>
               <Node name="WebApi" expanded="True">
                 <Node name="Api" expanded="True">
-                  <Node name="Controllers" expanded="True" />
+                  <Node name="Controllers" expanded="True">
+                    <Node name="ProductController.cs" selected="True" />
+                  </Node>
                   <Node name="appsettings.json" expanded="True" />
                 </Node>
               </Node>

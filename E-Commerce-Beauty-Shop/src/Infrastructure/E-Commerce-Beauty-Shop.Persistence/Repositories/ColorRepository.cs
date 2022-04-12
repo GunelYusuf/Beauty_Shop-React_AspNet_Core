@@ -45,6 +45,11 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             throw new NotImplementedException();
         }
 
+        public Task<Color> GetSingle(Expression<Func<Color, bool>> filter = null)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<bool> UpdateAsync(Color entity)
         {
             throw new NotImplementedException();

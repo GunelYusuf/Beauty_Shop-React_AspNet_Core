@@ -151,6 +151,20 @@ namespace Api.Controllers
            return Ok(productResponseDtos);
         }
 
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            Product product = await _productRepository.GetSingle(x => x.Id == id);
+            if (product == null) return NotFound();
+
+            bool success = await _productRepository.DeleteAsync(product);
+            if (!success) return BadRequest();
+
+           
+            
+            return Ok();
+        }
+
 
     }
 }

@@ -18,6 +18,6 @@ namespace E_Commerce_Beauty_Shop.Application.Repositories
 
         Task<bool> DeleteAsync(T entity);
 
-
+        Task<T> GetSingle(Expression<Func<T, bool>> filter = null);
     }
 }

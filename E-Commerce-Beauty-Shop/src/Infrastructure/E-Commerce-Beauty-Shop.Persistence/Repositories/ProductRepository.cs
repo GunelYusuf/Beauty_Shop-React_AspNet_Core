@@ -8,6 +8,7 @@ using E_Commerce_Beauty_Shop.Application.Repositories;
 using E_Commerce_Beauty_Shop.Domain.Entities;
 using E_Commerce_Beauty_Shop.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
+using Services.ImageService;
 
 namespace E_Commerce_Beauty_Shop.Persistence.Repositories
 {
@@ -15,11 +16,13 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
     {
         private readonly AppDbContext _dbContext;
         private readonly IMapper _mapper;
+        private readonly ImageService _imageService;
 
-        public ProductRepository(AppDbContext dbContext, IMapper mapper)
+        public ProductRepository(AppDbContext dbContext, IMapper mapper,ImageService imageService)
         {
             _dbContext = dbContext;
             _mapper = mapper;
+            _imageService = imageService;
         }
         
         public  async Task<bool> AddAsync(Product entity)
@@ -42,40 +45,22 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             try
             {
                 var productphoto = _dbContext.ProductPhotos.Where(p => p.ProductId == entity.Id);
-                var ColorProduct = _dbContext.ProductColors.Where(p => p.ProductId == entity.Id);
-                var tagPhoto = _dbContext.ProductTags.Where(p => p.ProductId == entity.Id);
+                
                 if (productphoto != null)
                 {
                     foreach (var item in productphoto)
                     {
-                        _dbContext.ProductPhotos.Remove(item);
-                        await _dbContext.SaveChangesAsync();
+                        if (!string.IsNullOrEmpty(item.PublicId))
+                            await _imageService.DeleteImageAsync(item.PublicId);
                     }
                 }
-                if (ColorProduct != null)
-                {
-                    foreach (var item in ColorProduct)
-                    {
-                        _dbContext.ProductColors.Remove(item);
-                        await _dbContext.SaveChangesAsync();
-                    }
-                }
-                if (tagPhoto != null)
-                {
-                    foreach (var item in tagPhoto)
-                    {
-                        _dbContext.ProductTags.Remove(item);
-                        await _dbContext.SaveChangesAsync();
-
-                    }
-                }
+              
                 _dbContext.Products.Remove(entity);
                 await _dbContext.SaveChangesAsync();
                 return true;
             }
             catch (Exception)
             {
-
                 return false;
             }
 
@@ -111,14 +96,14 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
         {
             try
             {
-                var product = _dbContext.Products
+                var product = await _dbContext.Products
                     .Include(p => p.Campaign)
                     .Include(p => p.productPhotos)
                     .Include(p => p.productColors)
                     .ThenInclude(p => p.Color)
                     .Include(p => p.productTags)
                     .ThenInclude(c => c.Tag)
-                    .FirstOrDefault(filter);
+                    .FirstOrDefaultAsync(filter);
                 return product;
             }
             catch (Exception)

@@ -80,6 +80,11 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             }
         }
 
+        public Task<Category> GetSingle(Expression<Func<Category, bool>> filter = null)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<bool> UpdateAsync(Category entity)
         {
             try
