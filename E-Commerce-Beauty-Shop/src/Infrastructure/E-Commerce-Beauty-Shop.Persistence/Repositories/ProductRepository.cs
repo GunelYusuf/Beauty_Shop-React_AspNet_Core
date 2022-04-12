@@ -26,7 +26,7 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
         {
            try
             {
-               await   _dbContext.Products.AddAsync(entity);
+               await _dbContext.Products.AddAsync(entity);
                await _dbContext.SaveChangesAsync();
                return true;
             }
@@ -88,20 +88,23 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
 
         public async Task<List<Product>> GetAllAsync(Expression<Func<Product, bool>> filter = null)
         {
-            try
-             {
-                List<Product> products = new List<Product>();
-                            foreach (var item in _dbContext.Products)
-                            {
-                                products.Add(item);
-                            }
-                            return products;
-                        }
-                        catch (Exception)
-                        {
-                            return null;
-                            throw;
-                        }
+           try
+            {
+                var product = await _dbContext.Products
+                 .Include(p => p.Campaign)
+                 .Include(p => p.productPhotos)
+                 .Include(p => p.productColors)
+                 .ThenInclude(p => p.Color)
+                 .Include(p => p.productTags)
+                 .ThenInclude(c => c.Tag)
+                 .ToListAsync();
+                return product;
+            }
+            catch (Exception)
+            {
+                 return null;
+
+            }
         }
 
         public async Task<Product> GetSingle(Expression<Func<Product, bool>> filter = null)

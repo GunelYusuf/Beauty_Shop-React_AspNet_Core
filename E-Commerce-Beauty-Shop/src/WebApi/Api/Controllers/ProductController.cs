@@ -119,5 +119,38 @@ namespace Api.Controllers
             var campaign = await _campaignRepository.GetAllAsync();
             return Ok(campaign);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var products = await _productRepository.GetAllAsync();
+
+            List<ProductResponseDto> productResponseDtos = new List<ProductResponseDto>();
+            foreach (var product in products)
+            {
+                ProductResponseDto productDto = new ProductResponseDto()
+                {
+                    Id = product.Id,
+                    Name = product.Name,
+                    Description = product.Description,
+                    Price = product.Price,
+                    Quantity = product.Quantity,
+                    CampaignId = product.CampaignId,
+                    ProductCode = product.ProductCode,
+                    Availibility = product.Availibility,
+                    CategoryId = product.CategoryId,
+                    ProductColor = product.productColors.Select(x => x.Color).Select(c => new Color { Id = c.Id, Name = c.Name }).ToList(),
+                    ProductTags = product.productTags.Select(x => x.Tag).Select(c => new Tag { Id = c.Id, Name = c.Name }).ToList(),
+                    ProductPhoto = product.productPhotos.Select(i => new ProductPhoto { Id = i.Id,PhotoUrl = i.PhotoUrl }).ToList()
+
+                };
+
+                productResponseDtos.Add(productDto);
+            }
+
+           return Ok(productResponseDtos);
+        }
+
+
     }
 }
