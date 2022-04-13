@@ -139,6 +139,7 @@ namespace Api.Controllers
                     ProductCode = product.ProductCode,
                     Availibility = product.Availibility,
                     CategoryId = product.CategoryId,
+                    CategoryName = product.Category.Name,
                     ProductColor = product.productColors.Select(x => x.Color).Select(c => new Color { Id = c.Id, Name = c.Name }).ToList(),
                     ProductTags = product.productTags.Select(x => x.Tag).Select(c => new Tag { Id = c.Id, Name = c.Name }).ToList(),
                     ProductPhoto = product.productPhotos.Select(i => new ProductPhoto { Id = i.Id,PhotoUrl = i.PhotoUrl }).ToList()
@@ -160,8 +161,6 @@ namespace Api.Controllers
             bool success = await _productRepository.DeleteAsync(product);
             if (!success) return BadRequest();
 
-           
-            
             return Ok();
         }
 

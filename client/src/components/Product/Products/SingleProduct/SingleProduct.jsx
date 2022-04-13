@@ -6,7 +6,7 @@ export const SingleProduct = ({
                                 onAddToCart,
                                 addedInCart,
                               }) => {
-  const { name, oldPrice, price, image, isSale, isNew, id } = product;
+  const { name, oldPrice, price, productPhoto, isSale, isNew, id } = product;
   return (
       <>
 
@@ -16,7 +16,7 @@ export const SingleProduct = ({
             {isNew && <span className='products-item__new'>new</span>}
           </div>
           <div className='products-item__img'>
-            <img src={image} className='js-img' alt='' />
+            <img src={productPhoto[0].photoUrl} className='js-img' alt='' />
             <div className='products-item__hover'>
               <Link href={`/product/${id}`}>
                 <a>

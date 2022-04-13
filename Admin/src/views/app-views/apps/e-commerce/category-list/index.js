@@ -44,12 +44,12 @@ const CategoryList = () => {
     const deleteRow = async (id) => {
         try {
             await axios.delete(`https://localhost:5001/api/Category/${id}`).then(() =>{
-            toast.success("Category has been deleted succesfully")
+            toast.success("Category has been deleted successfully")
             fetchData()
             }
            )
         } catch (error) {
-            toast.error("the error occurred")
+            toast.error("The Error occurred")
         }
     }
 

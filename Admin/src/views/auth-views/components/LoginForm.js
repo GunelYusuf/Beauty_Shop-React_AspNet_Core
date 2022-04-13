@@ -15,6 +15,7 @@ import {
 } from 'redux/actions/Auth';
 import { useHistory } from "react-router-dom";
 import { motion } from "framer-motion"
+import axios from "axios";
 
 export const LoginForm = props => {
 	let history = useHistory();
@@ -44,7 +45,12 @@ export const LoginForm = props => {
 
 	const onLogin = values => {
 		showLoading()
-		signIn(values);
+		console.log(values);
+		console.log(values.email)
+		console.log(values.password)
+		axios.post('https://localhost:5001/api/User/Login',
+			{headers:{'Content-Type': 'application/json'},email:values.email,password:values.password})
+			.then(console.log).catch(console.log)
 	};
 
 	const onGoogleLogin = () => {
@@ -101,7 +107,7 @@ export const LoginForm = props => {
 					opacity: showMessage ? 1 : 0,
 					marginBottom: showMessage ? 20 : 0 
 				}}> 
-				<Alert type="error" showIcon message={message}></Alert>
+				<Alert type="error" showIcon message={message}/>
 			</motion.div>
 			<Form 
 				layout="vertical" 

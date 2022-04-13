@@ -77,6 +77,7 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             {
                 var product = await _dbContext.Products
                  .Include(p => p.Campaign)
+                 .Include(p => p.Category)
                  .Include(p => p.productPhotos)
                  .Include(p => p.productColors)
                  .ThenInclude(p => p.Color)

@@ -24,6 +24,8 @@ namespace E_Commerce_Beauty_Shop.Application.Dto.ProductDto
       
         public Guid CategoryId { get; set; }
 
+        public string CategoryName { get; set; }
+
         public List<ProductPhoto> ProductPhoto { get; set; } = new List<ProductPhoto>();
 
         public List<Tag> ProductTags { get; set; } = new List<Tag>();
