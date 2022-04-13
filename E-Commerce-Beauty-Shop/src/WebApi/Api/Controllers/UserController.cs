@@ -101,7 +101,7 @@ namespace Api.Controllers
                 return Ok(new ResponseDto
                 {
                     Status = "200",
-                    Message = $"Student with the username {user.UserName} has succesfully registered"
+                    Message = $"Student with the username {user.UserName} has successfully registered"
                 });
             }
             else

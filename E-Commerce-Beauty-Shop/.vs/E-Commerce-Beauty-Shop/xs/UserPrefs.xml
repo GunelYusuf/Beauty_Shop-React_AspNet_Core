@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{B9D29CC1-7682-4A58-99DB-65DE547695DF}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Core/E-Commerce-Beauty-Shop.Domain/Entities/Product.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/TokenServiceRepository.cs">
     <Files>
       <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/ProductRepository.cs" Line="110" Column="14" />
-      <File FileName="src/WebApi/Api/Controllers/ProductController.cs" Line="163" Column="13" />
+      <File FileName="src/WebApi/Api/Controllers/ProductController.cs" />
       <File FileName="src/Core/E-Commerce-Beauty-Shop.Domain/Entities/Product.cs" Line="1" Column="1" />
+      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Repositories/ITokenServiceRepository.cs" Line="1" Column="1" />
+      <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/TokenServiceRepository.cs" Line="33" Column="38" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -26,15 +28,15 @@
                   </Node>
                 </Node>
                 <Node name="E-Commerce-Beauty-Shop.Domain" expanded="True">
-                  <Node name="Entities" expanded="True">
-                    <Node name="Product.cs" selected="True" />
-                  </Node>
+                  <Node name="Entities" expanded="True" />
                 </Node>
               </Node>
               <Node name="Infrastructure" expanded="True">
                 <Node name="E-Commerce-Beauty-Shop.Persistence" expanded="True">
                   <Node name="Context" expanded="True" />
-                  <Node name="Repositories" expanded="True" />
+                  <Node name="Repositories" expanded="True">
+                    <Node name="TokenServiceRepository.cs" selected="True" />
+                  </Node>
                 </Node>
               </Node>
               <Node name="WebApi" expanded="True">
