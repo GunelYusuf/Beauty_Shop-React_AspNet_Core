@@ -11,7 +11,7 @@ export const DetailBlock = ({ detailBlocks }) => {
                   className='js-img'
                   alt=''
                 />
-                <i className={block.icon}></i>
+                <i className={block.icon}/>
               </div>
               <div className='detail-block__item-info'>
                 <h6>{block.step}</h6>

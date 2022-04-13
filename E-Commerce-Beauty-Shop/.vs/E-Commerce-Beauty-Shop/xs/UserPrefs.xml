@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{B9D29CC1-7682-4A58-99DB-65DE547695DF}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/WebApi/Api/Controllers/ProductController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/WebApi/Api/Controllers/CategoryController.cs">
     <Files>
       <File FileName="src/WebApi/Api/Controllers/ProductController.cs" Line="142" Column="57" />
-      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Dto/ProductDto/ProductResponseDto.cs" Line="27" Column="35" />
       <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/ProductRepository.cs" Line="80" Column="43" />
       <File FileName="src/Core/E-Commerce-Beauty-Shop.Domain/Entities/Category.cs" Line="1" Column="1" />
       <File FileName="src/Core/E-Commerce-Beauty-Shop.Domain/Entities/Product.cs" Line="1" Column="1" />
-      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Repositories/ProductColor/IProductColorRepository.cs" Line="1" Column="1" />
+      <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/CategoryRepository.cs" Line="61" Column="82" />
+      <File FileName="src/WebApi/Api/Controllers/CategoryController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -41,7 +41,7 @@
               <Node name="WebApi" expanded="True">
                 <Node name="Api" expanded="True">
                   <Node name="Controllers" expanded="True">
-                    <Node name="ProductController.cs" selected="True" />
+                    <Node name="CategoryController.cs" selected="True" />
                   </Node>
                   <Node name="appsettings.json" expanded="True" />
                 </Node>

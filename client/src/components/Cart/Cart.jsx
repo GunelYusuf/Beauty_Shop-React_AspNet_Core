@@ -17,11 +17,11 @@ export const Cart = () => {
   const handleProductQuantity = (change, quantity, id) => {
     console.log(change, quantity, id);
     if (change === 'increment') {
-      cart.find((item) => item.id === id).quantity = quantity + 1;
+      cart.find((item) => item.id === id).cartQuantity = quantity + 1;
       setCount(count + 1);
     }
     if (change === 'decrement' && quantity > 1) {
-      cart.find((item) => item.id === id).quantity = quantity - 1;
+      cart.find((item) => item.id === id).cartQuantity = quantity - 1;
       setCount(count + 1);
     }
   };

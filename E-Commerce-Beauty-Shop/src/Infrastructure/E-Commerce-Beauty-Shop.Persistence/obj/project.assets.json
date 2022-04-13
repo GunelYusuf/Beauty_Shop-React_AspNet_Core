@@ -6087,7 +6087,7 @@
       "outputPath": "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/gunelyusubova/.nuget/NuGet/NuGet.Config"
+        "/Users/gunelyusubova/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

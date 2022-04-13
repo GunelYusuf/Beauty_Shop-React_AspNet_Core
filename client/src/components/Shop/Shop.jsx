@@ -33,7 +33,7 @@ export const Shop = () => {
     fetchData()
 
   },[])
-  
+  console.log(data)
   const allProducts = [...productData];
 
   const [productOrder, setProductOrder] = useState(
@@ -100,7 +100,7 @@ export const Shop = () => {
                     <ul key={category.id}>
                       <li>
                         <a href='#'>
-                          {category.name}<span>(37)</span>
+                          {category.name}<span>{category.products.quantity}</span>
                         </a>
                       </li>
 

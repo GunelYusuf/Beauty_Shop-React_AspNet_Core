@@ -67,7 +67,7 @@ export const Registration = () => {
               </div>
               <label className='checkbox-box checkbox-box__sm'>
                 <input type='checkbox' />
-                <span className='checkmark'></span>
+                <span className='checkmark'/>
                 Remember me
               </label>
               <button className='btn' type='submit'>

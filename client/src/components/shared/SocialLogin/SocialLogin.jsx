@@ -3,22 +3,22 @@ export const SocialLogin = () => {
     <ul className='login-form__social'>
       <li>
         <a href='#'>
-          <i className='icon-facebook'></i>
+          <i className='icon-facebook'/>
         </a>
       </li>
       <li>
         <a href='#'>
-          <i className='icon-twitter'></i>
+          <i className='icon-twitter'/>
         </a>
       </li>
       <li>
         <a href='#'>
-          <i className='icon-insta'></i>
+          <i className='icon-insta'/>
         </a>
       </li>
       <li>
         <a href='#'>
-          <i className='icon-google'></i>
+          <i className='icon-google'/>
         </a>
       </li>
     </ul>

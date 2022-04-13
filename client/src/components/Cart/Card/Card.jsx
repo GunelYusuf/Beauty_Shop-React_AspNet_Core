@@ -9,7 +9,7 @@ export const Card = ({ cart, onChangeQuantity }) => {
     productNumber,
     oldPrice,
     price,
-    quantity,
+    cartQuantity,
   } = cart;
 
   return (
@@ -44,7 +44,7 @@ export const Card = ({ cart, onChangeQuantity }) => {
             <div className='cart-table__quantity'>
               <div className='counter-box'>
               <span
-                  onClick={() => onChangeQuantity('decrement', quantity)}
+                  onClick={() => onChangeQuantity('decrement', cartQuantity)}
                   className='counter-link counter-link__prev'
               >
                 <i className='icon-arrow'/>
@@ -53,10 +53,11 @@ export const Card = ({ cart, onChangeQuantity }) => {
                     type='text'
                     className='counter-input'
                     disabled
-                    value={quantity}
+                    value={cartQuantity}
                 />
+
                 <span
-                    onClick={() => onChangeQuantity('increment', quantity)}
+                    onClick={() => onChangeQuantity('increment', cartQuantity)}
                     className='counter-link counter-link__next'
                 >
                 <i className='icon-arrow'/>
@@ -66,7 +67,7 @@ export const Card = ({ cart, onChangeQuantity }) => {
           </div>
           <div className='cart-table__col'>
           <span className='cart-table__total'>
-            ${(price * quantity).toFixed(2)}
+            ${(price * cartQuantity).toFixed(2)}
           </span>
           </div>
         </div>

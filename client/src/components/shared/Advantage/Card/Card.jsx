@@ -3,7 +3,7 @@ export const Card = ({ advantage }) => {
   return (
     <div className='advantages-item'>
       <div className='advantages-item__icon'>
-        <i className={icon}></i>
+        <i className={icon}/>
       </div>
       <h4>{title}</h4>
       <p>{body}</p>

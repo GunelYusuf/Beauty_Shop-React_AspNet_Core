@@ -6,11 +6,16 @@ import axios from "axios";
 export const Products = ({ products }) => {
   const { cart, setCart } = useContext(CartContext);
 
-  const handleAddToCart = (id) => {
-    const newProduct = products?.find((pd) => pd.id === id);
-    setCart([...cart, { ...newProduct, quantity: 1 }]);
+  const handleAddToCart = (product) => {
+    let newCart = [...cart, { ...product, cartQuantity: 1 }]
+    setCart(newCart);
+    addToLocalStorage(newCart)
   };
 
+  const addToLocalStorage = (newCart) => {
+    localStorage.setItem("cartItems", JSON.stringify(newCart))
+  }
+// browser
 
   const [data,setData]=useState([])
   useEffect( ()=>{
@@ -34,7 +39,7 @@ export const Products = ({ products }) => {
                 key={product.id}
                 product={product}
                 onAddToWish={(id) => console.log(id)}
-                onAddToCart={handleAddToCart}
+                onAddToCart={() => handleAddToCart(product)}
             />
         ))}
       </>

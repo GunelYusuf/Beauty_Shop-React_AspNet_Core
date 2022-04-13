@@ -38,16 +38,10 @@ export const LoginForm = props => {
 		allowRedirect
 	} = props
 
-	const initialCredential = {
-		email: 'user1@themenate.net',
-		password: '2005ipo'
-	}
+
 
 	const onLogin = values => {
 		showLoading()
-		console.log(values);
-		console.log(values.email)
-		console.log(values.password)
 		axios.post('https://localhost:5001/api/User/Login',
 			{headers:{'Content-Type': 'application/json'},email:values.email,password:values.password})
 			.then(console.log).catch(console.log)
@@ -111,8 +105,7 @@ export const LoginForm = props => {
 			</motion.div>
 			<Form 
 				layout="vertical" 
-				name="login-form" 
-				initialValues={initialCredential}
+				name="login-form"
 				onFinish={onLogin}
 			>
 				<Form.Item 
