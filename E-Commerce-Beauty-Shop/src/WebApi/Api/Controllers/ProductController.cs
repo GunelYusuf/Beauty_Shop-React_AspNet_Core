@@ -183,7 +183,7 @@ namespace Api.Controllers
 
 
             Product updateProduct = _mapper.Map<Product>(productUpdateDto);
-
+            await _productRepository.UpdateAsync(updateProduct);
 
             var allTags = await _productTagRepository.GetAllAsync(x => x.ProductId == updateProduct.Id);
             List<Guid> oldTags = allTags.Select(t => t.TagId).ToList();

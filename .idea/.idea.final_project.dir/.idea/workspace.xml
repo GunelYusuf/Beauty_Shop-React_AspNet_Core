@@ -5,101 +5,215 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47a7265c-7266-41c7-8c81-be6a75666dc5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.final_project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.final_project.dir/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/Dto/ProductDto/ProductUpdateDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/views/app-views/apps/e-commerce/category-list/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/views/app-views/apps/e-commerce/category-list/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/views/app-views/apps/e-commerce/product-list/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/views/app-views/apps/e-commerce/product-list/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/views/auth-views/components/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/views/auth-views/components/LoginForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/Controllers/UserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/.vs/E-Commerce-Beauty-Shop/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/.vs/E-Commerce-Beauty-Shop/xs/UserPrefs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/.vs/E-Commerce-Beauty-Shop/xs/project-cache/E-Commerce-Beauty-Shop.Application-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/.vs/E-Commerce-Beauty-Shop/xs/project-cache/E-Commerce-Beauty-Shop.Application-Debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/Mapping/AutoMapperProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/Mapping/AutoMapperProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/E-Commerce-Beauty-Shop.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/E-Commerce-Beauty-Shop.Application.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/E-Commerce-Beauty-Shop.Application.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/E-Commerce-Beauty-Shop.Application.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Domain.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Domain.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Domain.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Domain.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/obj/E-Commerce-Beauty-Shop.Domain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/obj/E-Commerce-Beauty-Shop.Domain.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/obj/E-Commerce-Beauty-Shop.Domain.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/obj/E-Commerce-Beauty-Shop.Domain.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/ProductColorRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/ProductColorRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/ProductImageRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/ProductImageRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/ProductRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/ProductTagRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/ProductTagRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/E-Commerce-Beauty-Shop.Persistence.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/E-Commerce-Beauty-Shop.Persistence.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/E-Commerce-Beauty-Shop.Persistence.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/E-Commerce-Beauty-Shop.Persistence.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/Services/obj/Debug/netcoreapp3.1/Services.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/Services/obj/Debug/netcoreapp3.1/Services.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/Services/obj/Debug/netcoreapp3.1/Services.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/Services/obj/Debug/netcoreapp3.1/Services.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/Services/obj/Services.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/Services/obj/Services.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/Services/obj/Services.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/Services/obj/Services.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/Services/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/Services/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/Services/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Infrastructure/Services/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/Controllers/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/Controllers/ProductController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/Api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/bin/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Persistence.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Api.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Api.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Api.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Api.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Debug/netcoreapp3.1/Api.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Debug/netcoreapp3.1/Api.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Debug/netcoreapp3.1/Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Debug/netcoreapp3.1/Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Debug/netcoreapp3.1/Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/Debug/netcoreapp3.1/Api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/build-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/0.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/1.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/11.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/12.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/13.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/13.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/16.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/16.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/17.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/17.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/19.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/19.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/21.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/21.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/23.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/23.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/25.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/25.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/27.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/27.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/28.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/28.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/29.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/29.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/3.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/4.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/5.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/6.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/9.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/index.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/client-development/index.pack.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/0.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/10.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/2.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/5.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/6.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/8.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/9.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/index.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/cache/webpack/server-development/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/404.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/cart.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.next/server/pages/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/static/chunks/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/product/[id].js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/static/chunks/pages/shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/server/pages/shop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/404.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/cart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/categories.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/pages/shop.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/static/chunks/webpack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/static/development/_buildManifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/0307c233b1a1bdeb.webpack.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/05a80f84d634a861.webpack.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/09a5c7ff25131109.webpack.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/11d9467a7e9aed81.webpack.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/2fb79084d6729cb3.webpack.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/3585250b559f156e.webpack.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/4d291c210056973c.webpack.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/632ae3809b820ebb.webpack.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/701857d1e592c322.webpack.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/7df4235ef42702c7.webpack.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/7f13458b3b9e79dc.webpack.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/8fda15d3aff5b299.webpack.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/994b8b103c2fce63.webpack.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/a3ed9b633bb288b4.webpack.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/bf91a9b1c2590063.webpack.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/c068b3a991720036.webpack.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/d8b3ca551f7a6bc8.webpack.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/dc72902ba52ba548.webpack.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/de0c766a3e5d5b75.webpack.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/f42e790bd64f51a7.webpack.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/_app.09a5c7ff25131109.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/_app.11d9467a7e9aed81.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/_app.2fb79084d6729cb3.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/_app.3585250b559f156e.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/_app.de0c766a3e5d5b75.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.05a80f84d634a861.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.4d291c210056973c.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.8fda15d3aff5b299.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.dc72902ba52ba548.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.0307c233b1a1bdeb.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.05a80f84d634a861.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.09a5c7ff25131109.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.11d9467a7e9aed81.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.2fb79084d6729cb3.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.3585250b559f156e.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.4d291c210056973c.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.632ae3809b820ebb.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.701857d1e592c322.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.7df4235ef42702c7.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.7f13458b3b9e79dc.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.8fda15d3aff5b299.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.994b8b103c2fce63.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.a3ed9b633bb288b4.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.bf91a9b1c2590063.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.c068b3a991720036.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.d8b3ca551f7a6bc8.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.dc72902ba52ba548.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.de0c766a3e5d5b75.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.f42e790bd64f51a7.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/0736d6efcae760ed.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/08f6fb04ff20a903.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/0fd8f82a5744ade3.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/23c4d7612438ee78.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/27c7c0014318adaf.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/29ffe31640354b91.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/3333d6ed11c59de3.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/352e10a8168ab629.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/35b9c4f6f0b73f2f.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/38e9e9ae19c62f7d.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/3de6bdad176546ac.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/46818c4caee42af9.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/498d5009a33168ed.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/4be777b51408ef8f.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/4beb62aaa4e6528b.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/4c48d92b696cb89d.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/503691259f9277ef.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/5316b6a06e83f9ac.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/5dbd12a1b8c2553a.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/627aca994de2fe3d.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/63cc4743e96c6bff.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/6955b1ecafbd6759.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/76de89eb5cb94fec.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/7a8fa00c50b907be.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/7ff5c113ebec6f07.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/8540501ecb589b5b.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/933932d95eeed4dc.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/9453b6c6241a3fde.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/96806cf463e49e53.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/9e4cd66e93e321bf.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/a8808f0c8624e94f.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/ae947194f65e4ddf.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/b4cfc42c21a07be2.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/baf54f315a014ed1.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/bb03cf7ed1e90761.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/bb25fac59e0bfd81.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/bb3e3c1d400c3015.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/bb42648bd638131f.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/c4ff4647927ab73e.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/c6ced5a35a3aab8a.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/c795ba2cfcd944ae.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/c9fb9193419b5509.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/d22ada11eaeb0d95.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/e11a5b497eb7e1a1.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/e570452cfb13fb0e.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/f1f9ac61f00089ac.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/404.0fd8f82a5744ade3.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/404.4be777b51408ef8f.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/404.a8808f0c8624e94f.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/404.b4cfc42c21a07be2.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/_app.23c4d7612438ee78.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/_app.27c7c0014318adaf.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/_app.76de89eb5cb94fec.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/cart.3de6bdad176546ac.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/cart.503691259f9277ef.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/cart.933932d95eeed4dc.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.0fd8f82a5744ade3.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.3333d6ed11c59de3.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.46818c4caee42af9.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.4be777b51408ef8f.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.4beb62aaa4e6528b.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.4c48d92b696cb89d.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.5dbd12a1b8c2553a.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.7a8fa00c50b907be.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.9e4cd66e93e321bf.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.a8808f0c8624e94f.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.b4cfc42c21a07be2.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.bb03cf7ed1e90761.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.bb25fac59e0bfd81.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.bb3e3c1d400c3015.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.bb42648bd638131f.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.c6ced5a35a3aab8a.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.c795ba2cfcd944ae.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.e11a5b497eb7e1a1.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/index.e570452cfb13fb0e.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/shop.0736d6efcae760ed.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/shop.08f6fb04ff20a903.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/shop.29ffe31640354b91.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/shop.352e10a8168ab629.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/shop.5316b6a06e83f9ac.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/shop.63cc4743e96c6bff.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/shop.8540501ecb589b5b.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/shop.9453b6c6241a3fde.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/shop.ae947194f65e4ddf.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/shop.baf54f315a014ed1.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/shop.c4ff4647927ab73e.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/shop.c9fb9193419b5509.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/pages/shop.d22ada11eaeb0d95.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.0736d6efcae760ed.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.08f6fb04ff20a903.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.0fd8f82a5744ade3.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.23c4d7612438ee78.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.27c7c0014318adaf.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.29ffe31640354b91.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.3333d6ed11c59de3.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.352e10a8168ab629.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.35b9c4f6f0b73f2f.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.38e9e9ae19c62f7d.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.3de6bdad176546ac.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.46818c4caee42af9.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.498d5009a33168ed.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.4be777b51408ef8f.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.4beb62aaa4e6528b.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.4c48d92b696cb89d.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.503691259f9277ef.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.5316b6a06e83f9ac.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.5dbd12a1b8c2553a.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.627aca994de2fe3d.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.63cc4743e96c6bff.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.6955b1ecafbd6759.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.76de89eb5cb94fec.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.7a8fa00c50b907be.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.7ff5c113ebec6f07.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.8540501ecb589b5b.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.933932d95eeed4dc.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.9453b6c6241a3fde.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.96806cf463e49e53.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.9e4cd66e93e321bf.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.a8808f0c8624e94f.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.ae947194f65e4ddf.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.b4cfc42c21a07be2.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.baf54f315a014ed1.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.bb03cf7ed1e90761.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.bb25fac59e0bfd81.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.bb3e3c1d400c3015.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.bb42648bd638131f.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.c4ff4647927ab73e.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.c6ced5a35a3aab8a.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.c795ba2cfcd944ae.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.c9fb9193419b5509.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.d22ada11eaeb0d95.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.e11a5b497eb7e1a1.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.e570452cfb13fb0e.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.next/static/webpack/webpack.f1f9ac61f00089ac.hot-update.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.next/trace" beforeDir="false" afterPath="$PROJECT_DIR$/client/.next/trace" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/Products/Products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/Products/Products.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/Products/ProductsCarousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/Products/ProductsCarousel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/Products/SingleProduct/SingleProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/Products/SingleProduct/SingleProduct.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +243,7 @@
     <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/Dto/UserDto/UserRegisterDto.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/Controllers/CategoryController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/Dto/CategoryDTO/UpdateCategoryDTO.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/Controllers/ProductController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/Entities/Color.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/Controllers/UserController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/Startup.cs" root0="SKIP_HIGHLIGHTING" />
@@ -197,7 +312,7 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/client/package.json" />
       <command value="run" />
       <scripts>
@@ -219,7 +334,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
       </list>
@@ -247,6 +361,7 @@
       <workItem from="1648927785378" duration="2994000" />
       <workItem from="1648944240458" duration="9541000" />
       <workItem from="1649801030625" duration="2000" />
+      <workItem from="1649970141841" duration="294000" />
     </task>
     <servers />
   </component>
@@ -257,5 +372,24 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/Controllers/ProductController.cs</url>
+          <line>168</line>
+          <properties documentPath="$PROJECT_DIR$/E-Commerce-Beauty-Shop/src/WebApi/Api/Controllers/ProductController.cs" initialLine="168" containingFunctionPresentation="method 'Put'">
+            <startOffsets>
+              <option value="6834" />
+            </startOffsets>
+            <endOffsets>
+              <option value="6835" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

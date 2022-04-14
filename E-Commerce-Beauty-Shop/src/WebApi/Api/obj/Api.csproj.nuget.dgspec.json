@@ -14,7 +14,7 @@
         "outputPath": "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/gunelyusubova/.config/NuGet/NuGet.Config"
+          "/Users/gunelyusubova/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -80,7 +80,7 @@
         "outputPath": "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/gunelyusubova/.config/NuGet/NuGet.Config"
+          "/Users/gunelyusubova/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -138,7 +138,7 @@
         "outputPath": "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/gunelyusubova/.config/NuGet/NuGet.Config"
+          "/Users/gunelyusubova/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -242,7 +242,7 @@
         "outputPath": "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Infrastructure/Services/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/gunelyusubova/.config/NuGet/NuGet.Config"
+          "/Users/gunelyusubova/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -304,7 +304,7 @@
         "outputPath": "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/WebApi/Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/gunelyusubova/.config/NuGet/NuGet.Config"
+          "/Users/gunelyusubova/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
