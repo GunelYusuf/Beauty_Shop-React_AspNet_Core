@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using E_Commerce_Beauty_Shop.Application.Repositories;
@@ -48,9 +49,17 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             }
         }
 
-        public Task<List<ProductPhoto>> GetAllAsync(Expression<Func<ProductPhoto, bool>> filter = null)
+        public async Task<List<ProductPhoto>> GetAllAsync(Expression<Func<ProductPhoto, bool>> filter = null)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var result = _dbContext.ProductPhotos.Where(filter).ToList();
+                return result;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
 
         public Task<ProductPhoto> GetAsync(Expression<Func<ProductPhoto, bool>> filter = null)
@@ -58,9 +67,18 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<ProductPhoto> GetSingle(Expression<Func<ProductPhoto, bool>> filter = null)
+        public async Task<ProductPhoto> GetSingle(Expression<Func<ProductPhoto, bool>> filter = null)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _dbContext.ProductPhotos.FirstOrDefault(filter);
+
+            }
+            catch (Exception)
+            {
+                return null;
+
+            }
         }
 
         public Task<bool> UpdateAsync(ProductPhoto entity)

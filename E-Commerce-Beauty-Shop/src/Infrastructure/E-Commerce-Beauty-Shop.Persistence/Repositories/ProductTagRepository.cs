@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using E_Commerce_Beauty_Shop.Application.Repositories;
 using E_Commerce_Beauty_Shop.Domain.Entities;
 using E_Commerce_Beauty_Shop.Persistence.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace E_Commerce_Beauty_Shop.Persistence.Repositories
 {
@@ -48,9 +50,17 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             }
         }
 
-        public Task<List<ProductTag>> GetAllAsync(Expression<Func<ProductTag, bool>> filter = null)
+        public async Task<List<ProductTag>> GetAllAsync(Expression<Func<ProductTag, bool>> filter = null)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var result = await _dbContext.ProductTags.Where(filter).Include(x => x.Tag).ToListAsync();
+               return result;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
 
         public Task<ProductTag> GetAsync(Expression<Func<ProductTag, bool>> filter = null)
@@ -58,9 +68,18 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<ProductTag> GetSingle(Expression<Func<ProductTag, bool>> filter = null)
+        public async Task<ProductTag> GetSingle(Expression<Func<ProductTag, bool>> filter = null)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _dbContext.ProductTags.FirstOrDefault(filter);
+
+            }
+            catch (Exception)
+            {
+                return null;
+
+            }
         }
 
         public Task<bool> UpdateAsync(ProductTag entity)

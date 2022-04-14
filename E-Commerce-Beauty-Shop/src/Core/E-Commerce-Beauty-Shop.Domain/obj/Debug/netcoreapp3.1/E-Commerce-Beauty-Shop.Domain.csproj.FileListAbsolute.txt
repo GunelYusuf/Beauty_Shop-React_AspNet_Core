@@ -7,4 +7,3 @@
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Domain.csproj.CoreCompileInputs.cache
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Domain.dll
 /Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Domain.pdb
-/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Domain/obj/Debug/netcoreapp3.1/E-Commerce-Beauty-Shop.Domain.csproj.AssemblyReference.cache

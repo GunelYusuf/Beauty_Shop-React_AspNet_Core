@@ -7,6 +7,7 @@ using E_Commerce_Beauty_Shop.Application.Repositories;
 using E_Commerce_Beauty_Shop.Domain.Common;
 using E_Commerce_Beauty_Shop.Domain.Entities;
 using E_Commerce_Beauty_Shop.Persistence.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace E_Commerce_Beauty_Shop.Persistence.Repositories
 {
@@ -50,9 +51,17 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             }
         }
 
-        public Task<List<ProductColor>> GetAllAsync(Expression<Func<ProductColor, bool>> filter = null)
+        public async Task<List<ProductColor>> GetAllAsync(Expression<Func<ProductColor, bool>> filter = null)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var result = await _dbContext.ProductColors.Where(filter).Include(x => x.Color).ToListAsync();
+                return result;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
 
         public Task<ProductColor> GetAsync(Expression<Func<ProductColor, bool>> filter = null)
@@ -60,9 +69,18 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<ProductColor> GetSingle(Expression<Func<ProductColor, bool>> filter = null)
+        public async Task<ProductColor> GetSingle(Expression<Func<ProductColor, bool>> filter = null)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _dbContext.ProductColors.FirstOrDefault(filter);
+
+            }
+            catch (Exception)
+            {
+                return null;
+
+            }
         }
 
         public Task<bool> UpdateAsync(ProductColor entity)

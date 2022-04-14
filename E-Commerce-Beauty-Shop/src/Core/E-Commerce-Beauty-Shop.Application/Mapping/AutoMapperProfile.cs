@@ -16,6 +16,7 @@ namespace E_Commerce_Beauty_Shop.Application.Mapping
             CreateMap<UpdateCategoryDTO,Category>().ReverseMap();
             CreateMap<Category,Category>().ReverseMap();
             CreateMap<ProductDto, Product>().ReverseMap();
+            CreateMap<ProductUpdateDto, Product>().ReverseMap();
         }
      
     }

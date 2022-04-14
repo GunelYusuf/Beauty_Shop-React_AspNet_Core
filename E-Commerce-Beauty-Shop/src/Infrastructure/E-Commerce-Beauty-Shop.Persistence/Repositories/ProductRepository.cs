@@ -119,12 +119,17 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             try
             {
                 var product = await GetSingle(p => p.Id == entity.Id);
-                product.Campaign = entity.Campaign;
-                product.productPhotos = entity.productPhotos;
+                product.Id = entity.Id;
                 product.Name = entity.Name;
                 product.Description = entity.Description;
+                product.Price = entity.Price;
+                product.Availibility = entity.Availibility;
+                product.Quantity = entity.Quantity;
+                product.ProductCode = entity.ProductCode;
+                product.CampaignId = entity.CampaignId;
                 product.CategoryId = entity.CategoryId;
-                product.productTags = entity.productTags;
+
+                await _dbContext.SaveChangesAsync();
                 return true;
             }
             catch (Exception)
