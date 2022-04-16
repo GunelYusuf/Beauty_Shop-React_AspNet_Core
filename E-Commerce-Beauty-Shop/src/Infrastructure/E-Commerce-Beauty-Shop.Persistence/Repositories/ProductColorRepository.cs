@@ -51,6 +51,11 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             }
         }
 
+        public IQueryable<ProductColor> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<List<ProductColor>> GetAllAsync(Expression<Func<ProductColor, bool>> filter = null)
         {
             try
@@ -69,6 +74,11 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             throw new NotImplementedException();
         }
 
+        public Task<ProductColor> GetById(string Id)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<ProductColor> GetSingle(Expression<Func<ProductColor, bool>> filter = null)
         {
             try
@@ -82,6 +92,13 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
 
             }
         }
+
+        public IQueryable<ProductColor> GetWhere(Expression<Func<ProductColor, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<int> SaveAsync() => await _dbContext.SaveChangesAsync();
 
         public Task<bool> UpdateAsync(ProductColor entity)
         {

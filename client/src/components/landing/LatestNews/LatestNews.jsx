@@ -2,9 +2,24 @@ import Link from 'next/link';
 import { Blogs } from 'components/Blog/Blogs/Blogs';
 import { SectionTitle } from 'components/shared/SectionTitle/SectionTitle';
 import blogData from 'data/blog/blog';
+import {useEffect, useState} from "react";
+import axios from "axios";
 
 export const LatestNews = () => {
-  const blogs = [...blogData].slice(0, 2);
+  const [ blogs, setBlogs] = useState([])
+
+  useEffect(() => {
+    const getBlogs = async () => {
+      await axios.get('http://localhost:5000/api/Blog').then(({data}) => {
+        setBlogs(data.slice(0, 2))
+      })
+    }
+
+    getBlogs()
+  }, [])
+
+
+
   return (
     <>
       <section className='latest-news'>

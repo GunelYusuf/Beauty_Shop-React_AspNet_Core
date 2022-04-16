@@ -258,8 +258,8 @@ namespace Api.Controllers
                     productPhoto.ProductId = updateProduct.Id;
                     productPhoto.PhotoUrl = imageResult.SecureUrl.ToString();
                     productPhoto.PublicId = imageResult.PublicId;
-                    bool res =await _productImageRepository.AddAsync(productPhoto);
-                    
+                    bool res = await _productImageRepository.AddAsync(productPhoto);
+
                     if (!res) return BadRequest(new ProblemDetails { Title = "An Error occurred while uploading the photo." });
 
                 }
@@ -268,6 +268,35 @@ namespace Api.Controllers
             return Ok();
         }
 
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Get(Guid id)
+        {
+            var product = await _productRepository.GetAsync(p => p.Id==id);
+            if (product == null) return NotFound();
+
+
+            ProductResponseDto getProduct = new ProductResponseDto()
+            {
+                Id = product.Id,
+                Name = product.Name,
+                Description = product.Description,
+                Price = product.Price,
+                Quantity = product.Quantity,
+                CampaignId = product.CampaignId,
+                ProductCode = product.ProductCode,
+                Availibility = product.Availibility,
+                CategoryId = product.CategoryId,
+                CategoryName = product.Category.Name,
+                ProductColor = product.productColors.Select(x => x.Color).Select(c => new Color { Id = c.Id, Name = c.Name }).ToList(),
+                ProductTags = product.productTags.Select(x => x.Tag).Select(c => new Tag { Id = c.Id, Name = c.Name }).ToList(),
+                ProductPhoto = product.productPhotos.Select(i => new ProductPhoto { Id = i.Id, PhotoUrl = i.PhotoUrl }).ToList()
+
+            };
+
+
+            return Ok(getProduct);
+        }
 
     }
 }

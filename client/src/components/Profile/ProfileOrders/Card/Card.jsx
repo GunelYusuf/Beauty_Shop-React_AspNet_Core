@@ -1,5 +1,7 @@
+
+
 export const Card = ({ order, index, onCollapse, active }) => {
-  const { date, deliveryAddress, amount, status, orderItems } = order;
+
 
   return (
     <>
@@ -7,38 +9,43 @@ export const Card = ({ order, index, onCollapse, active }) => {
         <div className='profile-orders__row'>
           <div className='profile-orders__col'>
             <span className='profile-orders__col-mob'>date</span>
-            <span className='profile-orders__item-date'>{date}</span>
+            <span className='profile-orders__item-date'>{new Date(order.orderDate).toDateString()}</span>
           </div>
           <div className='profile-orders__col'>
             <span className='profile-orders__col-mob'>Delivery address</span>
-            <span className='profile-orders__item-addr'>{deliveryAddress}</span>
+
+            <span className='profile-orders__item-addr'>
+                {
+                  order?.shippingAddress?.adress1+","+
+                  order?.shippingAddress?.adress2+","+
+                  order?.shippingAddress?.country+","+
+                  order?.shippingAddress?.city
+                }
+
+            </span>
+
           </div>
           <div className='profile-orders__col'>
             <span className='profile-orders__col-mob'>amount</span>
-            <span className='profile-orders__item-price'>${amount}</span>
+            <span className='profile-orders__item-price'>${order.total}</span>
           </div>
           <div className='profile-orders__col'>
             <span className='profile-orders__col-mob'>Status</span>
             <span
               className={`profile-orders__col-${
-                status.delivered ? 'delivered' : 'onway'
+                order.orderStatus==='Panding' ? 'Panding' : 'onway'
               }`}
             >
-              {status.onWay
-                ? 'on it’s way'
-                : status.delivered
-                ? 'DELIVERED'
-                : null}
             </span>
             <span
               onClick={() => onCollapse(index)}
               className='profile-orders__col-btn'
-            ></span>
+            />
           </div>
         </div>
         <div className='profile-orders__content'>
           <ul>
-            {orderItems.map((item, index) => (
+            {order.orderItems.map((item, index) => (
               <li key={index}>
                 {item.name}
                 <span>${item.price}</span>

@@ -398,6 +398,14 @@ h6,
         font-size: 70px;
         color: #fff;
       }
+      //.sign-out {
+      //  position: absolute;
+      //  left: 50%;
+      //  top: 50%;
+      //  transform: translate(-50%, -50%);
+      //  font-size: 70px;
+      //  color: #fff;
+      //}
 
       &-options {
         display: flex;
@@ -5966,6 +5974,7 @@ input[type='search']::-webkit-search-results-decoration {
     margin: 0 auto;
     margin-bottom: 15px;
     width: 100%;
+    position:relative;
     max-width: 320px;
     justify-content: flex-start;
 

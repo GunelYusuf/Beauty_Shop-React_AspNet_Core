@@ -4,5 +4,6 @@
     "paths": {
       "@data/*": ["src/data"]
     }
-  }
+  },
+  "extensions": [".js"]
 }

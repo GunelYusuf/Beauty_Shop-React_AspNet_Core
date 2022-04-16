@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using E_Commerce_Beauty_Shop.Domain.Common;
@@ -19,5 +20,13 @@ namespace E_Commerce_Beauty_Shop.Application.Repositories
         Task<bool> DeleteAsync(T entity);
 
         Task<T> GetSingle(Expression<Func<T, bool>> filter = null);
+
+        Task<int> SaveAsync();
+
+        IQueryable<T> GetWhere(Expression<Func<T, bool>> filter);
+
+        Task<T> GetById(string Id);
+
+        IQueryable<T> GetAll();
     }
 }

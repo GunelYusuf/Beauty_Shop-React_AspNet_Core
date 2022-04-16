@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import PageHeaderAlt from 'components/layout-components/PageHeaderAlt'
-import {Tabs, Form, Button, message, Col, Card, Input, Upload, Checkbox, Row} from 'antd';
+import {Tabs, Form, Button, message, Col, Card, Input, Upload, Checkbox, Row, Modal} from 'antd';
 import {useHistory, useParams} from 'react-router-dom';
 import Flex from 'components/shared-components/Flex'
 import axios from "axios";
@@ -13,27 +13,6 @@ import {ImageSvg} from "../../../../../assets/svg/icon";
 
 const { TabPane } = Tabs;
 
-
-
-const getBase64 = (img, callback) => {
-    const reader = new FileReader();
-    reader.addEventListener('load', () => callback(reader.result));
-    reader.readAsDataURL(img);
-}
-const rules = {
-    name: [
-        {
-            required: true,
-            message: 'Please enter product name',
-        }
-    ],
-    file:[
-        {
-            required:true,
-            message:'Please enter photo'
-        }
-    ]
-}
 
 
 const beforeUpload = file => {
@@ -62,7 +41,6 @@ const EditCategory = () => {
 
     let history = useHistory();
     const [form] = Form.useForm();
-    const [uploadedImg, setImage] = useState('')
     const [uploadLoading, setUploadLoading] = useState(false)
     const [submitLoading, setSubmitLoading] = useState(false)
     const [list,setList]=useState([])
@@ -71,16 +49,17 @@ const EditCategory = () => {
         try {
             const response = await axios.get(`https://localhost:5001/api/Category/${id}`);
             setList(response.data)
-            form.setFieldsValue({file:response.data.imageUrl,isFeature:response.data.isFeature})
+            form.setFieldsValue({file:response.data.imageUrl,
+                                       isFeature:response.data.isFeature}
+            )
 
         } catch (error) {
             console.log(error)
         }
     }
 
-
     useEffect(() => {
-        console.log(list)
+
 
        fetchData(param.id)
 
@@ -165,7 +144,7 @@ const EditCategory = () => {
                                     </Form.Item>
                                     <Card title="Basic Info">
                                         {list.name!==undefined?
-                                            <Form.Item name="name" label="Category name" initialValue={list.name}  rules={rules.name}>
+                                            <Form.Item name="name" label="Category name" initialValue={list.name} >
                                                 <Input  style={{width: "400px"}} placeholder="Category Name" onChange={(e) =>{setList({...list,name:e.target.value})}} />
                                             </Form.Item>: null
                                         }

@@ -22,7 +22,7 @@ namespace E_Commerce_Beauty_Shop.Persistence
 
             //Connection String
             service.AddDbContext<AppDbContext>(options =>
-            options.UseSqlServer("Server=localhost;Database=Beauty;Trusted_Connection=False;User Id=sa;Password=MyPass@word"));
+            options.UseSqlServer("Server=localhost;Database=BeautyContext;Trusted_Connection=False;User Id=sa;Password=MyPass@word"));
             service.AddAutoMapper(typeof(AutoMapperProfile));
 
 
@@ -51,12 +51,13 @@ namespace E_Commerce_Beauty_Shop.Persistence
             service.AddScoped<ITokenServiceRepository, TokenServiceRepository>();
 
 
-          
-        service.AddIdentity<AppUser, IdentityRole>(options=> {
-                options.Tokens.PasswordResetTokenProvider = TokenOptions.DefaultEmailProvider;
-            }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
 
+            service.AddIdentityCore<AppUser>(option =>
+            {
+                option.User.RequireUniqueEmail = true;
+            }).AddRoles<Role>().AddEntityFrameworkStores<AppDbContext>();
 
+        service.AddTransient<AppDbContext>();
         service.AddScoped<ICategoryRepository, CategoryRepository>();
         service.AddScoped<IProductRepository, ProductRepository>();
         service.AddScoped<ImageService>();
@@ -66,6 +67,15 @@ namespace E_Commerce_Beauty_Shop.Persistence
         service.AddScoped<IColorRepository, ColorRepository>();
         service.AddScoped<ITagRepository, TagRepository>();
         service.AddScoped<ICampaignRepository, CampaignRepository>();
+        service.AddScoped<IBlogRepository, BlogRepository>();
+        service.AddScoped<IBlogTagRepository, BlogTagRepository>();
+        service.AddScoped<IBasketRepository, BasketRepository>();
+        service.AddScoped<IBlocksRepository, BlocksRepository>();
+        service.AddScoped<IAboutBlockRepository, AboutBlockRepository>();
+        service.AddScoped<IAboutRepository, AboutRepository>();
+        service.AddScoped<IOrderRepository, OrderRepository>();
+        service.AddScoped<ICommentRepository, CommentRepository>();
+
         }
     }
     

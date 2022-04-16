@@ -2,6 +2,7 @@ import React from 'react'
 import LoginForm from '../../components/LoginForm'
 import { Card, Row, Col } from "antd";
 import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
 
 const backgroundStyle = {
 	backgroundImage: 'url(/img/others/img-17.jpg)',
@@ -11,6 +12,11 @@ const backgroundStyle = {
 
 const LoginOne = props => {
 	const theme = useSelector(state => state.theme.currentTheme)
+
+		useEffect(() => {
+			console.log("this is loginnn")
+		}, [])
+
 	return (
 		<div className="h-100" style={backgroundStyle}>
 			<div className="container d-flex flex-column justify-content-center h-100">

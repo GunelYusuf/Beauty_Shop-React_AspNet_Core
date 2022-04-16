@@ -6,28 +6,17 @@ import { Reviews } from '../Reviews/Reviews';
 import { ReviewFrom } from '../ReviewForm/ReviewFrom';
 import { useRouter } from 'next/router';
 import { CartContext } from 'pages/_app';
-
-export const ProductDetails = () => {
+import axios from "axios";
+export const ProductDetails = ({currentProduct}) => {
   const router = useRouter();
-  const { cart, setCart } = useContext(CartContext);
-
   const socialLinks = [...socialData];
   const products = [...productData];
   const [product, setProduct] = useState(null);
   const [addedInCart, setAddedInCart] = useState(false);
 
-  useEffect(() => {
-    if (router.query.id) {
-      const data = products.find((pd) => pd.id === router.query.id);
-      setProduct(data);
-    }
-  }, [router.query.id]);
 
-  useEffect(() => {
-    if (product) {
-      setAddedInCart(Boolean(cart?.find((pd) => pd.id === product.id)));
-    }
-  }, [product, cart]);
+  useEffect(() => {setProduct(currentProduct)}, [currentProduct])
+
 
   const [quantity, setQuantity] = useState(1);
   const [tab, setTab] = useState(2);
@@ -35,12 +24,33 @@ export const ProductDetails = () => {
   const [nav1, setNav1] = useState();
   const [nav2, setNav2] = useState();
 
+  const { cart, setCart } = useContext(CartContext);
+
+
   const handleAddToCart = () => {
-    const newProduct = { ...product, quantity: quantity };
-    setCart([...cart, newProduct]);
+    let newCart = [...cart, { ...currentProduct, cartQuantity: quantity, uid: generateNumber() }]
+    setCart(newCart);
   };
 
-  if (!product) return <></>;
+  const generateNumber = () => {
+    let randomNum = "";
+    for(let i =0; i < 16;i++) randomNum += Math.floor(Math.random() *10)
+    return randomNum;
+  }
+
+
+  const [allCampaign, setAllCampaign] = useState("")
+
+
+  useEffect(() => {
+
+    const getCampaign = async () => {
+      await axios('https://localhost:5001/api/Product/GetAllCampaigns').then(res => setAllCampaign(res.data))
+    }
+    getCampaign()
+  }, [])
+
+  if (!product) return <>Loading....</>;
   return (
     <>
 
@@ -57,17 +67,16 @@ export const ProductDetails = () => {
                   lazyLoad={true}
                   ref={(slider1) => setNav1(slider1)}
                 >
-                  {product.imageGallery.map((img, index) => (
-                    <div key={index} className='product-slider__main-item'>
+                  {product.productPhoto.map((item) => (
+                    <div key={item.id} className='product-slider__main-item'>
                       <div className='products-item__type'>
-                        {product.isSale && (
-                          <span className='products-item__sale'>sale</span>
-                        )}
-                        {product.isNew && (
+                        {product.campaignId ? (
+                          <span className='products-item__sale'>sale</span> ) :
+                           (
                           <span className='products-item__new'>new</span>
                         )}
                       </div>
-                      <img src={img} alt='product' />
+                      <img src={item.photoUrl} alt='product' />
                     </div>
                   ))}
                 </Slider>
@@ -83,9 +92,9 @@ export const ProductDetails = () => {
                   swipeToSlide={true}
                   focusOnSelect={true}
                 >
-                  {product.imageGallery.map((img, index) => (
-                    <div key={index} className='product-slider__nav-item'>
-                      <img src={img} alt='product' />
+                  {product.productPhoto.map((item) => (
+                    <div key={item.id} className='product-slider__nav-item'>
+                      <img src={item.photoUrl} alt='product' />
                     </div>
                   ))}
                 </Slider>
@@ -93,21 +102,17 @@ export const ProductDetails = () => {
             </div>
             <div className='product-info'>
               <h3>{product.name}</h3>
-              {product.isStocked ? (
+              {product.availibility ? (
                 <span className='product-stock'>in stock</span>
               ) : (
                 ''
               )}
 
-              <span className='product-num'>SKU: {product.productNumber}</span>
-              {product.oldPrice ? (
-                <span className='product-price'>
-                  <span>${product.oldPrice}</span>${product.price}
-                </span>
-              ) : (
+              <span className='product-num'>SKU: {product.productCode}</span>
+
                 <span className='product-price'>${product.price}</span>
-              )}
-              <p>{product.content}</p>
+
+              <p>{product.description}</p>
 
 
               <div className='contacts-info__social'>
@@ -128,12 +133,12 @@ export const ProductDetails = () => {
                 <div className='product-info__color'>
                   <span>Color:</span>
                   <ul>
-                    {product?.colors.map((color, index) => (
+                    {product?.productColor.map((color) => (
                       <li
-                        onClick={() => setActiveColor(index)}
-                        className={activeColor === index ? 'active' : ''}
-                        key={index}
-                        style={{ backgroundColor: color }}
+                        onClick={() => setActiveColor(color.id)}
+                        className={activeColor === color.id ? 'active' : ''}
+                        key={color.id}
+                        style={{ backgroundColor: color.name }}
                       />
                     ))}
                   </ul>
@@ -207,17 +212,13 @@ export const ProductDetails = () => {
                 {tab === 1 && (
                   <div className='tab-cont'>
                     <p>{product.description}</p>
-                    <p>{product.description}</p>
                   </div>
                 )}
 
                 {tab === 2 && (
-                  <div className='tab-cont product-reviews'>
-
-                    <Reviews reviews={product.reviews} />
-
-                    <ReviewFrom />
-                  </div>
+                 <div className='tab-cont product-reviews'>
+          <Reviews prodId = {product.id} />
+          <ReviewFrom prodId = {product.id} /></div>
                 )}
               </div>
             </div>

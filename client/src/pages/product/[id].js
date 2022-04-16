@@ -1,7 +1,11 @@
 import { MostViewed } from 'components/shared/MostViewed/MostViewed';
 import { ProductDetails } from 'components/Product/ProductDetails/ProductDetails';
+import axios from 'axios'
+//const { PublicLayout } = require('layout/PublicLayout');
+import { useEffect, useState } from 'react'
+import { Layout } from "layout/Layout"
 
-const { PublicLayout } = require('layout/PublicLayout');
+// PublicLayout breadcrumb={breadcrumbsData} breadcrumbTitle='Shop'
 
 const breadcrumbsData = [
   {
@@ -17,13 +21,43 @@ const breadcrumbsData = [
     path: '/product',
   },
 ];
-const SingleProductPage = () => {
+const SingleProductPage = ({id}) => {
+
+
+
+  const [product, setProduct] = useState("")
+  useEffect(() => {
+    const getProduct = async () => {
+      const res = await axios(`https://localhost:5001/api/Product/${id}`)
+      setProduct(res.data)
+    }
+
+    getProduct()
+
+  }, [])
+
+  useEffect(() => {
+    if(product){
+      console.log(product)
+    }
+  }, [product])
+
+
   return (
-    <PublicLayout breadcrumb={breadcrumbsData} breadcrumbTitle='Shop'>
-      <ProductDetails />
-      <MostViewed additionalClass='product-viewed' />
-    </PublicLayout>
+    <Layout>
+      <ProductDetails currentProduct = {product} />
+    </Layout>
   );
 };
 
 export default SingleProductPage;
+
+export const getServerSideProps = async (context) => {
+  return {
+    props: {
+      id: context.query.id
+    }
+  }
+}
+
+

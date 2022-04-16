@@ -3,32 +3,56 @@ import socialData from 'data/social';
 import { CartContext } from 'pages/_app';
 import { useContext, useEffect, useState } from 'react';
 import Link from 'next/link';
+import {useAppDispatch, useAppSelector} from "../../store/ConfigureStore";
+import {fetchCurrentUser} from "../Profile/AccountSlice";
+import httpAgent from "../../api/httpAgent";
+import {setBasket} from "./CartSlice";
+
+
 
 export const Cart = () => {
   const { cart, setCart } = useContext(CartContext);
   const [count, setCount] = useState(0);
   const socialLinks = [...socialData];
 
-  const total = cart.reduce(
-      (total, item) => total + Number(item.price) * Number(item.quantity),
-      0
-  );
+  const {basket} = useAppSelector(state => state.basket)
+  const [loading,setLoading] = useState(true);
+const dispatch = useAppDispatch();
+  useEffect( ()=>{
+      dispatch(fetchCurrentUser())
+  },[dispatch])
 
-  const handleProductQuantity = (change, quantity, id) => {
-    console.log(change, quantity, id);
-    if (change === 'increment') {
-      cart.find((item) => item.id === id).cartQuantity = quantity + 1;
-      setCount(count + 1);
-    }
-    if (change === 'decrement' && quantity > 1) {
-      cart.find((item) => item.id === id).cartQuantity = quantity - 1;
-      setCount(count + 1);
-    }
-  };
+  function getCookie(key) {
+      const b = document.cookie.match("(^|;)\\s*" + key + "\\s*=\\s*([^;]+)");
+      return b ? b.pop() : "";
+  }
 
-  useEffect(() => {
+  useEffect(()=>{
+    const buyerId = getCookie('buyerId');
+    if (buyerId){
+      httpAgent.Basket.getBaskets()
+          .then(basket => dispatch(setBasket(basket)))
+          .catch(error => console.log(error))
+          .finally(()=>setLoading(false))
+    }else {
+      setLoading(false)
+    }
+  },[dispatch])
+
+
+ useEffect(() => {
     setCart(cart);
   }, [cart, count]);
+
+useEffect(() => {console.log("GGG",basket)}, [basket])
+
+  const calcTotalPrice = () => {
+    let totalPrice = 0
+     basket?.items.forEach((cart) => {
+       totalPrice += (cart.price * cart.quantity)
+     })
+    return totalPrice.toFixed(2);
+  }
 
   return (
       <>
@@ -44,15 +68,13 @@ export const Cart = () => {
                   <div className='cart-table__col'>Total</div>
                 </div>
 
-                {cart.map((cart) => (
+                { basket?.items && basket?.items.length>0? basket?.items.map((cart) => (
                     <Card
-                        onChangeQuantity={(change, quantity) =>
-                            handleProductQuantity(change, quantity, cart.id)
-                        }
-                        key={cart.id}
+                     key={cart.id}
                         cart={cart}
+                        dispatch={dispatch}
                     />
-                ))}
+                )): <h6>salam</h6>}
               </div>
             </div>
             <div className='cart-bottom'>
@@ -94,7 +116,9 @@ export const Cart = () => {
               <div className='cart-bottom__total'>
                 <div className='cart-bottom__total-goods'>
                   Goods on
-                  <span>${total.toFixed(2)}</span>
+                 {basket?.items && basket?.items.length >0  ?
+                     <span>${calcTotalPrice()}</span>
+                     : ""}
                 </div>
                 <div className='cart-bottom__total-promo'>
                   Discount on promo code
@@ -102,7 +126,10 @@ export const Cart = () => {
                 </div>
                 <div className='cart-bottom__total-num'>
                   total:
-                  <span>${total.toFixed(2)}</span>
+                  { basket?.items && basket?.items.length >0  ?
+                      <span>${calcTotalPrice()}</span>
+                  : ""}
+
                 </div>
                 <Link href='/checkout'>
                   <a className='btn'>Checkout</a>

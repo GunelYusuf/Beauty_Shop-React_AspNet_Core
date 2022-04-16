@@ -50,6 +50,11 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             }
         }
 
+        public IQueryable<ProductTag> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<List<ProductTag>> GetAllAsync(Expression<Func<ProductTag, bool>> filter = null)
         {
             try
@@ -68,6 +73,11 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             throw new NotImplementedException();
         }
 
+        public Task<ProductTag> GetById(string Id)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<ProductTag> GetSingle(Expression<Func<ProductTag, bool>> filter = null)
         {
             try
@@ -81,6 +91,13 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
 
             }
         }
+
+        public IQueryable<ProductTag> GetWhere(Expression<Func<ProductTag, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<int> SaveAsync() => await _dbContext.SaveChangesAsync();
 
         public Task<bool> UpdateAsync(ProductTag entity)
         {

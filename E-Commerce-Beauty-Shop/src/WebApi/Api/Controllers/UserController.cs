@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using AutoMapper;
 using E_Commerce_Beauty_Shop.Application.Dto;
@@ -8,6 +10,7 @@ using E_Commerce_Beauty_Shop.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
 namespace Api.Controllers
@@ -18,17 +21,21 @@ namespace Api.Controllers
     {
         private readonly IConfiguration _config;
         private readonly UserManager<AppUser> _userManager;
-        private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly RoleManager<Role> _roleManager;
+        private readonly IBasketRepository _basketRepository;
+        private readonly IProductImageRepository _productImageRepository;
         private readonly ITokenServiceRepository _tokenService;
         private readonly IMapper _mapper;
 
-        public UserController(UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager, IMapper mapper, IConfiguration config, ITokenServiceRepository tokenService)
+        public UserController(UserManager<AppUser> userManager, RoleManager<Role> roleManager, IMapper mapper, IConfiguration config, ITokenServiceRepository tokenService, IBasketRepository basketRepository, IProductImageRepository productImageRepository)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _mapper = mapper;
             _config = config;
             _tokenService = tokenService;
+            _basketRepository = basketRepository;
+            _productImageRepository = productImageRepository;
         }
 
         [HttpPost]
@@ -49,6 +56,17 @@ namespace Api.Controllers
 
             if (response)
             {
+                var userBasket = await RetrieveBasket(user.Id.ToString());
+
+                var anonymousBasket = await RetrieveBasket(Request.Cookies["buyerId"]);
+
+                if (anonymousBasket != null)
+                {
+                    if (userBasket != null) await _basketRepository.DeleteAsync(userBasket);
+                    anonymousBasket.BuyerId = user.Id.ToString();
+                    Response.Cookies.Delete("buyerId");
+                    await _basketRepository.SaveAsync();
+                }
                 var token = _tokenService.GenerateToken(user);
 
                 return Ok(
@@ -57,9 +75,8 @@ namespace Api.Controllers
                     Status = "200",
                     Message = $"User with the username {user.UserName} has successfully logged in!",
                     Token = await token,
-                    Name = user.Name,
-                    Surname = user.Surname,
                     Username = user.UserName,
+                    Basket = anonymousBasket != null ? MapBasketToDto(anonymousBasket) : userBasket != null ? MapBasketToDto(userBasket) : default
                 });
             }
             else
@@ -70,6 +87,7 @@ namespace Api.Controllers
                     Message = "Invalid password or email address!"
                 });
             }
+
         }
 
         [HttpPost]
@@ -101,7 +119,7 @@ namespace Api.Controllers
                 return Ok(new ResponseDto
                 {
                     Status = "200",
-                    Message = $"Student with the username {user.UserName} has successfully registered"
+                    Message = $"User with the username {user.UserName} has successfully registered"
                 });
             }
             else
@@ -115,20 +133,62 @@ namespace Api.Controllers
         }
 
 
-        [HttpGet]
-        public async Task CreateRole()
+        private async Task<Basket> RetrieveBasket(string buyerId)
         {
-            if (!await _roleManager.RoleExistsAsync("Admin"))
+            if (string.IsNullOrEmpty(buyerId))
             {
-                await _roleManager.CreateAsync(new IdentityRole { Name = "Admin" });
+                Response.Cookies.Delete("buyerId");
+                return null;
             }
-            if (!await _roleManager.RoleExistsAsync("Member"))
-            {
-                await _roleManager.CreateAsync(new IdentityRole { Name = "Member" });
-            }
+
+            return await _basketRepository.GetSingle(p => p.BuyerId == buyerId);
         }
-        
-        
+
+        private string GetBuyerId()
+        {
+            var userId = GetIdentityUserId();
+            return userId ?? Request.Cookies["buyerId"];
+        }
+
+        private string GetIdentityUserId()
+        {
+            string userId = null;
+            if (User.Identity.IsAuthenticated)
+            {
+                userId = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Sid).Value;
+            }
+            return userId;
+        }
+
+        private BasketDto MapBasketToDto(Basket basket)
+        {
+            return new BasketDto
+            {
+                Id = basket.Id,
+                BuyerId = basket.BuyerId,
+                Items = basket.Items.Select(item => new BasketItemDto
+                {
+                    ProductId = item.ProductId,
+                    Name = item.Product.Name,
+                    Price = item.Product.Price,
+                    ImageUrl = _productImageRepository.GetWhere(x => x.ProductId == item.ProductId && x.IsMain == true).Select(x => x.PhotoUrl).First(),
+                    Quantity = item.Quantity,
+
+                }).ToList()
+            };
+        }
+
+        [Authorize]
+        [HttpGet]
+        public async Task<ActionResult<UserAddress>> GetSavedAddress()
+        {
+            var adress = await _userManager.Users.Where(x => x.Id == Guid.Parse(GetIdentityUserId()))
+                .Select(user => user.Address)
+                .FirstOrDefaultAsync();
+            return adress;
+        }
+
+
 
     }
 }

@@ -11,6 +11,8 @@ const breadcrumbsData = [
     path: '/cart',
   },
 ];
+
+
 const CartPage = () => {
   return (
     <PublicLayout breadcrumb={breadcrumbsData} breadcrumbTitle='Cart'>

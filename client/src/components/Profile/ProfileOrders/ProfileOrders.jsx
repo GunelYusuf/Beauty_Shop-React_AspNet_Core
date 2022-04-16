@@ -1,10 +1,25 @@
-import orderData from 'data/orders/orders';
-import { useState } from 'react';
 import { Card } from './Card/Card';
+import {useEffect, useState} from "react";
+import httpAgent from "../../../api/httpAgent";
+
 
 export const ProfileOrders = () => {
+
+  const[orders,setOrders] = useState([])
+  useEffect(()=>{
+    try{
+      httpAgent.Order.list().then((data) =>{
+        setOrders(data)
+      })
+
+
+    }catch(err){
+
+    }
+  },[])
+
   const [active, setActive] = useState(-1);
-  const orders = [...orderData];
+
   const handleCollapse = (indx) => {
     if (active === indx) {
       setActive(-1);

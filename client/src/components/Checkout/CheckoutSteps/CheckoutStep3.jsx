@@ -1,4 +1,5 @@
 export const CheckoutStep3 = () => {
+
   return (
     <>
 
@@ -24,7 +25,7 @@ export const CheckoutStep3 = () => {
             <span>Order status</span>Awaiting payment
           </li>
           <li>
-            <span>Reserved for</span>22.09.2020
+            <span>Reserved for</span>22.09.2022
           </li>
           <li>
             <span>Expected loading date</span>20.09.2020

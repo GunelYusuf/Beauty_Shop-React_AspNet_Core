@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7ZXHkSZaYARCb4eAs0jWNrDM8XLPlN2pN+KnCs3xbHaiWqIGIRJv8JxpPfgqoKabtKeXKNHxVjdCRqQ4AhmyyA==",
+  "dgSpecHash": "IN5Jikk1NymcuIwzn4OAy1mPe05cyV7dP78V29OAx1ncAYEojNV93HINRMeCIBMyPAR8XEggd4mbIFo82jejmg==",
   "success": true,
   "projectFilePath": "/Users/gunelyusubova/Desktop/final_project/E-Commerce-Beauty-Shop/src/Core/E-Commerce-Beauty-Shop.Application/E-Commerce-Beauty-Shop.Application.csproj",
   "expectedPackageFiles": [
@@ -12,7 +12,14 @@
     "/Users/gunelyusubova/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.2.0/microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "/Users/gunelyusubova/.nuget/packages/microsoft.aspnetcore.http.features/2.2.0/microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "/Users/gunelyusubova/.nuget/packages/microsoft.aspnetcore.webutilities/2.2.0/microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.0/microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "/Users/gunelyusubova/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.entityframeworkcore/3.1.0/microsoft.entityframeworkcore.3.1.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.entityframeworkcore.abstractions/3.1.0/microsoft.entityframeworkcore.abstractions.3.1.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.entityframeworkcore.analyzers/3.1.0/microsoft.entityframeworkcore.analyzers.3.1.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.caching.abstractions/3.1.0/microsoft.extensions.caching.abstractions.3.1.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.caching.memory/3.1.0/microsoft.extensions.caching.memory.3.1.0.nupkg.sha512",
     "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.configuration/3.1.0/microsoft.extensions.configuration.3.1.0.nupkg.sha512",
     "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.0/microsoft.extensions.configuration.abstractions.3.1.0.nupkg.sha512",
     "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.configuration.binder/3.1.0/microsoft.extensions.configuration.binder.3.1.0.nupkg.sha512",
@@ -27,6 +34,9 @@
     "/Users/gunelyusubova/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "/Users/gunelyusubova/.nuget/packages/microsoft.net.http.headers/2.2.0/microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "/Users/gunelyusubova/.nuget/packages/system.buffers/4.5.0/system.buffers.4.5.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/system.collections.immutable/1.7.0/system.collections.immutable.1.7.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "/Users/gunelyusubova/.nuget/packages/system.diagnostics.diagnosticsource/4.7.0/system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512",
     "/Users/gunelyusubova/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "/Users/gunelyusubova/.nuget/packages/system.text.encodings.web/4.5.0/system.text.encodings.web.4.5.0.nupkg.sha512"
   ],

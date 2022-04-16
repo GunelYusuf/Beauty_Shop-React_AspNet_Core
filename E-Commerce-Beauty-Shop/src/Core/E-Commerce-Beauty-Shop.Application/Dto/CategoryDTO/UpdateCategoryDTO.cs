@@ -11,7 +11,7 @@ namespace E_Commerce_Beauty_Shop.Application.Dto.CategoryDTO
         public bool IsFeature { get; set; }
         public bool IsDeleted { get; set; }
 
-        [Required]
+        
         public IFormFile File { get; set; }
 
     }

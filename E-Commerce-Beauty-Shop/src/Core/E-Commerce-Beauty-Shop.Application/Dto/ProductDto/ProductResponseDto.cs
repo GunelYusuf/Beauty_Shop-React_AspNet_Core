@@ -20,7 +20,7 @@ namespace E_Commerce_Beauty_Shop.Application.Dto.ProductDto
 
         public bool Availibility { get; set; }
 
-        public Guid CampaignId { get; set; }
+        public Guid? CampaignId { get; set; }
       
         public Guid CategoryId { get; set; }
 

@@ -6,7 +6,7 @@ export const Subscribe = () => {
           <div className='subscribe-form'>
             <div className='subscribe-form__img'>
               <img
-                src='/assets/img/subscribe-img.png'
+                src='/assets/img/subscribe-imgaaaaa.png'
                 className='js-img'
                 alt=''
               />

@@ -1,9 +1,12 @@
 ﻿<Properties StartupConfiguration="{B9D29CC1-7682-4A58-99DB-65DE547695DF}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Core/E-Commerce-Beauty-Shop.Application/Mapping/AutoMapperProfile.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/WebApi/Api/Controllers/UserController.cs">
     <Files>
-      <File FileName="src/WebApi/Api/Controllers/ProductController.cs" Line="185" Column="36" />
-      <File FileName="src/Infrastructure/E-Commerce-Beauty-Shop.Persistence/Repositories/ProductImageRepository.cs" Line="1" Column="1" />
-      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Mapping/AutoMapperProfile.cs" Line="1" Column="1" />
+      <File FileName="src/Core/E-Commerce-Beauty-Shop.Application/Dto/OrderDto/CreateOrderDto.cs" Line="1" Column="1" />
+      <File FileName="src/Core/E-Commerce-Beauty-Shop.Domain/Entities/Comment.cs" />
+      <File FileName="src/Core/E-Commerce-Beauty-Shop.Domain/Entities/Blog.cs" />
+      <File FileName="src/WebApi/Api/Controllers/BlogController.cs" />
+      <File FileName="src/WebApi/Api/Controllers/CommentController.cs" Line="56" Column="32" />
+      <File FileName="src/WebApi/Api/Controllers/UserController.cs" Line="117" Column="64" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,22 +16,18 @@
               <Node name="Core" expanded="True">
                 <Node name="E-Commerce-Beauty-Shop.Application" expanded="True">
                   <Node name="Dto" expanded="True">
-                    <Node name="CategoryDTO" expanded="True" />
+                    <Node name="BlogDto" expanded="True" />
+                    <Node name="CommentDto" expanded="True" />
+                    <Node name="OrderDto" expanded="True" />
                     <Node name="ProductDto" expanded="True" />
-                    <Node name="UserDto" expanded="True" />
                   </Node>
-                  <Node name="Mapping" expanded="True">
-                    <Node name="AutoMapperProfile.cs" selected="True" />
-                  </Node>
-                  <Node name="Repositories" expanded="True">
-                    <Node name="Campaign" expanded="True" />
-                    <Node name="Product" expanded="True" />
-                    <Node name="ProductColor" expanded="True" />
-                    <Node name="ProductTag" expanded="True" />
-                  </Node>
+                  <Node name="Mapping" expanded="True" />
+                  <Node name="Repositories" expanded="True" />
                 </Node>
                 <Node name="E-Commerce-Beauty-Shop.Domain" expanded="True">
-                  <Node name="Entities" expanded="True" />
+                  <Node name="Entities" expanded="True">
+                    <Node name="Order" expanded="True" />
+                  </Node>
                 </Node>
               </Node>
               <Node name="Infrastructure" expanded="True">
@@ -39,8 +38,9 @@
               </Node>
               <Node name="WebApi" expanded="True">
                 <Node name="Api" expanded="True">
-                  <Node name="Controllers" expanded="True" />
-                  <Node name="appsettings.json" expanded="True" />
+                  <Node name="Controllers" expanded="True">
+                    <Node name="UserController.cs" selected="True" />
+                  </Node>
                 </Node>
               </Node>
             </Node>

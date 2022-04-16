@@ -19,6 +19,7 @@ namespace E_Commerce_Beauty_Shop.Domain.Entities
 
         public List<ProductTag> productTags { get; set; }
         public List<ProductColor> productColors { get; set; }
+        public List<Comment> Comments { get; set; }
         public List<ProductPhoto> productPhotos { get; set; }
         
     }

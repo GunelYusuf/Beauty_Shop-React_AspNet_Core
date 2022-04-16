@@ -1,10 +1,36 @@
 import { ProductsCarousel } from 'components/Product/Products/ProductsCarousel';
 import { SectionTitle } from 'components/shared/SectionTitle/SectionTitle';
 import productData from 'data/product/product';
+import {useEffect, useState} from "react";
+import httpAgent from "../../../api/httpAgent";
 
 export const NewArrivals = () => {
-  const newArrival = [...productData].filter(
-    (arrival) => arrival.isNew === true
+  const [allProducts,setAllProducts]=useState([])
+  const [loading, setLoading] =useState(true)
+  useEffect( ()=>{
+
+    const fetchData = async () => {
+
+      try {
+        await httpAgent.Product.getAllProduct().then((response) =>{
+          setAllProducts(response)
+
+          setLoading(false)
+        }).finally(() =>{
+          setLoading(false)
+        })
+
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    fetchData()
+
+  },[])
+
+
+  const newArrival = allProducts.filter(
+    (arrival) => arrival.availibility === true
   );
 
   return (

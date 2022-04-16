@@ -6,6 +6,7 @@ import Slider from 'rc-slider';
 import { useEffect, useState } from 'react';
 import Dropdown from 'react-dropdown';
 import { AsideItem } from '../shared/AsideItem/AsideItem';
+import httpAgent from "../../api/httpAgent";
 import axios from "axios";
 
 
@@ -13,19 +14,29 @@ import axios from "axios";
 
 const { createSliderWithTooltip } = Slider;
 const Range = createSliderWithTooltip(Slider.Range);
-const options = [
-  { value: 'highToMin', label: 'From expensive to cheap' },
-  { value: 'minToHigh', label: 'From cheap to expensive' },
-];
+const options =
+    [
+      { value: 'highToMin', label: 'From expensive to cheap' },
+      { value: 'minToHigh', label: 'From cheap to expensive' },
+    ]
+
 export const Shop = () => {
 
+
   const [data,setData]=useState([])
+  const [loading, setLoading] =useState(true)
   useEffect( ()=>{
 
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://localhost:5001/api/Category");
-        setData(response.data)
+        await httpAgent.Category.getAllCategory().then((response) =>{
+          setData(response)
+
+          setLoading(false)
+        }).finally(() =>{
+          setLoading(false)
+        })
+
       } catch (error) {
         console.log(error)
       }
@@ -33,12 +44,34 @@ export const Shop = () => {
     fetchData()
 
   },[])
-  console.log(data)
-  const allProducts = [...productData];
+
+  const [allProducts,setAllProducts]=useState([])
+
+  useEffect( ()=>{
+
+    const fetchData = async () => {
+
+        try {
+          await httpAgent.Product.getAllProduct().then((response) =>{
+            setAllProducts(response)
+
+            setLoading(false)
+          }).finally(() =>{
+            setLoading(false)
+          })
+
+        } catch (error) {
+          console.log(error)
+        }
+      }
+      fetchData()
+
+  },[])
 
   const [productOrder, setProductOrder] = useState(
     allProducts.sort((a, b) => (a.price < b.price ? 1 : -1))
   );
+
 
   const [products, setProducts] = useState([...productOrder]);
   const [filter, setFilter] = useState({ isNew: false, isSale: true });
@@ -63,20 +96,27 @@ export const Shop = () => {
       setProducts([...productOrder]);
     }
   }, [filter, productOrder]);
-  const recentlyViewed = [...productData].slice(0, 3);
-  const todaysTop = [...productData].slice(3, 6);
-  const paginate = usePagination(products, 9);
+  const recentlyViewed = allProducts.slice(0, 3);
+  const todaysTop = allProducts.slice(3, 6);
+  const paginate = usePagination(productOrder, 9);
 
   const handleSort = (value) => {
+    console.log(value)
     if (value === 'highToMin') {
-      const newOrder = allProducts.sort((a, b) => (a.price < b.price ? 1 : -1));
+      const newOrder = [...allProducts].sort((a, b) => (a.price < b.price));
+      console.log(newOrder)
       setProductOrder(newOrder);
     }
     if (value === 'minToHigh') {
-      const newOrder = allProducts.sort((a, b) => (a.price > b.price ? 1 : -1));
+      const newOrder = [...allProducts].sort((a, b) => (a.price > b.price)).reverse();
+  console.log(newOrder)
       setProductOrder(newOrder);
     }
   };
+
+  useEffect(() => {
+    handleSort("highToMin")
+  }, [allProducts])
 
   return (
     <div>
@@ -178,7 +218,7 @@ export const Shop = () => {
               </div>
 
 
-              <PagingList paginate={paginate} />
+               <PagingList paginate={paginate} />
             </div>
           </div>
         </div>

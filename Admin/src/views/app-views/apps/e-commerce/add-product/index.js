@@ -1,18 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import PageHeaderAlt from 'components/layout-components/PageHeaderAlt'
 import {Tabs, Form, Button, message, Input, Row, Col, Card, Upload, InputNumber, Select, Checkbox} from 'antd';
-import Flex from 'components/shared-components/Flex'
-import { ImageSvg } from 'assets/svg/icon';
-import CustomIcon from 'components/util-components/CustomIcon'
-import { LoadingOutlined } from '@ant-design/icons';
+import Flex from 'components/shared-components/Flex';
 import axios from "axios";
 import {toast, ToastContainer} from "react-toastify";
 import {useHistory} from "react-router-dom";
+import PhotoUpload from "../edit-product/PhotoUpload";
 
 
 const { TabPane } = Tabs;
 
-const { Dragger } = Upload;
+
 const { Option } = Select;
 
 
@@ -43,24 +41,12 @@ const rules = {
 	]
 }
 
-const beforeUpload = file => {
-	const isJpgOrPng = file.type === 'image/jpeg' || file.type === 'image/png';
-	if (!isJpgOrPng) {
-		message.error('You can only upload JPG/PNG file!');
-	}
-	const isLt2M = file.size / 1024 / 1024 < 2;
-	if (!isLt2M) {
-		message.error('Image must smaller than 2MB!');
-	}
-	return isJpgOrPng && isLt2M;
-}
 
 const AddProduct = () => {
 
 	let history = useHistory();
 	const [form] = Form.useForm();
-	// const [uploadedImg, setImage] = useState('')
-	// const [submitLoading, setSubmitLoading] = useState(false)
+
 	const [data,setData]=useState([])
 	const [tag,setTag]=useState([])
 	const [color,setColor]=useState([])
@@ -69,57 +55,8 @@ const AddProduct = () => {
 	const [FileSend, setFileSend] = useState([]);
 
 
-	const propsUpload = {
-		onRemove: (file) => {
-			const index = fileList.indexOf(file);
-			const newFileList = fileList.slice();
-			newFileList.splice(index, 1);
 
-			return setFileList(newFileList)
-		},
-		beforeUpload: (file) => {
-			setFileList([...fileList, file]);
-			return false;
-		},
-		onChange(info) {
-			const listFiles = info.fileList.slice(-3);
-
-			const newArrayFiles  = listFiles.map((file) => file.originFileObj? (file.originFileObj) : file );
-
-			const anAsyncFunction = async (item) => {
-				return convertBase64(item)
-			}
-
-			const getData = async () => {
-				return Promise.all(newArrayFiles.map((item) => anAsyncFunction(item)))
-			}
-			getData().then(data => {
-				setFileSend(data)
-				console.log(data);
-			})
-		},
-		multiple:true,
-		fileList: fileList,
-	};
-	const convertBase64 = (file) => {
-		return new Promise((resolve, reject) => {
-			const fileReader = new FileReader();
-			fileReader.readAsDataURL(file)
-			fileReader.onload = () => {
-				resolve(fileReader?.result);
-			}
-			fileReader.onerror = (error) => {
-				reject(error);
-			}
-		})
-	}
-
-	// const handleUploadChange = e => {
-	// 	setImage(e.target.files[0])
-	// 	console.log(e.file[0])
-	// };
-
-	useEffect( ()=>{
+useEffect( ()=>{
 
 		const fetchTag = async () => {
 			try {
@@ -189,11 +126,8 @@ const AddProduct = () => {
 	const onSubmit = (e) => {
 
 		form.validateFields().then(values => {
-
-
-
-			const formData = new FormData();
-
+            const formData = new FormData();
+	console.log("values", values)
 			formData.append("name",form.getFieldValue("name"))
 			formData.append("description",form.getFieldValue("description"))
 			formData.append("price",form.getFieldValue("price"))
@@ -209,7 +143,7 @@ const AddProduct = () => {
                 formData.append('colorId', newcolorIdList[colorId])
             }
 
-			formData.append("campaignId",form.getFieldValue("campaignId"))
+		    formData.append("campaignId",form.getFieldValue("campaignId"))
 			formData.append("categoryId",form.getFieldValue("categoryId"))
 			for (const key in fileList) {
 				formData.append('files', fileList[key])
@@ -220,7 +154,7 @@ const AddProduct = () => {
 					headers: {'Content-Type': 'multipart/form-data'}
 
 				}).then(()=>{
-					toast.success(`Created ${values.name} to product list`);
+					toast.success(`Created product to adding list`);
 					history.push(`/app/apps/ecommerce/product-list`)
 				}).catch((err)=>{
 
@@ -306,7 +240,7 @@ const AddProduct = () => {
 											<Col xs={24} sm={24} md={12}>
 												<Form.Item name="campaignId" label="Campaigns">
 													<Select mode="campaign" style={{width: '100%'}} placeholder="Campaign">
-														{campaign.map(elm => (<Option value={elm.id} key={elm.id}>{elm.discount}%</Option>))}
+														{!!campaign && campaign.map(elm => (<Option value={elm.id} key={elm.id}>{elm.discount}%</Option>))}
 													</Select>
 												</Form.Item>
 											</Col>
@@ -320,16 +254,14 @@ const AddProduct = () => {
 								</Col>
 								<Col xs={24} sm={24} md={7}>
 									<Card title="Media">
-										<Upload.Dragger
-											{...propsUpload}
-											listType='picture-card'
-											accept='.png,.jpg,.jpeg'
-											maxCount={5}
-										>
-											<Button>
-												Upload
-											</Button>
-										</Upload.Dragger>
+										<Form.Item name='file' >
+											<PhotoUpload
+												setFileList={setFileList}
+												fileList={fileList}
+												FileSend={FileSend}
+												setFileSend={setFileSend}
+											/>
+										</Form.Item>
 									</Card>
 									<Card title="Organization">
 										<Form.Item name="categoryId" label="Category">

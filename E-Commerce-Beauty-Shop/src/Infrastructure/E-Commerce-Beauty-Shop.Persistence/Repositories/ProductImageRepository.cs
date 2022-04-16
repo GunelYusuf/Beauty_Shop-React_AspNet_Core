@@ -49,6 +49,11 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             }
         }
 
+        public IQueryable<ProductPhoto> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<List<ProductPhoto>> GetAllAsync(Expression<Func<ProductPhoto, bool>> filter = null)
         {
             try
@@ -67,6 +72,11 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             throw new NotImplementedException();
         }
 
+        public Task<ProductPhoto> GetById(string Id)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<ProductPhoto> GetSingle(Expression<Func<ProductPhoto, bool>> filter = null)
         {
             try
@@ -80,6 +90,14 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
 
             }
         }
+
+        public IQueryable<ProductPhoto> GetWhere(Expression<Func<ProductPhoto, bool>> filter)
+        {
+            var query = _dbContext.ProductPhotos.Where(filter);
+            return query;
+        }
+
+        public async Task<int> SaveAsync() => await _dbContext.SaveChangesAsync();
 
         public Task<bool> UpdateAsync(ProductPhoto entity)
         {

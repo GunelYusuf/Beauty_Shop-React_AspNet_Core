@@ -2,6 +2,8 @@ import { PromoVideo } from 'components/shared/PromoVideo/PromoVideo';
 import { SectionTitle } from 'components/shared/SectionTitle/SectionTitle';
 import { useState } from 'react';
 import PromoNumberData from 'data/promoNumber/promoNumber';
+import {useEffect} from "react";
+import axios from "axios";
 
 export const AboutPromo = () => {
   const [play, setPlay] = useState(false);
@@ -10,25 +12,41 @@ export const AboutPromo = () => {
   const url = play
     ? 'https://www.youtube.com/embed/K1yp7Q1hH1c'
     : '';
+    const [abouts, setAbouts] = useState(null);
+
+    useEffect(() => {
+        const getAbout = async () => {
+            await axios.get('http://localhost:5000/api/About').then(({data}) => {
+                setAbouts(data)
+            })
+        }
+        getAbout()
+
+    }, []);
+
   return (
     <>
 
       <section className='promo-video'>
         <div className='wrapper'>
           <SectionTitle
-            title='Welcome to BeShope'
-            subTitle='Promotion video'
-            body={`Today we can offer our customers exclusive products of 108 brands marked "only in BeShope"`}
+              title='Welcome to BeShope'
+              subTitle='Promotion video'
+              body={`Today we can offer our customers exclusive products of 108 brands marked "only in BeShope"`}
           />
 
-          <div className='promo-video__block'>
-            <PromoVideo
-              videoUrl={url}
-              play={play}
-              onVideoPlay={() => setPlay(true)}
-              image='/assets/img/promo-video-img.jpg'
-            />
-          </div>
+             <div className='promo-video__block'>
+
+                     <PromoVideo
+                         videoUrl={url}
+                         play={url? play : ""}
+                         onVideoPlay={() => setPlay(true)}
+
+                     />
+                 ))
+
+                </div>
+
 
           <div className='promo-video__nums'>
             {promoNumber.map((promo, index) => (
@@ -41,7 +59,7 @@ export const AboutPromo = () => {
         </div>
         <img
           className='promo-video__decor js-img'
-          src='/assets/img/promo-video__decor.jpg'
+          src=''
           alt=''
         />
       </section>

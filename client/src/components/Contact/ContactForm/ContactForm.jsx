@@ -4,7 +4,7 @@ export const ContactFrom = () => {
 
       <div
         className='discount discount-contacts js-img'
-        style={{ backgroundImage: `url('/assets/img/discount-bg3.jpg')` }}
+        style={{ backgroundImage: `url('/assets/img/about1.png')` }}
       >
         <div className='wrapper'>
           <div className='discount-info'>
@@ -33,7 +33,7 @@ export const ContactFrom = () => {
                 <textarea
                   className='form-control'
                   placeholder='Enter your message'
-                ></textarea>
+                />
               </div>
               <button type='submit' className='btn'>
                 send

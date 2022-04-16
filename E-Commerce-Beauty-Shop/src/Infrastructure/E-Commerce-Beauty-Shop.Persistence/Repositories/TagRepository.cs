@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using E_Commerce_Beauty_Shop.Application.Repositories;
@@ -30,6 +31,11 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             throw new NotImplementedException();
         }
 
+        public IQueryable<Tag> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<List<Tag>> GetAllAsync(Expression<Func<Tag, bool>> filter = null)
         {
             List<Tag> result = new List<Tag>();
@@ -45,10 +51,22 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             throw new NotImplementedException();
         }
 
+        public Task<Tag> GetById(string Id)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<Tag> GetSingle(Expression<Func<Tag, bool>> filter = null)
         {
             throw new NotImplementedException();
         }
+
+        public IQueryable<Tag> GetWhere(Expression<Func<Tag, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<int> SaveAsync() => await _dbContext.SaveChangesAsync();
 
         public Task<bool> UpdateAsync(Tag entity)
         {

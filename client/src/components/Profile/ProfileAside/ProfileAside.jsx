@@ -1,8 +1,34 @@
 import Link from 'next/link';
 import productData from 'data/product/product';
+import {useState,useEffect} from "react";
+
+import httpAgent from "../../../api/httpAgent";
 
 export const ProfileAside = () => {
-  const recentlyViewed = [...productData].slice(0, 3);
+
+  const [allProducts,setAllProducts]=useState([])
+  const [loading, setLoading] =useState(true)
+  useEffect( ()=>{
+
+    const fetchData = async () => {
+
+      try {
+        await httpAgent.Product.getAllProduct().then((response) =>{
+          setAllProducts(response)
+
+          setLoading(false)
+        }).finally(() =>{
+          setLoading(false)
+        })
+
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    fetchData()
+
+  },[])
+  const recentlyViewed = allProducts.slice(0, 3);
   return (
     <>
       <div className='profile-aside'>
@@ -27,14 +53,14 @@ export const ProfileAside = () => {
         <div className='profile-aside__viewed'>
           <h5>You have viewed</h5>
           {recentlyViewed.map((product) => (
-            <div key={product.id} className='profile-aside__viewed-item'>
-              <Link href={`/product/${product.id}`}>
+            <div key={product.productId} className='profile-aside__viewed-item'>
+              <Link href={`/product/${product.productId}`}>
                 <a className='profile-aside__viewed-item-img'>
-                  <img src={product.image} className='js-img' alt='' />
+                  <img src={product.productPhoto[0].photoUrl} className='js-img' alt='' />
                 </a>
               </Link>
               <div className='profile-aside__viewed-item-info'>
-                <Link href={`/product/${product.id}`}>
+                <Link href={`/product/${product.productId}`}>
                   <a className='profile-aside__viewed-item-title'>
                     {product.name}
                   </a>
@@ -48,7 +74,7 @@ export const ProfileAside = () => {
         </div>
         <div
           className='profile-aside__discount js-img'
-          style={{ backgroundImage: `url('/assets/img/discount-bg-sm.jpg')` }}
+          style={{ backgroundImage: `url('/assets/img/about1.png')` }}
         >
           <div className='profile-aside__discount-title'>
             Get Your

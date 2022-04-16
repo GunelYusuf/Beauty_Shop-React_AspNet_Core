@@ -74,26 +74,8 @@ export const CheckoutStep2 = ({ onNext, onPrev }) => {
             </div>
           </div>
         </div>
-        <div
-          className={`checkout-payment__item ${
-            payment === 'paypal' && 'active'
-          }`}
-        >
-          <div className='checkout-payment__item-head'>
-            <label onClick={() => setPayment('paypal')} className='radio-box'>
-              PayPal
-              <input type='radio' checked={payment === 'paypal'} name='radio' />
-              <span className='checkmark'></span>
-              <span className='radio-box__info'>
-                <i className='icon-info'></i>
-                <span className='radio-box__info-content'>
-                  Aliqua nulla id aliqua minim ullamco adipisicing enim. Do sint
-                  nisi velit qui. Ullamco Lorem aliquip dolor nostrud cupidatat
-                  amet.
-                </span>
-              </span>
-            </label>
-          </div>
+
+
           <div className='checkout-payment__item-content'>
             <div className='box-field'>
               <span>Card number</span>
@@ -133,25 +115,7 @@ export const CheckoutStep2 = ({ onNext, onPrev }) => {
               </div>
             </div>
           </div>
-        </div>
-        <div
-          className={`checkout-payment__item ${payment === 'cash' && 'active'}`}
-        >
-          <div className='checkout-payment__item-head'>
-            <label onClick={() => setPayment('cash')} className='radio-box'>
-              Cash payment
-              <input type='radio' checked={payment === 'cash'} name='radio' />
-              <span className='checkmark'></span>
-              <span className='radio-box__info'>
-                <i className='icon-info'></i>
-                <span className='radio-box__info-content'>
-                  Aliqua nulla id aliqua minim ullamco adipisicing enim. Do sint
-                  nisi velit qui. Ullamco Lorem aliquip dolor nostrud cupidatat
-                  amet.
-                </span>
-              </span>
-            </label>
-          </div>
+
           <div className='checkout-payment__item-content'>
             <div className='box-field'>
               <span>Card number</span>
@@ -191,13 +155,13 @@ export const CheckoutStep2 = ({ onNext, onPrev }) => {
               </div>
             </div>
           </div>
-        </div>
+
         <div className='checkout-buttons'>
           <button onClick={onPrev} className='btn btn-grey btn-icon'>
-            <i className='icon-arrow'></i> back
+            <i className='icon-arrow'/> back
           </button>
           <button onClick={onNext} className='btn btn-icon btn-next'>
-            next <i className='icon-arrow'></i>
+            next <i className='icon-arrow'/>
           </button>
         </div>
       </div>

@@ -1,19 +1,33 @@
 import { ProductsCarousel } from 'components/Product/Products/ProductsCarousel';
 import { SectionTitle } from 'components/shared/SectionTitle/SectionTitle';
 import { useEffect, useState } from 'react';
-import productData from 'data/product/product';
+import axios from "axios"
 
 export const Trending = () => {
-  const trendingProducts = [...productData];
-  const [products, setProducts] = useState(trendingProducts);
-  const [filterItem, setFilterItem] = useState('makeup');
+  const [products, setProducts] = useState([]);
+  const [filtered, setFiltered] = useState([])
+  const [filterItem, setFilterItem] = useState('Make Up');
+  const [categories, setCategories] = useState([])
 
   useEffect(() => {
-    const newItems = trendingProducts.filter((pd) =>
-      pd.filterItems.includes(filterItem)
-    );
-    setProducts(newItems);
-  }, [filterItem]);
+    const getCategories = async () => {
+      await axios.get('http://localhost:5000/api/Category').then(({data}) => setCategories(data))
+    }
+
+    getCategories();
+  }, []);
+
+  useEffect(() => {
+    const getProducts = async () => {
+      await axios.get('http://localhost:5000/api/Product').then(({data}) => setProducts(data))
+    }
+
+    getProducts()
+  }, [])
+
+  useEffect(() => {
+console.log(products)
+  }, [products])
 
   const filterList = [
     {
@@ -33,14 +47,21 @@ export const Trending = () => {
       value: 'nail',
     },
     {
-      name: 'Skin care',
+      name: 'Skin',
       value: 'skin',
     },
     {
-      name: 'Hair care',
+      name: 'Hair',
       value: 'hair',
     },
   ];
+
+  useEffect(() => {
+    setFiltered(products.filter(product => {
+      return categories.find(item => item.id === product.categoryId)?.name === filterItem
+    }))
+  }, [filterItem, products])
+
   return (
     <>
 
@@ -56,15 +77,18 @@ export const Trending = () => {
               {filterList.map((item) => (
                 <li
                   key={item.value}
-                  onClick={() => setFilterItem(item.value)}
-                  className={item.value === filterItem ? 'active' : ''}
+                  onClick={() => setFilterItem(item.name)}
+                  className={item.name === filterItem ? 'active' : ''}
                 >
                   {item.name}
                 </li>
               ))}
             </ul>
             <div className='products-items'>
-              <ProductsCarousel products={products} />
+              {
+                products.length > 0 &&
+              <ProductsCarousel products = {filtered} />
+            }
             </div>
           </div>
         </div>

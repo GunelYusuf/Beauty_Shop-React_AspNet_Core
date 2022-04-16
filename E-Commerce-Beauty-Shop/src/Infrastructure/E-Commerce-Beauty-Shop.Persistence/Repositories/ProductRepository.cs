@@ -66,9 +66,27 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
 
         }
 
-        public Task<Product> GetAsync(Expression<Func<Product, bool>> filter = null)
+        public async Task<Product> GetAsync(Expression<Func<Product, bool>> filter = null)
         {
-            throw new NotImplementedException();
+
+            try
+            {
+                var product = await _dbContext.Products
+                    .Include(p => p.Category)
+                    .Include(p => p.Campaign)
+                    .Include(p => p.productPhotos)
+                    .Include(p => p.productColors)
+                    .ThenInclude(p => p.Color)
+                    .Include(p => p.productTags)
+                    .ThenInclude(c => c.Tag)
+                    .FirstOrDefaultAsync(filter);
+                return product;
+            }
+            catch (Exception)
+            {
+                return null;
+
+            }
         }
 
         public async Task<List<Product>> GetAllAsync(Expression<Func<Product, bool>> filter = null)
@@ -138,6 +156,25 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
                 throw;
             }
 
+        }
+
+        public async Task<int> SaveAsync() => await _dbContext.SaveChangesAsync();
+
+        public IQueryable<Product> GetWhere(Expression<Func<Product, bool>> filter)
+        {
+            var query = _dbContext.Products.Where(filter);
+            return query;
+        }
+
+        public async Task<Product> GetById(string Id)
+        {
+            var query =  _dbContext.Products.FirstOrDefault(x => x.Id== Guid.Parse(Id));
+            return query;
+        }
+
+        public IQueryable<Product> GetAll()
+        {
+            throw new NotImplementedException();
         }
     }
 }

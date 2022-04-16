@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using E_Commerce_Beauty_Shop.Application.Repositories;
@@ -30,6 +31,11 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             throw new NotImplementedException();
         }
 
+        public IQueryable<Color> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<List<Color>> GetAllAsync(Expression<Func<Color, bool>> filter = null)
         {
             List<Color> result = new List<Color>();
@@ -45,10 +51,22 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             throw new NotImplementedException();
         }
 
+        public Task<Color> GetById(string Id)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<Color> GetSingle(Expression<Func<Color, bool>> filter = null)
         {
             throw new NotImplementedException();
         }
+
+        public IQueryable<Color> GetWhere(Expression<Func<Color, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<int> SaveAsync() => await _dbContext.SaveChangesAsync();
 
         public Task<bool> UpdateAsync(Color entity)
         {

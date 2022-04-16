@@ -22,6 +22,15 @@
 	"sidenav.apps.ecommerce.categoryList": "Category List",
 	"sidenav.apps.ecommerce.addCategory": "Add Category",
 	"sidenav.apps.ecommerce.editCategory": "Edit Category",
+	"sidenav.apps.ecommerce.blogList": "Blog List",
+	"sidenav.apps.ecommerce.addBlog": "Add Blog",
+	"sidenav.apps.ecommerce.editBlog": "Edit Blog",
+	"sidenav.apps.ecommerce.blockList": "Block List",
+	"sidenav.apps.ecommerce.addBlock": "Add Block",
+	"sidenav.apps.ecommerce.editBlock": "Edit Block",
+	"sidenav.apps.ecommerce.aboutList": "About List",
+	"sidenav.apps.ecommerce.addAbout": "Add About",
+	"sidenav.apps.ecommerce.editAbout": "Edit About",
 
 
 	"sidenav.components": "Components",

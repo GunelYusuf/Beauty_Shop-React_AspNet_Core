@@ -32,15 +32,38 @@ namespace Api
     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
 );
             services.AddPersistenceInfrastructure(Configuration);
-            
-            services.AddSwaggerGen(c =>
+
+            services.AddSwaggerGen(swagger =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo
+                swagger.SwaggerDoc("v1", new OpenApiInfo { Title = "Api" });
+                swagger.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
                 {
-                    Version = "v1",
-                    Title = "LMS API",
-                    Description = "API for a Learning Management System"
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer",
+                    BearerFormat = "JWT",
+                    In = ParameterLocation.Header,
+                    Description = "JWT Authorization header using the Bearer scheme. \r\n\r\n Enter 'Bearer' [space] and then your token in the text input below.\r\n\r\nExample: \"Bearer 12345abcdef\"",
                 });
+
+                swagger.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                },
+                Scheme = "oauth2",
+                Name = "Bearer",
+                In = ParameterLocation.Header
+            },
+            new List<string>()
+        }
+    });
+
             });
         }
 
@@ -53,9 +76,9 @@ namespace Api
             }
 
             app.UseHsts();
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
-            app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000","http://localhost:3001"));
+            app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithOrigins("http://localhost:3000","http://localhost:3001"));
             app.UseSwagger();
 
             app.UseSwaggerUI(c =>

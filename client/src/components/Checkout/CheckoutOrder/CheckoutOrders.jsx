@@ -1,27 +1,48 @@
-import productData from 'data/product/product';
-import { CartContext } from 'pages/_app';
-import { useContext } from 'react';
 import { Card } from './Card/Card';
+import {useAppDispatch, useAppSelector} from "../../../store/ConfigureStore";
+import {useEffect, useState} from "react";
+import {fetchCurrentUser} from "../../Profile/AccountSlice";
+import httpAgent from "../../../api/httpAgent";
+import {setBasket} from "../../Cart/CartSlice";
 
 export const CheckoutOrders = () => {
-  const { cart } = useContext(CartContext);
-  const total = cart.reduce(
-    (total, item) => total + Number(item.price) * Number(item.quantity),
-    0
-  );
 
+  const {basket} = useAppSelector(state => state.basket);
+  const [loading,setLoading] = useState(true);
+  const dispatch = useAppDispatch();
+  useEffect( ()=>{
+    dispatch(fetchCurrentUser())
+  },[dispatch])
+
+  function getCookie(key) {
+    const b = document.cookie.match("(^|;)\\s*" + key + "\\s*=\\s*([^;]+)");
+    return b ? b.pop() : "";
+  }
+
+  useEffect(()=>{
+    const buyerId = getCookie('buyerId');
+    if (buyerId){
+      httpAgent.Basket.getBaskets()
+          .then(basket => dispatch(setBasket(basket)))
+          .catch(error => console.log(error))
+          .finally(()=>setLoading(false))
+    }else {
+      setLoading(false)
+    }
+  },[dispatch])
+  const subtotal = basket?.items?.reduce((sum,item)=>sum + (item.quantity * item.price),0) ?? 0;
   return (
     <>
       <div className='checkout-order'>
         <h5>Your Order</h5>
-        {cart.map((order) => (
+        {basket?.items?.map((order) => (
           <Card key={order.id} order={order} />
         ))}
       </div>
       <div className='cart-bottom__total'>
         <div className='cart-bottom__total-goods'>
           Goods on
-          <span>${total.toFixed(2)}</span>
+          <span>${subtotal}</span>
         </div>
         <div className='cart-bottom__total-promo'>
           Discount on promo code
@@ -36,7 +57,7 @@ export const CheckoutOrders = () => {
         </div>
         <div className='cart-bottom__total-num'>
           total:
-          <span>${(total + 30).toFixed(2)}</span>
+          {subtotal+30}
         </div>
       </div>
     </>

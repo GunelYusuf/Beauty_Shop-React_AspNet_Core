@@ -1,4 +1,4 @@
-import React,{ useState, useEffect } from 'react';
+import React,{ useState } from 'react';
 import PageHeaderAlt from 'components/layout-components/PageHeaderAlt'
 import {Tabs, Form, Button, message, Row, Col, Card, Input, Upload, Checkbox} from 'antd';
 import Flex from 'components/shared-components/Flex'
@@ -43,14 +43,9 @@ const AddCategory = () => {
 
     let history = useHistory();
     const [form] = Form.useForm();
-    const [uploadedImg, setImage] = useState('')
-    const [uploadLoading, setUploadLoading] = useState(false)
     const [submitLoading, setSubmitLoading] = useState(false)
 
-    const handleUploadChange = e => {
-        setImage(e.target.files[0])
-        console.log(e.file[0])
-    };
+
 
     const onSubmit = (e) => {
         setSubmitLoading(true)
@@ -87,7 +82,9 @@ const AddCategory = () => {
             message.error('Please enter all required field ');
         });
     };
-    return (
+
+
+ return (
         <>
         <ToastContainer/>
     <Form

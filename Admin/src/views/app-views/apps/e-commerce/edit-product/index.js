@@ -1,56 +1,95 @@
 import React, { useState, useEffect } from 'react'
 import PageHeaderAlt from 'components/layout-components/PageHeaderAlt'
-import { Tabs, Form, Button, message,Input, Row, Col, Card, Upload, InputNumber, Select} from 'antd';
+import {Tabs, Form, Button, message, Input, Row, Col, Card, InputNumber, Select, Checkbox} from 'antd';
 import Flex from 'components/shared-components/Flex'
-import { ImageSvg } from 'assets/svg/icon';
-import CustomIcon from 'components/util-components/CustomIcon'
-import { LoadingOutlined } from '@ant-design/icons';
+import { toast,ToastContainer} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
+import {useHistory, useParams} from "react-router-dom";
+import PhotoUpload from "./PhotoUpload";
 
 
 const { TabPane } = Tabs;
-
-const { Dragger } = Upload;
 const { Option } = Select;
 
-const getBase64 = (img, callback) => {
-	const reader = new FileReader();
-	reader.addEventListener('load', () => callback(reader.result));
-	reader.readAsDataURL(img);
-}
+
+
 const EditProduct = () => {
 
+	const param = useParams();
+
+	let history = useHistory();
 	const [form] = Form.useForm();
-	const [uploadedImg, setImage] = useState('')
-	const [uploadLoading, setUploadLoading] = useState(false)
+
 	const [submitLoading, setSubmitLoading] = useState(false)
-
-	const handleUploadChange = info => {
-		if (info.file.status === 'uploading') {
-			setUploadLoading(true)
-			return;
-		}
-		if (info.file.status === 'done') {
-			getBase64(info.file.originFileObj, imageUrl =>{
-				setImage(imageUrl)
-				setUploadLoading(true)
-			});
-		}
-	};
-
-	useEffect(() => {
+	const [list,setList]=useState([])
+    const [data,setData]=useState([])
+	const [tag,setTag]=useState([])
+	const [color,setColor]=useState([])
+	const [campaign,setCampaign]=useState([])
 
 
+	const [fileList, setFileList] = useState([]);
+	const [FileSend, setFileSend] = useState([]);
+	const [currentPhoto, setCurrentPhoto] = useState([])
+	const [deletedPhoto, setDeletedPhoto] = useState([])
 
-
-	}, [form]);
-
-
-	const [data,setData]=useState([])
+	const DeletedPhotos = (id) => {
+		setCurrentPhoto(currentPhoto.filter(item => item.id !== id))
+		setDeletedPhoto([...deletedPhoto,...currentPhoto.filter(item => item.id===id)])
+	}
 
 	useEffect( ()=>{
 
-		const fetchData = async () => {
+		const fetchTag = async () => {
+			try {
+				const response = await axios.get("https://localhost:5001/api/Product/GetAllTags");
+				setTag(response.data)
+			} catch (error) {
+				console.log(error)
+			}
+		}
+		fetchTag()
+
+	},[])
+
+
+	useEffect( ()=>{
+
+		const fetchColor = async () => {
+			try {
+				const response = await axios.get("https://localhost:5001/api/Product/GetAllColors");
+				setColor(response.data)
+			} catch (error) {
+				console.log(error)
+			}
+		}
+		fetchColor()
+
+	},[])
+
+
+	useEffect( ()=>{
+
+		const fetchCampaign = async () => {
+			try {
+				const response = await axios.get("https://localhost:5001/api/Product/GetAllCampaigns");
+				setCampaign(response.data)
+
+
+			} catch (error) {
+				console.log(error)
+			}
+		}
+		fetchCampaign()
+
+	},[])
+
+
+
+	useEffect( ()=>{
+
+		const fetchCategories = async () => {
 			try {
 				const response = await axios.get("https://localhost:5001/api/Category");
 				setData(response.data)
@@ -58,22 +97,96 @@ const EditProduct = () => {
 				console.log(error)
 			}
 		}
-		fetchData()
+		fetchCategories()
 
 	},[])
-	console.log(data)
 
 
-	const onFinish = () => {
+	const fetchData = async (id) => {
+		try {
+			const response = await axios.get(`https://localhost:5001/api/Product/${id}`);
+			setCurrentPhoto(response.data.productPhoto)
+            setList(response.data)
+			form.setFieldsValue({
+				tagId: response.data.productTags.map(item => item && item.id),
+				name:response.data.name,
+				campaignId: response.data.campaignId,
+				description:response.data.description,
+				price:response.data.price,
+				categoryId:response.data.categoryId,
+				productCode:response.data.productCode,
+				quantity:response.data.quantity,
+				availibility:response.data.availibility,
+				colorId:response.data.productColor.map(item => item && item.id)}
+			)
+
+		} catch (error) {
+			console.log(error)
+		}
+	}
+
+
+	useEffect(() => {
+
+		 fetchData(param.id)
+
+	}, [form]);
+
+
+
+
+
+ const onSubmit = (e) => {
 
 		setSubmitLoading(true)
 		form.validateFields().then(values => {
-			setTimeout(() => {
-				setSubmitLoading(false)
 
-					message.success(`Product saved`);
+			setSubmitLoading(false)
+			const formData = new FormData();
+			formData.append("id",form.getFieldValue("id"))
+			formData.append("name",form.getFieldValue("name"))
+			formData.append("description",form.getFieldValue('description'))
+			formData.append("price",form.getFieldValue('price'))
+			formData.append("quantity",form.getFieldValue('quantity'))
+			formData.append("productCode",form.getFieldValue('productCode'))
+			formData.append("availibility",form.getFieldValue('availibility'))
+			formData.append("categoryId",form.getFieldValue('categoryId'))
+            formData.append("campaignId",form.getFieldValue("campaignId"))
+			const newtagIdList = form.getFieldValue('tagId')
 
-			}, 1500);
+			for (const i in newtagIdList) {
+				formData.append('tagId', newtagIdList[i])
+			}
+			const newcolorIdList = form.getFieldValue("colorId")
+            for (const i in newcolorIdList) {
+				formData.append('colorId', newcolorIdList[i])
+
+			}
+
+			deletedPhoto.map((item) => {
+				formData.append("deletedPhotoId",item.id)
+			})
+			for (const key in fileList) {
+				formData.append('files', fileList[key])
+			}
+
+            const updateProduct = async () =>{
+				await axios.put(`https://localhost:5001/api/Product/`,formData,{
+					headers: {'Content-Type': 'multipart/form-data'}
+
+				}).then(() =>{
+					toast.success(`Saved ${values.name} to product list`);
+					history.push(`/app/apps/ecommerce/product-list`)
+				}).catch((err)=>{
+
+					console.log(err.data)
+					toast.error(`${err.message} `)
+				})
+
+			}
+			updateProduct()
+
+
 		}).catch(info => {
 			setSubmitLoading(false)
 			console.log('info', info)
@@ -81,89 +194,22 @@ const EditProduct = () => {
 		});
 	};
 
-
-
-
-
-
-	const rules = {
-		name: [
-			{
-				required: true,
-				message: 'Please enter product name',
-			}
-		],
-		description: [
-			{
-				required: true,
-				message: 'Please enter product description',
-			}
-		],
-		price: [
-			{
-				required: true,
-				message: 'Please enter product price',
-			}
-		],
-		comparePrice: [
-		],
-		taxRate: [
-			{
-				required: true,
-				message: 'Please enter tax rate',
-			}
-		],
-		cost: [
-			{
-				required: true,
-				message: 'Please enter item cost',
-			}
-		]
-	}
-
-	const imageUploadProps = {
-		name: 'file',
-		multiple: true,
-		listType: "picture-card",
-		showUploadList: false,
-		action: 'https://www.mocky.io/v2/5cc8019d300000980a055e76'
-	}
-
-	const beforeUpload = file => {
-		const isJpgOrPng = file.type === 'image/jpeg' || file.type === 'image/png';
-		if (!isJpgOrPng) {
-			message.error('You can only upload JPG/PNG file!');
-		}
-		const isLt2M = file.size / 1024 / 1024 < 2;
-		if (!isLt2M) {
-			message.error('Image must smaller than 2MB!');
-		}
-		return isJpgOrPng && isLt2M;
-	}
-
-
-	const tags = ['Cotton', 'Nike', 'Sales', 'Sports', 'Outdoor', 'Toys', 'Hobbies' ]
 	return (
 		<>
 			<Form
 				layout="vertical"
 				form={form}
-				name="advanced_search"
-				className="ant-advanced-search-form"
-				initialValues={{
-					heightUnit: 'cm',
-					widthUnit: 'cm',
-					weightUnit: 'kg'
-				}}
+				onFinish={onSubmit}
+				list={list}
 			>
 				<PageHeaderAlt className="border-bottom" overlap>
 					<div className="container">
 						<Flex className="py-2" mobileFlex={false} justifyContent="between" alignItems="center">
-							<h2 className="mb-3">Add New Product</h2>
+							<h2 className="mb-3">Edit Product</h2>
 							<div className="mb-3">
 								<Button className="mr-2">Discard</Button>
-								<Button type="primary" onClick={() => onFinish()} htmlType="submit" loading={submitLoading} >
-									Add
+								<Button type="primary" htmlType="submit" loading={submitLoading} >
+									Save
 								</Button>
 							</div>
 						</Flex>
@@ -175,53 +221,78 @@ const EditProduct = () => {
 							<Row gutter={16}>
 
 								<Col xs={24} sm={24} md={17}>
+									<Form.Item name="id" initialValue={param.id}>
+										<Input type="hidden"/>
+									</Form.Item>
 									<Card title="Basic Info">
-										<Form.Item name="name" label="Product name" rules={rules.name}>
-											<Input placeholder="Product Name"/>
-										</Form.Item>
-										<Form.Item name="description" label="Description" rules={rules.description}>
-											<Input.TextArea rows={4}/>
-										</Form.Item>
+										{list.name!==undefined?
+											<Form.Item name="name" label="Product name" initialValue={list.name}>
+												<Input  style={{width: "400px"}} placeholder="Product Name" onChange={(e) =>{setList({...list,name:e.target.value})}} />
+											</Form.Item>: null
+										}
+										{list.description!==undefined?
+											<Form.Item name="description" initialValue={list.description} label="Description">
+												<Input.TextArea rows={4} onChange={(e) =>{setList({...list,description:e.target.value})}} />
+											</Form.Item>: null
+										}
+
 									</Card>
 									<Card title="Pricing">
 										<Row gutter={16}>
 											<Col xs={24} sm={24} md={12}>
-												<Form.Item name="price" label="Price" rules={rules.price}>
-													<InputNumber
-														className="w-100"
-														formatter={value => `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
-														parser={value => value.replace(/\$\s?|(,*)/g, '')}
-													/>
-												</Form.Item>
+												{list.price !== undefined ?
+													<Form.Item name="price" label="Price">
+                                                        <InputNumber
+															className="w-100"
+															initialValue={list.price}
+															formatter={value => `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+															parser={value => value.replace(/\$\s?|(,*)/g, '')}
+
+														/>
+													</Form.Item>:null
+												}
 											</Col>
 											<Col xs={24} sm={24} md={12}>
-												<Form.Item name="comparePrice" label="Compare price" rules={rules.comparePrice}>
+												{list.quantity !== undefined ?
+												<Form.Item name="quantity" label="Quantity" >
 													<InputNumber
 														className="w-100"
-														value={0}
-														formatter={value => `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+														initialValue={list.quantity}
+														formatter={value => ` ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
 														parser={value => value.replace(/\$\s?|(,*)/g, '')}
+
 													/>
-												</Form.Item>
+												</Form.Item>:null
+												}
 											</Col>
 											<Col xs={24} sm={24} md={12}>
-												<Form.Item name="cost" label="Cost per item" rules={rules.cost}>
-													<InputNumber
+												{list.productCode !== undefined ?
+												<Form.Item name="productCode" label="Product Code">
+													<Input
+														initialValue={list.productCode}
 														className="w-100"
-														formatter={value => `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
-														parser={value => value.replace(/\$\s?|(,*)/g, '')}
+														placeholder="Product Code"
+														onChange={(e) => {
+															setList({...list, productCode: e.target.value})
+														}}
 													/>
-												</Form.Item>
+												</Form.Item>:null}
 											</Col>
 											<Col xs={24} sm={24} md={12}>
-												<Form.Item name="taxRate" label="Tax rate" rules={rules.taxRate}>
-													<InputNumber
-														className="w-100"
-														min={0}
-														max={100}
-														formatter={value => `${value}%`}
-														parser={value => value.replace('%', '')}
-													/>
+												{list.campaignId  !== undefined && campaign.length>0 ?
+													<Form.Item name="campaignId" label="Campaigns" >
+														<Select mode="campaign" style={{width: '100%'}} placeholder="Campaign" defaultValue={campaign?.find(item => item.id === list.campaignId).discount +"%"} onSelect={(value,event) => {
+															setList({...list, campaignId:value})
+														}} >
+															{campaign.map(elm => (<Option value={elm.id} key={elm.id}>{elm.discount}%</Option>))}
+														</Select>
+													</Form.Item>:null
+												}
+
+											</Col>
+											<Col xs={24} sm={24} md={12}>
+												<Form.Item valuePropName="checked" name="availibility" initialValue={list.availibility}>
+													<Checkbox  onChange={(e) =>{setList({...list,availibility:e.target.checked})}} checked={list.availibility}>Availibility</Checkbox>
 												</Form.Item>
 											</Col>
 										</Row>
@@ -229,44 +300,60 @@ const EditProduct = () => {
 								</Col>
 								<Col xs={24} sm={24} md={7}>
 									<Card title="Media">
-										<Dragger {...imageUploadProps} beforeUpload={beforeUpload}
-												 onChange={e => handleUploadChange(e)}>
-											{
-												uploadedImg ?
-													<img src={uploadedImg} alt="avatar" className="img-fluid"/>
-													:
-													<div>
-														{
-															uploadLoading ?
-																<div>
-																	<LoadingOutlined className="font-size-xxl text-primary"/>
-																	<div className="mt-3">Uploading</div>
-																</div>
-																:
-																<div>
-																	<CustomIcon className="display-3" svg={ImageSvg}/>
-																	<p>Click or drag file to upload</p>
-																</div>
-														}
-													</div>
-											}
-										</Dragger>
+										<Form.Item name='file' >
+                                             <PhotoUpload
+												 setFileList={setFileList}
+												 fileList={fileList}
+												 FileSend={FileSend}
+												 setFileSend={setFileSend}
+												 currentPhoto={currentPhoto}
+												 DeletedPhotos={DeletedPhotos}
+											 />
+										</Form.Item>
 									</Card>
 									<Card title="Organization">
-										<Form.Item name="category" label="Category">
-											<Select className="w-100" placeholder="Category">
-												{
-													data.map(elm => (
-														<Option value={elm.id} key={elm.id}>{elm.name}</Option>
-													))
+										{list.categoryId !== undefined && data.length > 0 ?
+											<Form.Item name="categoryId" label="Categories" >
+												<Select  style={{width: '100%'}} placeholder="Category" defaultValue={data?.find(item => item.id === list.categoryId).name} onSelect={(value,event) => {
+													setList({...list, categoryId:value})
+												}} >
+													{data?.map(elm => (<Option value={elm.id} key={elm.id}>{elm.name}</Option>))}
+												</Select>
+											</Form.Item>:null
+										}
+
+										<Form.Item name="tagId" label="Tags">
+											{list.productTags !== undefined ?
+												<Select mode="tags" options={
+													tag.map((item) =>{
+															return {id:item.id,value:item.id,label:item.name}
+
+														}
+													)
 												}
-											</Select>
+														style={{width: '100%'}}
+														placeholder="Tags"
+														defaultValue={list.productTags.map((item) =>item.id)}
+												/> :null
+											}
+
 										</Form.Item>
-										<Form.Item name="tags" label="Tags">
-											<Select mode="tags" style={{width: '100%'}} placeholder="Tags">
-												{tags.map(elm => <Option key={elm}>{elm}</Option>)}
-											</Select>
+										<Form.Item name="colorId" label="Colors">
+											{list.productColor !== undefined ?
+												<Select mode="tags" options={
+													color.map((item) =>{
+															return {id:item.id,value:item.id,label:item.name}
+
+														}
+													)
+												}
+														style={{width: '100%'}}
+														placeholder="Colors"
+														defaultValue={list.productColor.map((item) =>item.id)}
+												/>  :null
+											}
 										</Form.Item>
+
 									</Card>
 
 								</Col>

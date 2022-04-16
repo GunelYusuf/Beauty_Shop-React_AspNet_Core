@@ -5,6 +5,12 @@
         <RootNamespace>E_Commerce_Beauty_Shop.Application</RootNamespace>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+      <LangVersion>9.0</LangVersion>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+      <LangVersion>9.0</LangVersion>
+    </PropertyGroup>
     <ItemGroup>
       <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
       <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
@@ -22,6 +28,18 @@
       <None Remove="Repositories\ProductColor\" />
       <None Remove="Repositories\ProductTag\" />
       <None Remove="Repositories\Campaign\" />
+      <None Remove="Dto\BlogDto\" />
+      <None Remove="Repositories\Blog\" />
+      <None Remove="Repositories\BlogTag\" />
+      <None Remove="Repositories\Basket\" />
+      <None Remove="Dto\Basket\" />
+      <None Remove="Repositories\About\" />
+      <None Remove="Repositories\AboutBlock\" />
+      <None Remove="Dto\AboutDto\" />
+      <None Remove="Dto\BlockDto\" />
+      <None Remove="Repositories\Order\" />
+      <None Remove="Dto\OrderDto\" />
+      <None Remove="Dto\CommentDto\" />
     </ItemGroup>
     <ItemGroup>
       <Folder Include="Repositories\" />
@@ -30,5 +48,17 @@
       <Folder Include="Repositories\ProductColor\" />
       <Folder Include="Repositories\ProductTag\" />
       <Folder Include="Repositories\Campaign\" />
+      <Folder Include="Dto\BlogDto\" />
+      <Folder Include="Repositories\Blog\" />
+      <Folder Include="Repositories\BlogTag\" />
+      <Folder Include="Repositories\Basket\" />
+      <Folder Include="Dto\BasketDto\" />
+      <Folder Include="Repositories\About\" />
+      <Folder Include="Repositories\AboutBlock\" />
+      <Folder Include="Dto\AboutDto\" />
+      <Folder Include="Dto\BlockDto\" />
+      <Folder Include="Repositories\Order\" />
+      <Folder Include="Dto\OrderDto\" />
+      <Folder Include="Dto\CommentDto\" />
     </ItemGroup>
 </Project>

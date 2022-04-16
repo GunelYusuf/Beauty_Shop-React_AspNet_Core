@@ -1,39 +1,33 @@
 import { CartContext } from 'pages/_app';
 import {useContext, useEffect, useState} from 'react';
-import { SingleProduct } from './SingleProduct/SingleProduct';
 import axios from "axios";
+import httpAgent from "../../../api/httpAgent";
+import {useAppDispatch} from "../../../store/ConfigureStore";
+import {addBasketItemAsync} from "../../Cart/CartSlice";
+import {SingleProduct} from "./SingleProduct/SingleProduct.jsx";
 
 export const Products = ({ products }) => {
+
+  const dispatch = useAppDispatch();
+
+
   const { cart, setCart } = useContext(CartContext);
 
   const handleAddToCart = (product) => {
-    let newCart = [...cart, { ...product, cartQuantity: 1 }]
+    dispatch(addBasketItemAsync({productId:product.id}))
+    let newCart = [...cart, { ...product, cartQuantity: 1, uid: generateNumber() }]
     setCart(newCart);
-    addToLocalStorage(newCart)
   };
 
-  const addToLocalStorage = (newCart) => {
-    localStorage.setItem("cartItems", JSON.stringify(newCart))
+  const generateNumber = () => {
+    let randomNum = "";
+    for(let i =0; i < 16;i++) randomNum += Math.floor(Math.random() *10)
+    return randomNum;
   }
-// browser
 
-  const [data,setData]=useState([])
-  useEffect( ()=>{
-
-    const fetchData = async () => {
-      try {
-        const response = await axios.get("https://localhost:5001/api/Product");
-        setData(response.data)
-      } catch (error) {
-        console.log(error)
-      }
-    }
-    fetchData()
-
-  },[])
   return (
       <>
-        {data.map((product) => (
+        {products.map((product) => (
             <SingleProduct
                 addedInCart={Boolean(cart?.find((pd) => pd.id === product.id))}
                 key={product.id}

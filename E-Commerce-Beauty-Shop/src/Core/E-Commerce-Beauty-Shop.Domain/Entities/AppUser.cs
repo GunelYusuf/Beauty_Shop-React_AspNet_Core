@@ -4,10 +4,9 @@ using Microsoft.AspNetCore.Identity;
 
 namespace E_Commerce_Beauty_Shop.Domain.Entities
 {
-    public class AppUser:IdentityUser
+    public class AppUser:IdentityUser<Guid>
     {
-        public string? Name { get; set; }
-        public string? Surname { get; set;}
+        public UserAddress Address { get; set; }
 
         public DateTime? DateOfBirth { get; set; }
 

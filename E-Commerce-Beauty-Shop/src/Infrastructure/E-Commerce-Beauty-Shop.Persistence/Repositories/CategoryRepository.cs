@@ -53,8 +53,12 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
                 return Task.FromResult(false);
             }
         }
-        
-       
+
+        public IQueryable<Category> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<List<Category>> GetAllAsync(Expression<Func<Category, bool>> filter = null)
         {
             List<Category> result = new List<Category>();
@@ -80,17 +84,29 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             }
         }
 
+        public Task<Category> GetById(string Id)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<Category> GetSingle(Expression<Func<Category, bool>> filter = null)
         {
             throw new NotImplementedException();
         }
+
+        public IQueryable<Category> GetWhere(Expression<Func<Category, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<int> SaveAsync() => await _dbContext.SaveChangesAsync();
+
 
         public async Task<bool> UpdateAsync(Category entity)
         {
             try
             {
                 Category category = await GetAsync(c => c.Id == entity.Id);
-
                 category.Id=entity.Id;
                 category.Name=entity.Name;
                 category.IsFeature=entity.IsFeature;

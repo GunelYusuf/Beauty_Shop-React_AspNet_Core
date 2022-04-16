@@ -11,25 +11,22 @@ import axios from "axios";
 export const ProductsCarousel = ({ products }) => {
     const { cart, setCart } = useContext(CartContext);
 
-    const handleAddToCart = (id) => {
-        const newProduct = products?.find((pd) => pd.id === id);
-        setCart([...cart, { ...newProduct, quantity: 1 }]);
+    const handleAddToCart = (product) => {
+        let newCart = [...cart, { ...product, cartQuantity: 1, uid: generateNumber() }]
+        setCart(newCart);
     };
 
+    const generateNumber = () => {
+        let randomNum = "";
+        for(let i =0; i < 16;i++) randomNum += Math.floor(Math.random() *10)
+        return randomNum;
+    }
     const [data,setData]=useState([])
-    useEffect( ()=>{
 
-        const fetchData = async () => {
-            try {
-                const response = await axios.get("https://localhost:5001/api/Product");
-                setData(response.data)
-            } catch (error) {
-                console.log(error)
-            }
-        }
-        fetchData()
+    useEffect(() => {
+        setData(products)
+    }, [products])
 
-    },[])
 
     const settings = {
         dots: false,
@@ -69,13 +66,13 @@ export const ProductsCarousel = ({ products }) => {
     return (
         <>
             <Slider {...settings}>
-                {data.map((product) => (
+                {data.length > 0 && data.map((product) => (
                     <SingleProduct
                         addedInCart={Boolean(cart?.find((pd) => pd.id === product.id))}
                         key={product.id}
                         product={product}
                         onAddToWish={(id) => console.log(id)}
-                        onAddToCart={handleAddToCart}
+                        onAddToCart={() => handleAddToCart(product)}
                     />
                 ))}
             </Slider>

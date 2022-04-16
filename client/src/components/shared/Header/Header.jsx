@@ -4,9 +4,40 @@ import { useContext, useEffect, useState } from 'react';
 import { Nav } from './Nav/Nav';
 import { navItem } from 'data/data.header';
 import { CartContext } from 'pages/_app';
+import {useAppDispatch, useAppSelector} from "../../../store/ConfigureStore";
+import {fetchCurrentUser, signOut} from "../../Profile/AccountSlice";
+import httpAgent from "../../../api/httpAgent";
+import {setBasket} from "../../Cart/CartSlice";
+
 
 export const Header = () => {
-  const { cart } = useContext(CartContext);
+
+  const dispatch = useAppDispatch();
+  const {user} = useAppSelector(state => state.account)
+  const {basket} = useAppSelector(state => state.basket)
+  const [loading,setLoading] = useState(true);
+
+  useEffect( ()=>{
+    dispatch(fetchCurrentUser())
+  },[dispatch])
+
+  function getCookie(key) {
+    const b = document.cookie.match("(^|;)\\s*" + key + "\\s*=\\s*([^;]+)");
+    return b ? b.pop() : "";
+  }
+
+  useEffect(()=>{
+    const buyerId = getCookie('buyerId');
+    if (buyerId){
+      httpAgent.Basket.getBaskets()
+          .then(basket => dispatch(setBasket(basket)))
+          .catch(error => console.log(error))
+          .finally(()=>setLoading(false))
+    }else {
+      setLoading(false)
+    }
+  },[dispatch])
+
   const [promo, setPromo] = useState(true);
   const [fixedNav, setFixedNav] = useState(false);
 
@@ -17,6 +48,10 @@ export const Header = () => {
       window.removeEventListener('scroll', isSticky);
     };
   });
+
+  useEffect(() => {
+    console.log("VVV",basket)
+  }, [basket])
 
   const isSticky = () => {
     const scrollTop = window.scrollY;
@@ -32,7 +67,7 @@ export const Header = () => {
       <header className='header'>
         {promo && (
           <div className='header-top'>
-            <span>30% OFF ON ALL PRODUCTS ENTER CODE: beshop2020</span>
+
             <i
               onClick={() => setPromo(false)}
               className='header-top-close js-header-top-close icon-close'
@@ -59,6 +94,16 @@ export const Header = () => {
                   </a>
                 </Link>
               </li>
+
+              <li>
+                {user?
+                    <Link href="#"  >
+                      <a onClick={()=>dispatch(signOut())}>
+                       Log Out
+                      </a>
+                    </Link>
+                : null}
+              </li>
               <li>
                 <Link href='/profile'>
                   <a>
@@ -77,7 +122,8 @@ export const Header = () => {
                 <Link href='/cart'>
                   <a>
                     <i className='icon-cart'/>
-                    <span>{cart.length ?? '0'}</span>
+                    {basket && basket.items?.length > 0 ?
+                   <span> {basket.items?.length}</span> : ""}
                   </a>
                 </Link>
               </li>

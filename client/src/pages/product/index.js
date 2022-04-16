@@ -19,7 +19,7 @@ const breadcrumbsData = [
 ];
 const ProductPage = () => {
   return (
-    <PublicLayout breadcrumb={breadcrumbsData} breadcrumbTitle='Shop'>
+    <PublicLayout breadcru mb={breadcrumbsData} breadcrumbTitle='Shop'>
       <ProductDetails />
       <MostViewed />
     </PublicLayout>
@@ -27,3 +27,5 @@ const ProductPage = () => {
 };
 
 export default ProductPage;
+
+

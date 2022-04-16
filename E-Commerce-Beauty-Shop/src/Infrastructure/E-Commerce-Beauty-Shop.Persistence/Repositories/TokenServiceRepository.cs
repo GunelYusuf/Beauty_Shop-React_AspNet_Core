@@ -29,7 +29,7 @@ namespace E_Commerce_Beauty_Shop.Persistence.Repositories
             var claims = new List<Claim>
             {
               new Claim (ClaimTypes.Email,user.Email),
-              new Claim (ClaimTypes.Sid,user.Id)
+              new Claim (ClaimTypes.Sid,user.Id.ToString())
 
             };
 

@@ -11,14 +11,17 @@ import {
 	showAuthMessage, 
 	hideAuthMessage, 
 	signInWithGoogle, 
-	signInWithFacebook 
+	signInWithFacebook ,
+	authenticated
 } from 'redux/actions/Auth';
 import { useHistory } from "react-router-dom";
 import { motion } from "framer-motion"
 import axios from "axios";
+import jwt_decode from 'jwt-decode'
 
 export const LoginForm = props => {
 	let history = useHistory();
+
 
 	const { 
 		otherSignIn, 
@@ -35,16 +38,22 @@ export const LoginForm = props => {
 		redirect,
 		showMessage,
 		message,
-		allowRedirect
+		allowRedirect,
+		authenticated
 	} = props
-
-
 
 	const onLogin = values => {
 		showLoading()
-		axios.post('https://localhost:5001/api/User/Login',
+		console.log(values)
+		axios.post("http://localhost:5000/api/User/Login",
 			{headers:{'Content-Type': 'application/json'},email:values.email,password:values.password})
-			.then(console.log).catch(console.log)
+			.then(({data}) => {
+				if(jwt_decode(data.token)["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"] === "Admin")
+				{
+					localStorage.setItem("auth_token", data.token)
+					authenticated(data.token)
+				}
+			}).catch(console.log)
 	};
 
 	const onGoogleLogin = () => {
@@ -66,12 +75,15 @@ export const LoginForm = props => {
 				hideAuthMessage();
 			}, 3000);
 		}
+
 	});
+
 	
 	const renderOtherSignIn = (
 		<div>
 			<Divider>
 				<span className="text-muted font-size-base font-weight-normal">or connect with</span>
+				<div onClick = {() => {history.push("/app/dashboards")}}>Click here to redirect</div>
 			</Divider>
 			<div className="d-flex justify-content-center">
 				<Button 
@@ -187,7 +199,8 @@ const mapDispatchToProps = {
 	showLoading,
 	hideAuthMessage,
 	signInWithGoogle,
-	signInWithFacebook
+	signInWithFacebook,
+	authenticated
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(LoginForm)
